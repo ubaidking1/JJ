@@ -109,14 +109,14 @@ export default function Home() {
 {(
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1>Cargo Services from Karachi to Dubai</h1>
+        <h1>Cargo Services from Karachi to Chaina</h1>
         <p>
           Jilani Shipping International (JSI) provides reliable, cost-effective, and fast cargo
-          shipping solutions from Karachi to Dubai. Whether you’re an exporter, importer, or
+          shipping solutions from Karachi to China. Whether you’re an exporter, importer, or
           individual, we handle all types of sea and air freight with professional care.
         </p>
 
-        <h2>Why Choose JSI for Karachi to Dubai Cargo?</h2>
+        <h2>Why Choose JSI for Karachi to China Cargo?</h2>
         <ul>
           <li>✅ Weekly LCL (Less than Container Load) and FCL (Full Container Load) shipments</li>
           <li>✅ Door-to-door cargo delivery available</li>
