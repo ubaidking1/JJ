@@ -49,7 +49,7 @@ export default function Navbar() {
         }`}
       >
         <Link href="/cargo-karachi-dubai" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-DXB</Link>
-        <Link href="/cargo-karachi-chaina" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-CHN</Link>
+        <Link href="/cargo-karachi-china" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-CHN</Link>
         <Link href="/cargo-karachi-usa" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-USA</Link>
         <Link href="/cargo-karachi-uk" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-UK</Link>
         <Link href="/worldwide-cargo" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo Worldwide</Link>

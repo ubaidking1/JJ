@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <main className="container py-12">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-      <p className="text-gray-700 mb-6">Email: info.jilanishipping@gmail.com | Phone: 0301-8204493</p>
+      <p className="text-gray-700 mb-6">Email: info@jilanishipping.net | Phone: 0301-8204493</p>
 
       <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid md:grid-cols-2 gap-4 bg-white p-6 rounded shadow">
         <input name="name" placeholder="Full Name" className="p-3 border rounded" required />

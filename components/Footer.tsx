@@ -7,7 +7,7 @@ export default function Footer() {
                   <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                     <div>
                       <h4 className="font-semibold">Jilani Shipping International</h4>
-                      <p className="text-sm">info.jilanishipping@gmail.com | +92 301 8204493</p>
+                      <p className="text-sm">info@jilanishipping.net | +92 301 8204493</p>
                     </div>
                     <div className="flex flex-col md:flex-row gap-8">
                       <div>
@@ -26,7 +26,7 @@ export default function Footer() {
                       <div>
                         <h5 className="font-semibold mb-2">Our Services</h5>
                         <ul className="text-sm space-y-1">
-                          <li><Link href="/cargo-karachi-chaina" className="hover:text-blue-700">Cargo Karachi to China</Link></li>
+                          <li><Link href="/cargo-karachi-china" className="hover:text-blue-700">Cargo Karachi to China</Link></li>
                           <li><Link href="/cargo-karachi-dubai" className="hover:text-blue-700">Cargo Karachi to Dubai</Link></li>
                           <li><Link href="/cargo-karachi-uk" className="hover:text-blue-700">Cargo Karachi to UK</Link></li>
                           <li><Link href="/cargo-karachi-usa" className="hover:text-blue-700">Cargo Karachi to USA</Link></li>
