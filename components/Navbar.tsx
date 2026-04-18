@@ -7,52 +7,72 @@ import { FiMenu, FiX } from 'react-icons/fi';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  return (
-    <header className="shadow-sm border-b bg-white/95 relative z-50">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <div className="flex items-center gap-4">
-          <div className="w-12 h-12 rounded-full bg-blue-900 text-white flex items-center justify-center font-bold">
-            JSI
-          </div>
-          <div>
-            <h1 className="text-lg font-semibold">Jilani Shipping International</h1>
-            <p className="text-xs text-gray-600">Freight Forwarding • Sea • Air • Customs</p>
-          </div>
-        </div>
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
-        {/* Desktop nav (hide if menuOpen is true) */}
-        <nav className={`${menuOpen ? 'hidden' : 'flex'} gap-4 items-center text-sm`}>
-          <Link href="/" className="hover:text-blue-700">Home</Link>
-          <Link href="/companyprofile" className="hover:text-blue-700">Company Profile</Link>
-          <Link href="/seafreight" className="hover:text-blue-700">Sea Freight</Link>
-          <Link href="/buyerconsolidation" className="hover:text-blue-700">Buyer’s Consolidation</Link>
-          <Link href="/warehouse" className="hover:text-blue-700">Warehouse</Link>
-          <Link href="/csr" className="hover:text-blue-700">CSR</Link>
-          <Link href="/project" className="hover:text-blue-700">Project</Link>
-          <Link href="/contact" className="px-3 py-2 rounded bg-blue-900 text-white">Contact</Link>
+  return (
+    <header className="shadow-sm border-b bg-white/95 sticky top-0 z-[100]">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 md:gap-3 shrink-0" onClick={closeMenu}>
+          <img 
+            src="/logo.png" 
+            alt="JSI Logo" 
+            className="w-10 h-10 md:w-12 md:h-12 object-contain"
+          />
+          <div className="flex flex-col">
+            <h1 className="text-sm md:text-lg font-bold leading-tight text-blue-900">Jilani Shipping</h1>
+            <p className="text-[10px] md:text-xs text-gray-600 font-medium">International Logistics</p>
+          </div>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="hidden lg:flex gap-6 items-center text-sm font-semibold text-gray-700">
+          <Link href="/" className="hover:text-blue-700 transition-colors">Home</Link>
+          <Link href="/companyprofile" className="hover:text-blue-700 transition-colors">Profile</Link>
+          <Link href="/seafreight" className="hover:text-blue-700 transition-colors">Sea Freight</Link>
+          <Link href="/buyerconsolidation" className="hover:text-blue-700 transition-colors">Consolidation</Link>
+          <Link href="/warehouse" className="hover:text-blue-700 transition-colors">Warehouse</Link>
+          <Link href="/csr" className="hover:text-blue-700 transition-colors">CSR</Link>
+          <Link href="/project" className="hover:text-blue-700 transition-colors">Project</Link>
+          <Link href="/iran-transit-service" className="hover:text-blue-700 transition-colors">Iran Transit</Link>
+          <Link href="/contact" className="px-4 py-2 rounded-lg bg-blue-900 text-white hover:bg-blue-800 transition-all">Contact</Link>
         </nav>
 
-        {/* Hamburger button (always visible) */}
+        {/* Mobile Toggle */}
         <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="p-2 rounded hover:bg-gray-100 focus:outline-none focus:ring focus:ring-blue-300"
+          onClick={toggleMenu}
+          className="lg:hidden p-2 text-blue-900 focus:outline-none"
+          aria-label="Toggle Menu"
         >
-          {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          {menuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
         </button>
       </div>
 
-      {/* Menu for all screens */}
+      {/* Mobile Menu Dropdown */}
       <div
-        className={`absolute top-full left-0 w-full bg-white border-t shadow-sm px-6 py-4 flex flex-col gap-2 transition-all duration-300 ${
-          menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+        className={`lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-xl transition-all duration-300 ease-in-out overflow-hidden ${
+          menuOpen ? 'max-h-[90vh] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <Link href="/cargo-karachi-dubai" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-DXB</Link>
-        <Link href="/cargo-karachi-china" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-CHN</Link>
-        <Link href="/cargo-karachi-usa" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-USA</Link>
-        <Link href="/cargo-karachi-uk" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo KHI-UK</Link>
-        <Link href="/worldwide-cargo" className="px-3 py-2 rounded bg-blue-600 text-white">Cargo Worldwide</Link>
+        <div className="flex flex-col p-4 gap-1 text-gray-800 font-medium">
+          <Link href="/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Home</Link>
+          <Link href="/companyprofile" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Company Profile</Link>
+          <Link href="/seafreight" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Sea Freight</Link>
+          <Link href="/buyerconsolidation" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Buyer’s Consolidation</Link>
+          <Link href="/warehouse" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Warehouse</Link>
+          <Link href="/csr" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">CSR</Link>
+          <Link href="/project" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Project</Link>
+          <Link href="/iran-transit-service" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Iran Transit</Link>
+          <Link href="/contact" onClick={closeMenu} className="p-3 bg-blue-900 text-white rounded-lg text-center mt-2">Contact Us</Link>
+          
+          <div className="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-[10px]">
+            <Link href="/cargo-karachi-dubai" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-Dubai</Link>
+            <Link href="/cargo-karachi-china" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-China</Link>
+            <Link href="/cargo-karachi-usa" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-USA</Link>
+            <Link href="/cargo-karachi-uk" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-UK</Link>
+          </div>
+        </div>
       </div>
     </header>
   );

@@ -2,12 +2,26 @@
 import Link from "next/link";
 
 export default function Contact() {
+  const handleSubmit = () => {
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag('event', 'generate_lead', {
+        'event_category': 'Contact Form',
+        'event_label': 'Lead Generated'
+      });
+    }
+  };
+
   return (
-    <main className="container py-12">
+    <main className="container py-12 px-6">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <p className="text-gray-700 mb-6">Email: info@jilanishipping.net | Phone: 0301-8204493</p>
 
-      <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid md:grid-cols-2 gap-4 bg-white p-6 rounded shadow">
+      <form 
+        action="https://formspree.io/f/xpwadvro" 
+        method="POST" 
+        onSubmit={handleSubmit}
+        className="grid md:grid-cols-2 gap-4 bg-white p-6 rounded shadow"
+      >
         <input name="name" placeholder="Full Name" className="p-3 border rounded" required />
         <input name="email" type="email" placeholder="Email" className="p-3 border rounded" required />
         <input name="phone" placeholder="Phone" className="p-3 border rounded" required />

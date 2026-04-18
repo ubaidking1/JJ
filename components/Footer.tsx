@@ -20,6 +20,7 @@ export default function Footer() {
                           <li><Link href="/warehouse" className="hover:text-blue-700">Warehouse</Link></li>
                           <li><Link href="/csr" className="hover:text-blue-700">CSR</Link></li>
                           <li><Link href="/project" className="hover:text-blue-700">Project</Link></li>
+                          <li><Link href="/iran-transit-service" className="hover:text-blue-700">Iran Transit</Link></li>
                           <li><Link href="/contact" className="hover:text-blue-700">Contact Us</Link></li>
                         </ul>
                       </div>
@@ -30,6 +31,7 @@ export default function Footer() {
                           <li><Link href="/cargo-karachi-dubai" className="hover:text-blue-700">Cargo Karachi to Dubai</Link></li>
                           <li><Link href="/cargo-karachi-uk" className="hover:text-blue-700">Cargo Karachi to UK</Link></li>
                           <li><Link href="/cargo-karachi-usa" className="hover:text-blue-700">Cargo Karachi to USA</Link></li>
+                          <li><Link href="/iran-transit-service" className="hover:text-blue-700">Iran Transit Service</Link></li>
                           <li><Link href="/worldwide-cargo" className="hover:text-blue-700">Worldwide Cargo</Link></li>
                         </ul>
                       </div>

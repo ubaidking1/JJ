@@ -5,7 +5,24 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/Whatsapp";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jilanishipping.net"),  openGraph: {
+  metadataBase: new URL("https://jilanishipping.net"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/",
+      "en-GB": "/",
+      "en-AE": "/",
+    },
+  },
+  other: {
+    "google-site-verification": "aj94_WtlcjHxi1gd7f2KwaEQaLHX8lkPHJr7Xf-NJUg",
+    "google-site-verification-2": "pd_oDtTHCN_0supzJeLXGK_Tfn8xpahdkdx2VCNpUUs",
+    "geo.region": "PK-SD",
+    "geo.placename": "Karachi",
+    "geo.position": "24.8607;67.0011",
+    "ICBM": "24.8607, 67.0011",
+  },
+  openGraph: {
     title: "Jilani Shipping International | Freight & Logistics",
     description:
       "Reliable freight & cargo solutions from Karachi to Dubai, China, and worldwide.",
@@ -29,7 +46,7 @@ export const metadata: Metadata = {
   },
   title: "Freight Forwarding Karachi | Jilani Shipping International",
   description:
-    "JSI offers professional freight forwarding, sea freight, air cargo, customs clearance, and logistics services in Karachi. Cargo shipping from Karachi to Dubai & China.",
+    "JSI offers professional international freight forwarding, sea freight, air cargo, and logistics services. Partners with CMA CGM, MAERSK, MSC for global shipping.",
   keywords: [
     "freight forwarding Karachi",
     "shipping company Karachi",
@@ -259,12 +276,72 @@ export const metadata: Metadata = {
 "Jilani freight management",
 "Jilani logistics network",
 "Jilani shipping and logistics",
-  ],
+"Iran transit service",
+"Gwadar to Iran cargo",
+"Karachi to Iran transit",
+],
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LogisticsBusiness",
+    "name": "Jilani Shipping International",
+    "url": "https://jilanishipping.net",
+    "logo": "https://jilanishipping.net/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+92-301-8204493",
+      "contactType": "customer service",
+      "email": "info@jilanishipping.net"
+    },
+    "description": "Professional international freight forwarding and world-wide one-stop integrated logistics service. Specializing in Karachi to Dubai, China, USA, and UK routes. Partners with CMA CGM, MAERSK, MSC, EVERGREEN.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Logistics Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sea Freight Karachi to Dubai" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cargo Karachi to China" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Freight Karachi to USA" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Air Cargo Karachi to UK" }},
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Iran Transit Service from Karachi & Gwadar" }}
+      ]
+    },
+    "areaServed": ["PK", "AE", "CN", "US", "GB"],
+    "video": {
+      "@type": "VideoObject",
+      "name": "Jilani Shipping Port Operations",
+      "description": "Professional port and shipping operations by Jilani Shipping International.",
+      "thumbnailUrl": "https://jilanishipping.net/logo.png",
+      "uploadDate": "2024-01-01T08:00:00+05:00",
+      "duration": "PT0M27S",
+      "contentUrl": "https://jilanishipping.net/images/shipping.mp4"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Karachi",
+      "addressCountry": "PK"
+    }
+  };
+
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/logo.png" />
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WHSWB82F');`,
+          }}
+        />
+        {/* End Google Tag Manager */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4PRZE07D3"></script>
         <script
@@ -281,6 +358,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WHSWB82F"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+        {/* End Google Tag Manager (noscript) */}
         <Navbar />
         {children}
         <Footer />

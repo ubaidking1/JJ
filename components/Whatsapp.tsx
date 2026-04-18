@@ -1,12 +1,29 @@
 "use client";
 import React from "react";
 
+declare global {
+  interface Window {
+    gtag: any;
+  }
+}
+
 export default function WhatsAppButton() {
+  const handleClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'contact', {
+        'event_category': 'Engagement',
+        'event_label': 'WhatsApp Click',
+        'value': 1
+      });
+    }
+  };
+
   return (
     <a
       href="https://wa.me/923018204493"
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
       className="fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-50"
     >
       <img
