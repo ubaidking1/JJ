@@ -1,64 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to UK | Sea & Air Freight by Jilani Shipping International",
-  description:
-    "Reliable freight forwarding from Karachi to the United Kingdom. Sea, air, and door-to-door cargo delivery with Jilani Shipping International (JSI).",
-  keywords: [
-    "cargo Karachi to UK",
-    "freight Karachi to London",
-    "sea freight Karachi to UK",
-    "air cargo Karachi to UK",
-    "door to door cargo Karachi to UK",
-    "shipping company Karachi to UK",
-    "JSI cargo services",
-  ],
+  title: "Cargo Karachi to UK | Jilani Shipping International",
+  description: "Ship your cargo from Karachi to UK (London Gateway, Felixstowe, Southampton). Professional sea and air freight with door-to-door solutions.",
+  keywords: ["cargo Karachi to UK", "shipping to London Gateway", "Karachi to UK freight", "UK logistics Pakistan"],
 };
 
-export default function CargoKarachiUkPage() {
+export default function CargoUK() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
+    <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1>Cargo Services from Karachi to the United Kingdom</h1>
-        <p>
-          Jilani Shipping International (JSI) provides reliable cargo shipping from Karachi to
-          London, Manchester, Birmingham, and other UK destinations. We handle both air and sea
-          freight with complete logistics support.
-        </p>
-
-        <h2>Why Choose JSI?</h2>
-        <ul>
-          <li>✅ Weekly LCL/FCL shipments to the UK</li>
-          <li>✅ Air cargo for urgent delivery</li>
-          <li>✅ Door-to-door pickup and delivery</li>
-          <li>✅ Full customs documentation support</li>
-          <li>✅ Real-time tracking and updates</li>
+        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to UK</h1>
+        <p className="text-lg text-gray-700 mt-4">JSI provides top-tier freight forwarding services for businesses and individuals shipping to the United Kingdom.</p>
+        <ul className="mt-6 space-y-2">
+          <li>✅ Direct sailings to London Gateway and Felixstowe</li>
+          <li>✅ Weekly LCL and FCL options</li>
+          <li>✅ UK customs clearance and VAT support</li>
         </ul>
-
-        <h2>UK Destinations We Serve</h2>
-        <p>
-          - Karachi to London  
-          - Karachi to Birmingham  
-          - Karachi to Manchester  
-          - Karachi to Glasgow  
-          - Karachi to Liverpool  
-        </p>
-
-        <h2>Our Services</h2>
-        <ul>
-          <li>🟩 Sea Freight (FCL/LCL)</li>
-          <li>🟩 Air Freight</li>
-          <li>🟩 Customs Clearance</li>
-          <li>🟩 Warehousing</li>
-          <li>🟩 Door-to-Door Cargo</li>
-        </ul>
-
-        <a
-          href="/contact"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
-        >
-          Request a Quote
-        </a>
+        <div className="mt-8">
+          <a href="/contact" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get UK Quote</a>
+        </div>
       </section>
     </main>
   );

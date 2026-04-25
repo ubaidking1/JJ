@@ -1,64 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to USA | Sea & Air Freight by Jilani Shipping International",
-  description:
-    "Ship your cargo from Karachi to USA with Jilani Shipping International. Reliable air and sea freight, customs clearance, and door-to-door delivery services from Pakistan to America.",
-  keywords: [
-    "cargo Karachi to USA",
-    "freight Karachi to America",
-    "sea freight Karachi to USA",
-    "air cargo Karachi to USA",
-    "door to door cargo Karachi to USA",
-    "shipping company Karachi to USA",
-    "JSI cargo services",
-  ],
+  title: "Cargo Karachi to USA | Jilani Shipping International",
+  description: "Reliable shipping from Karachi to USA (New York, Houston, Los Angeles). Sea and air freight services with complete documentation.",
+  keywords: ["cargo Karachi to USA", "shipping to New York", "Karachi to USA freight", "USA logistics agents"],
 };
 
-export default function CargoKarachiUsaPage() {
+export default function CargoUSA() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
+    <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1>Cargo Services from Karachi to USA</h1>
-        <p>
-          Jilani Shipping International (JSI) provides fast, safe, and cost-effective freight
-          services from Karachi to all major U.S. destinations. Whether sea or air freight, we
-          ensure your goods arrive on time and in perfect condition.
-        </p>
-
-        <h2>Why Choose JSI?</h2>
-        <ul>
-          <li>✅ Weekly sea & air cargo from Karachi to USA</li>
-          <li>✅ Customs clearance & documentation handled by our experts</li>
-          <li>✅ Door-to-door delivery available</li>
-          <li>✅ Real-time shipment tracking</li>
-          <li>✅ Competitive freight rates</li>
+        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to USA</h1>
+        <p className="text-lg text-gray-700 mt-4">Expand your business to the United States with JSI's reliable maritime and air cargo solutions.</p>
+        <ul className="mt-6 space-y-2">
+          <li>✅ Major ports: New York, Houston, Los Angeles, and Savannah</li>
+          <li>✅ Specialized handling for textile and commercial goods</li>
+          <li>✅ ISF filing and US customs support</li>
         </ul>
-
-        <h2>Major U.S. Destinations</h2>
-        <p>
-          - Karachi to New York  
-          - Karachi to Houston  
-          - Karachi to Los Angeles  
-          - Karachi to Chicago  
-          - Karachi to Miami  
-        </p>
-
-        <h2>Our Services Include</h2>
-        <ul>
-          <li>🟩 Sea Freight (LCL/FCL)</li>
-          <li>🟩 Air Freight for urgent shipments</li>
-          <li>🟩 Warehousing & Consolidation</li>
-          <li>🟩 Customs Brokerage</li>
-          <li>🟩 Door-to-Door Cargo</li>
-        </ul>
-
-        <a
-          href="/contact"
-          className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
-        >
-          Request a Quote
-        </a>
+        <div className="mt-8">
+          <a href="/contact" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get USA Quote</a>
+        </div>
       </section>
     </main>
   );

@@ -155,6 +155,7 @@ export default function ProfilePage() {
           </motion.div>
         </div>
       </section>
+
     </div>
   );
 }

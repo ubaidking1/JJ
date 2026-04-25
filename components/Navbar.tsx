@@ -30,12 +30,60 @@ export default function Navbar() {
         <nav className="hidden lg:flex gap-6 items-center text-sm font-semibold text-gray-700">
           <Link href="/" className="hover:text-blue-700 transition-colors">Home</Link>
           <Link href="/companyprofile" className="hover:text-blue-700 transition-colors">Profile</Link>
-          <Link href="/seafreight" className="hover:text-blue-700 transition-colors">Sea Freight</Link>
-          <Link href="/buyerconsolidation" className="hover:text-blue-700 transition-colors">Consolidation</Link>
-          <Link href="/warehouse" className="hover:text-blue-700 transition-colors">Warehouse</Link>
+          
+          {/* Services Dropdown */}
+          <div className="relative group">
+            <button className="flex items-center gap-1 hover:text-blue-700 transition-colors py-2">
+              Services
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div className="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110] max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-600">
+              <Link href="/seafreight" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Sea Freight</Link>
+              <Link href="/buyerconsolidation" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Consolidation</Link>
+              <Link href="/warehouse" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Warehouse</Link>
+              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Primary Gulf Routes</div>
+              <Link href="/cargo-karachi-dubai" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Dubai</Link>
+              <Link href="/cargo-karachi-saudi" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Saudi Arabia</Link>
+              <Link href="/cargo-karachi-kuwait" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Kuwait</Link>
+              <hr className="my-1 border-gray-50" />
+              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Routes</div>
+              <Link href="/cargo-karachi-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to China</Link>
+              <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to UK</Link>
+              <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to USA</Link>
+              <Link href="/cargo-karachi-canada" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Canada</Link>
+              <Link href="/cargo-karachi-australia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Australia</Link>
+              <Link href="/cargo-karachi-italy" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Italy</Link>
+              <Link href="/cargo-karachi-france" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to France</Link>
+              <Link href="/cargo-karachi-netherlands" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Netherlands</Link>
+              <Link href="/cargo-karachi-turkey" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Turkey</Link>
+              <Link href="/cargo-karachi-malaysia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Malaysia</Link>
+              <Link href="/cargo-karachi-singapore" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Singapore</Link>
+              <Link href="/cargo-karachi-thailand" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Thailand</Link>
+              <Link href="/cargo-karachi-bangladesh" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Bangladesh</Link>
+              <Link href="/cargo-karachi-south-africa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to South Africa</Link>
+              <Link href="/iran-transit-service" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Iran Transit Service</Link>
+            </div>
+          </div>
+
           <Link href="/csr" className="hover:text-blue-700 transition-colors">CSR</Link>
           <Link href="/project" className="hover:text-blue-700 transition-colors">Project</Link>
-          <Link href="/iran-transit-service" className="hover:text-blue-700 transition-colors">Iran Transit</Link>
+          
+          {/* Resources Dropdown */}
+          <div className="relative group">
+            <button className="flex items-center gap-1 hover:text-blue-700 transition-colors py-2">
+              Resources
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div className="absolute right-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110]">
+              <Link href="/track-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Track Your Cargo</Link>
+              <hr className="my-1 border-gray-50" />
+              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Expert Guides</div>
+              <Link href="/blog/shipping-from-pakistan-to-uae-guide" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Pakistan to UAE Guide</Link>
+              <Link href="/blog/cargo-karachi-to-saudi-arabia-guide" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Saudi Arabia Shipping Guide</Link>
+              <Link href="/blog/air-vs-sea-freight-pakistan" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Air vs Sea Freight</Link>
+            </div>
+          </div>
+
           <Link href="/contact" className="px-4 py-2 rounded-lg bg-blue-900 text-white hover:bg-blue-800 transition-all">Contact</Link>
         </nav>
 
@@ -51,8 +99,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-xl transition-all duration-300 ease-in-out overflow-hidden ${
-          menuOpen ? 'max-h-[90vh] opacity-100' : 'max-h-0 opacity-0'
+        className={`lg:hidden absolute top-full left-0 w-full bg-white border-t shadow-xl transition-all duration-300 ease-in-out overflow-y-auto ${
+          menuOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0 invisible'
         }`}
       >
         <div className="flex flex-col p-4 gap-1 text-gray-800 font-medium">
