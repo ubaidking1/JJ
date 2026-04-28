@@ -40,7 +40,7 @@ export default function BlogUAE() {
           Ships depart from Karachi Port and Port Qasim, arriving at Jebel Ali (Dubai) or Khalifa Port (Abu Dhabi).
         </p>
         <ul>
-          <li><strong>LCL (Less than Container Load):</strong> Perfect for smaller shipments where you share container space.</li>
+          <li><strong><a href="/lcl-shipping" className="text-blue-700 underline font-bold">LCL (Less than Container Load):</a></strong> Perfect for smaller <strong>LCL shipments</strong> where you share container space and save costs.</li>
           <li><strong>FCL (Full Container Load):</strong> Ideal for large commercial exports where you have exclusive use of a container.</li>
         </ul>
 

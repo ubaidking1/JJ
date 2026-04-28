@@ -13,12 +13,12 @@ export default function Home() {
             transition={{duration:0.8}} 
             className="text-3xl md:text-5xl font-bold leading-tight text-blue-900"
           >
-            Reliable Shipping Services from Pakistan to Gulf Countries
+            International Freight & LCL Shipment Solutions: China, Gulf & Worldwide
           </motion.h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Jilani Shipping is a trusted logistics and freight forwarding company in Pakistan, providing reliable cargo services to UAE, Saudi Arabia, and Kuwait. We specialize in air freight, sea freight, and door-to-door delivery solutions tailored to businesses and individuals.
+              Jilani Shipping International (JSI) is your premier global logistics partner. We specialize in <strong>China to Pakistan LCL shipments</strong>, dedicated Gulf country routes, and comprehensive freight forwarding to over 100+ global destinations.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               With competitive pricing, fast transit times, and expert customs handling, we ensure your shipments reach safely and on time. Whether you are exporting goods or sending personal cargo, Jilani Shipping is your reliable partner.
@@ -92,6 +92,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* LCL vs FCL Section */}
+      <section className="mt-20 p-8 bg-blue-50 rounded-3xl border border-blue-100">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-blue-900 text-center mb-8">Choose the Right Shipment Type</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-blue-100">
+              <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">📦 LCL Shipment</h3>
+              <p className="text-sm text-gray-600 mb-4"><strong>Less than Container Load:</strong> Best for smaller cargo that doesn't fill a whole container. You only pay for the space you use.</p>
+              <ul className="text-sm text-gray-700 space-y-2">
+                <li>✅ Most Cost-Effective</li>
+                <li>✅ Pay per CBM (Cubic Meter)</li>
+                <li>✅ Weekly departures from Karachi</li>
+              </ul>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-sm border border-blue-100">
+              <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">🚢 FCL Shipment</h3>
+              <p className="text-sm text-gray-600 mb-4"><strong>Full Container Load:</strong> Best for large shipments where you have exclusive use of a 20ft or 40ft container.</p>
+              <ul className="text-sm text-gray-700 space-y-2">
+                <li>✅ Maximum Security</li>
+                <li>✅ Faster Transit (No consolidation)</li>
+                <li>✅ Best for Bulk Goods</li>
+              </ul>
+            </div>
+          </div>
+          <div className="text-center mt-10">
+            <Link href="/lcl-shipping" className="inline-block px-8 py-3 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all">
+              Compare LCL Shipping Rates
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Authority Section */}
       <section className="mt-20">
         <div className="bg-blue-900 text-white rounded-3xl p-8 md:p-16 relative overflow-hidden shadow-2xl">
@@ -137,6 +169,12 @@ export default function Home() {
       <section className="mt-20">
         <h2 className="text-center text-3xl font-bold text-blue-900 mb-10">Global Shipping & Logistics Services</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Link href="/lcl-shipping" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
+            <h2 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h2>
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
+            <span className="text-blue-600 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
+          </Link>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚢</div>
             <h2 className="font-bold text-blue-900 text-lg">International Sea Freight</h2>
