@@ -1,0 +1,22 @@
+# Local Netlify folder
+.netlify
+
+# Next.js
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# IDE
+.vscode/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# misc
+*.js.map
+*.css.map

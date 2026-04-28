@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900">
+  <rect width="100%" height="100%" fill="#c8d7e6"/>
+  <text x="50" y="80" font-size="36" fill="#123456">JSI Hero Image Placeholder</text>
+  <text x="50" y="130" font-size="20" fill="#123456">Replace /public/images/hero-ship.svg with your own photo</text>
+</svg>
