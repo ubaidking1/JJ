@@ -30,13 +30,18 @@ export default function Home() {
               <h3 className="text-xl font-bold text-blue-900 mb-4">Get a Quick Quote</h3>
               <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input name="name" placeholder="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
+                <input name="email" type="email" placeholder="Email Address" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
                 <input name="phone" placeholder="Phone Number" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <select name="service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500 sm:col-span-2">
+                <select name="service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500">
                   <option>Karachi to Dubai</option>
                   <option>Karachi to Saudi Arabia</option>
                   <option>Karachi to Kuwait</option>
+                  <option>China to Pakistan LCL</option>
                   <option>Other / International</option>
                 </select>
+                <input name="pol" placeholder="POL (Port of Loading)" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
+                <input name="pod" placeholder="POD (Port of Discharge)" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
+                <textarea name="comments" placeholder="Your Message / Comments" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500 sm:col-span-2" rows={3}></textarea>
                 <button type="submit" className="sm:col-span-2 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition-all shadow-md">
                   Get Rates Now
                 </button>

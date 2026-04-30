@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import CBMCalculator from "@/components/CBMCalculator";
 
 export const metadata: Metadata = {
   title: "LCL Shipment Karachi | Best Less than Container Load Rates 2026",
@@ -89,6 +90,8 @@ export default function LCLShipping() {
           </div>
         </div>
 
+        <CBMCalculator />
+
         <div className="mt-16 grid md:grid-cols-2 gap-12 bg-gray-50 p-8 rounded-3xl border border-gray-200">
           <div>
             <h2 className="text-2xl font-bold text-blue-900 mb-4">How to Calculate LCL Shipment Cost?</h2>
@@ -131,7 +134,7 @@ export default function LCLShipping() {
           </div>
         </div>
 
-        <div className="mt-16 text-center">
+        <div id="quote-form" className="mt-16 text-center">
           <a href="/contact" className="inline-block px-12 py-5 bg-blue-700 text-white font-black rounded-full hover:bg-blue-800 transition-all shadow-xl hover:shadow-blue-200 uppercase tracking-widest">
             Request LCL Shipping Rates
           </a>
