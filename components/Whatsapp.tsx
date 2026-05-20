@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 declare global {
   interface Window {
@@ -42,14 +43,17 @@ export default function WhatsAppButton() {
       {/* Desktop WhatsApp Button */}
       <a
         href="https://wa.me/923018204493"
-        target="_blank"
+        target="_blank" 
         rel="noopener noreferrer"
         onClick={handleClick}
+        aria-label="Contact Jilani Shipping on WhatsApp"
         className="hidden lg:flex fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:scale-110 transition-transform z-50 items-center justify-center"
       >
-        <img
+        <Image
           src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
           alt="WhatsApp"
+          width={40}
+          height={40}
           className="w-10 h-10"
         />
       </a>

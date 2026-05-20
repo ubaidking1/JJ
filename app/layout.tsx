@@ -3,17 +3,10 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/Whatsapp";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jilanishipping.net"),
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/",
-      "en-GB": "/",
-      "en-AE": "/",
-    },
-  },
   other: {
     "google-site-verification": "aj94_WtlcjHxi1gd7f2KwaEQaLHX8lkPHJr7Xf-NJUg",
     "google-site-verification-2": "pd_oDtTHCN_0supzJeLXGK_Tfn8xpahdkdkdx2VCNpUUs",
@@ -23,8 +16,6 @@ export const metadata: Metadata = {
     "ICBM": "24.8607, 67.0011",
   },
   openGraph: {
-    title: "Jilani Shipping | International Freight Forwarding & China LCL Specialists",
-    description: "Expert International Shipping & LCL solutions. Specialized in China to Pakistan imports, Gulf country exports, and global freight forwarding.",
     type: "website",
     url: "https://jilanishipping.net",
     images: [
@@ -38,13 +29,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jilani Shipping | International Freight Forwarder",
-    description: "Trusted freight forwarding, cargo, and logistics services from Karachi to worldwide destinations.",
     images: ["https://jilanishipping.net/og-image.jpg"],
   },
-  title: "Jilani Shipping | International Freight Forwarding & China LCL Specialists",
+  title: "Jilani Shipping | International Freight & China LCL Specialists",
   description:
-    "Expert International Shipping & LCL solutions. Specialized in China to Pakistan imports, Gulf country exports, and global freight forwarding. Reliable, fast, and cost-effective.",
+    "Expert International Shipping & LCL solutions. Specialized in China to Pakistan imports, Gulf exports, and global freight forwarding. Reliable, fast, and cost-effective.",
   keywords: [
     "international freight forwarder Pakistan",
     "China to Pakistan LCL shipment",
@@ -211,19 +200,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "@type": "OfferCatalog",
       "name": "Jilani Shipping Global Services",
       "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping LCL Shipment Services Karachi" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to Dubai Cargo" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to China Freight" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to USA Shipping" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to UK Air Cargo" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Iran Transit Service" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to South Africa Durban" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Karachi to Australia Sydney" }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Jilani Shipping Europe Gateway Rotterdam" }}
+        { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "LCL Shipment Services Karachi" }},
+        { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "Karachi to Dubai Cargo" }},
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "Karachi to China Freight" }},
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Karachi to USA Shipping" }},
+        { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Karachi to UK Air Cargo" }},
+        { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Iran Transit Service" }},
+        { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Karachi to South Africa Durban" }},
+        { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Karachi to Australia Sydney" }},
+        { "@type": "ListItem", "position": 9, "item": { "@type": "Service", "name": "Europe Gateway Rotterdam" }},
+        { "@type": "ListItem", "position": 10, "item": { "@type": "Service", "name": "PVOC Pre-Export Verification of Conformity" }}
       ]
     },
     "areaServed": ["PK", "AE", "CN", "US", "GB", "SA", "QA", "DE", "ZA", "AU", "NL", "FR", "IT"],
-    "video": {
+    "subjectOf": {
       "@type": "VideoObject",
       "name": "Jilani Shipping Port Operations",
       "description": "Professional port and shipping operations by Jilani Shipping International.",
@@ -243,32 +233,31 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <head>
         <link rel="icon" href="/logo.png" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-WHSWB82F');`,
-          }}
+        <Script 
+          src="https://analytics.ahrefs.com/analytics.js" 
+          data-key="1HjjmS9vsobNlQH0F/jVAg" 
+          strategy="afterInteractive"
         />
+        <Script id="gtm" strategy="afterInteractive">
+          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-WHSWB82F');`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-C4PRZE07D3"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-C4PRZE07D3', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-C4PRZE07D3" strategy="afterInteractive" />
+        <Script id="ga-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-C4PRZE07D3');
+          `}
+        </Script>
       </head>
       <body>
         <noscript>

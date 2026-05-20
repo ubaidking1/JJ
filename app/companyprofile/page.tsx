@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 const profilePages = [
   { id: 1, src: '/images/profile/page_1.png', title: 'Corporate Cover' },
@@ -97,10 +98,12 @@ export default function ProfilePage() {
               transition={{ duration: 0.5 }}
               className="absolute inset-0 flex items-center justify-center p-4 md:p-8"
             >
-              <img 
+              <Image 
                 src={profilePages[currentIndex].src} 
                 alt={profilePages[currentIndex].title}
-                className="max-w-full max-h-full object-contain shadow-sm relative z-10"
+                fill
+                className="object-contain shadow-sm relative z-10"
+                priority={currentIndex === 0}
               />
             </motion.div>
           </AnimatePresence>
@@ -108,6 +111,7 @@ export default function ProfilePage() {
           <div className="absolute inset-y-0 left-0 flex items-center z-30">
             <button 
               onClick={prevSlide}
+              aria-label="Previous Page"
               className="bg-black/30 hover:bg-blue-600 p-2 md:p-4 transition-colors rounded-r-lg"
             >
               <svg className="w-5 h-5 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
@@ -116,6 +120,7 @@ export default function ProfilePage() {
           <div className="absolute inset-y-0 right-0 flex items-center z-30">
             <button 
               onClick={nextSlide}
+              aria-label="Next Page"
               className="bg-black/30 hover:bg-blue-600 p-2 md:p-4 transition-colors rounded-l-lg"
             >
               <svg className="w-5 h-5 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>

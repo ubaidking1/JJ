@@ -17,6 +17,7 @@ export default function Footer() {
                           <li><Link href="/companyprofile" className="hover:text-blue-700">Company Profile</Link></li>
                           <li><Link href="/seafreight" className="hover:text-blue-700">Sea Freight</Link></li>
                           <li><Link href="/buyerconsolidation" className="hover:text-blue-700">Buyer's Consolidation</Link></li>
+                          <li><Link href="/pvoc-service" className="hover:text-blue-700 font-semibold text-blue-900 italic">PVOC Service (New)</Link></li>
                           <li><Link href="/warehouse" className="hover:text-blue-700">Warehouse</Link></li>
                           <li><Link href="/csr" className="hover:text-blue-700">CSR</Link></li>
                           <li><Link href="/project" className="hover:text-blue-700">Project</Link></li>

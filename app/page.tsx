@@ -27,21 +27,21 @@ export default function Home() {
 
           <div className="mt-8">
             <div className="bg-white p-6 rounded-2xl shadow-xl border border-blue-50 max-w-lg">
-              <h3 className="text-xl font-bold text-blue-900 mb-4">Get a Quick Quote</h3>
+              <h2 className="text-xl font-bold text-blue-900 mb-4">Get a Quick Quote</h2>
               <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input name="name" placeholder="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <input name="email" type="email" placeholder="Email Address" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <input name="phone" placeholder="Phone Number" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <select name="service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500">
+                <input name="name" placeholder="Full Name" aria-label="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
+                <input name="email" type="email" placeholder="Email Address" aria-label="Email Address" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
+                <input name="phone" placeholder="Phone Number" aria-label="Phone Number" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
+                <select name="service" aria-label="Select Service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500">
                   <option>Karachi to Dubai</option>
                   <option>Karachi to Saudi Arabia</option>
                   <option>Karachi to Kuwait</option>
                   <option>China to Pakistan LCL</option>
                   <option>Other / International</option>
                 </select>
-                <input name="pol" placeholder="POL (Port of Loading)" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
-                <input name="pod" placeholder="POD (Port of Discharge)" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
-                <textarea name="comments" placeholder="Your Message / Comments" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500 sm:col-span-2" rows={3}></textarea>
+                <input name="pol" placeholder="POL (Port of Loading)" aria-label="Port of Loading" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
+                <input name="pod" placeholder="POD (Port of Discharge)" aria-label="Port of Discharge" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
+                <textarea name="comments" placeholder="Your Message / Comments" aria-label="Your Message or Comments" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500 sm:col-span-2" rows={3}></textarea>
                 <button type="submit" className="sm:col-span-2 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition-all shadow-md">
                   Get Rates Now
                 </button>
@@ -176,28 +176,28 @@ export default function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Link href="/lcl-shipping" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
-            <h2 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h2>
+            <h3 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h3>
             <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
             <span className="text-blue-600 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
           </Link>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚢</div>
-            <h2 className="font-bold text-blue-900 text-lg">International Sea Freight</h2>
+            <h3 className="font-bold text-blue-900 text-lg">International Sea Freight</h3>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">Global forwarding (FCL, LCL, Break-bulk). Specialized <strong>project cargo</strong> & chartering with competitive rates for worldwide shipping routes.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">📦</div>
-            <h2 className="font-bold text-blue-900 text-lg">Global Buyer’s Consolidation</h2>
+            <h3 className="font-bold text-blue-900 text-lg">Global Buyer’s Consolidation</h3>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">Optimized consolidation, labelling, and inventory control. We bridge the gap between <strong>international suppliers</strong> and global buyers.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🏢</div>
-            <h2 className="font-bold text-blue-900 text-lg">Secure Warehousing</h2>
+            <h3 className="font-bold text-blue-900 text-lg">Secure Warehousing</h3>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">Bonded storage and eco-friendly operations within 5km of Port Qasim. Essential for <strong>supply chain optimization</strong> in Pakistan.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚛</div>
-            <h2 className="font-bold text-blue-900 text-lg">Iran Transit Service</h2>
+            <h3 className="font-bold text-blue-900 text-lg">Iran Transit Service</h3>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">Professional transit solutions from <strong>Karachi Port</strong> and <strong>Gwadar Port</strong> to Iran. Reliable and efficient cargo handling.</p>
           </div>
         </div>

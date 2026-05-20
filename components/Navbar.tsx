@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 
@@ -15,13 +16,16 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 md:gap-3 shrink-0" onClick={closeMenu}>
-          <img 
+          <Image 
             src="/logo.png" 
             alt="JSI Logo" 
+            width={48}
+            height={48}
+            priority
             className="w-10 h-10 md:w-12 md:h-12 object-contain"
           />
           <div className="flex flex-col">
-            <h1 className="text-sm md:text-lg font-bold leading-tight text-blue-900">Jilani Shipping</h1>
+            <span className="text-sm md:text-lg font-bold leading-tight text-blue-900 block">Jilani Shipping</span>
             <p className="text-[10px] md:text-xs text-gray-600 font-medium">International Logistics</p>
           </div>
         </Link>
@@ -41,6 +45,7 @@ export default function Navbar() {
               <Link href="/seafreight" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Sea Freight</Link>
               <Link href="/lcl-shipping" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-800 italic">LCL Shipping (New)</Link>
               <Link href="/buyerconsolidation" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Consolidation</Link>
+              <Link href="/pvoc-service" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">PVOC Service (New)</Link>
               <Link href="/warehouse" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Warehouse</Link>
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Primary Gulf Routes</div>
               <Link href="/cargo-karachi-dubai" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Dubai</Link>
@@ -79,6 +84,7 @@ export default function Navbar() {
               <Link href="/track-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Track Your Cargo</Link>
               <hr className="my-1 border-gray-50" />
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Expert Guides</div>
+              <Link href="/blog/mistakes-marketers-make-with-ai" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900">AI Marketing Mistakes (New)</Link>
               <Link href="/blog/shipping-from-pakistan-to-uae-guide" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Pakistan to UAE Guide</Link>
               <Link href="/blog/cargo-karachi-to-saudi-arabia-guide" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Saudi Arabia Shipping Guide</Link>
               <Link href="/blog/air-vs-sea-freight-pakistan" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700">Air vs Sea Freight</Link>
@@ -110,6 +116,7 @@ export default function Navbar() {
           <Link href="/lcl-shipping" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-800 rounded-lg">LCL Shipping (New)</Link>
           <Link href="/seafreight" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Sea Freight</Link>
           <Link href="/buyerconsolidation" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Buyer’s Consolidation</Link>
+          <Link href="/pvoc-service" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">PVOC Service (New)</Link>
           <Link href="/warehouse" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Warehouse</Link>
           <Link href="/csr" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">CSR</Link>
           <Link href="/project" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Project</Link>
