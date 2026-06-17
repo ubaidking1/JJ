@@ -60,7 +60,7 @@ export default function BlogUAE() {
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Customs and Documentation</h2>
         <p>
-          Navigating customs is the most complex part of international shipping. Required documents usually include:
+          Navigating customs is the most complex part of international shipping. Professional <strong>importers and exporters</strong> often use a <a href="/freight-forwarder-karachi" className="text-blue-700 underline font-bold">customs clearing agent in Karachi</a> to avoid delays. Required documents usually include:
           - Commercial Invoice
           - Packing List
           - Bill of Lading (for sea) or Airway Bill (for air)

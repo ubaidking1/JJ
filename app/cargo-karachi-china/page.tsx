@@ -1,43 +1,41 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to China | Sea & Air Freight by Jilani Shipping International",
+  title: "Cargo Karachi to China | China to Pakistan Import Specialists | JSI",
   description:
-    "Ship your cargo from Karachi to China with Jilani Shipping International. Reliable sea & air freight, customs clearance, and door-to-door delivery services across major Chinese ports.",
+    "Expert freight forwarder for Karachi to China cargo and China to Pakistan imports. Specializing in LCL consolidation, customs clearance, and commercial shipping.",
   keywords: [
     "cargo Karachi to China",
-    "freight Karachi to China",
+    "China to Pakistan LCL shipment",
+    "import from China to Pakistan",
+    "customs clearing agent for China imports",
     "sea freight Karachi to China",
     "air cargo Karachi to China",
     "door to door cargo Karachi to China",
-    "shipping company Karachi to China",
-    "JSI cargo services",
-    "Karachi to Guangzhou cargo",
-    "Karachi to Shanghai cargo",
-    "Karachi to Shenzhen cargo",
-    "Karachi to Ningbo cargo",
+    "Jilani Shipping International China",
   ],
 };
 
 export default function CargoKarachiChinaPage() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
+    <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
       <section className="prose max-w-none">
-        <h1>Cargo Services from Karachi to China</h1>
-        <p>
-          Jilani Shipping International (JSI) provides trusted, affordable, and efficient cargo
-          shipping services from Karachi to major ports and cities in China. Whether you are
-          exporting commercial goods or importing materials, JSI ensures smooth sea and air freight
-          solutions.
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Expert Cargo & Logistics: Karachi to China & China to Pakistan</h1>
+        <p className="text-lg leading-relaxed text-gray-700">
+          Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
         </p>
 
-        <h2>Why Choose JSI for Karachi to China Cargo?</h2>
-        <ul>
-          <li>✅ Weekly LCL (Less than Container Load) and FCL (Full Container Load) services</li>
-          <li>✅ Door-to-door cargo delivery across major Chinese cities</li>
-          <li>✅ Complete customs clearance & documentation assistance</li>
-          <li>✅ Real-time shipment tracking</li>
-          <li>✅ Competitive and transparent rates</li>
+        <div className="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
+          <h2 className="text-xl font-bold text-blue-900 mb-2">China to Pakistan Import Specialists</h2>
+          <p className="text-sm text-gray-700">We handle the entire import process, from <strong>supplier coordination in China</strong> to <strong>customs clearing at Karachi Port</strong>. Our dedicated LCL service for China imports is the most cost-effective in the market.</p>
+        </div>
+
+        <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Why JSI for China Trade?</h2>
+        <ul className="grid md:grid-cols-2 gap-4">
+          <li className="flex items-start gap-2">✅ <strong>Direct LCL Consolidation</strong> - No third-party markups.</li>
+          <li className="flex items-start gap-2">✅ <strong>In-house Customs Agents</strong> - Expert documentation & clearing.</li>
+          <li className="flex items-start gap-2">✅ <strong>Global Sourcing Support</strong> - We bridge the gap with suppliers.</li>
+          <li className="flex items-start gap-2">✅ <strong>Door-to-Door Delivery</strong> - Seamless logistics from origin to destination.</li>
         </ul>
 
         <h2>Our Cargo Services Include:</h2>

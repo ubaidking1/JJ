@@ -55,6 +55,10 @@ export default function BlogChoose() {
           <li><strong>Digital First:</strong> Real-time tracking and online quote generation.</li>
         </ul>
 
+        <p className="my-8 p-6 bg-gray-50 border-l-4 border-blue-600 rounded-r-xl">
+          <strong>Pro Tip:</strong> If you are specifically looking for a partner to handle complex trade documents, check our specialized guide for <a href="/freight-forwarder-karachi" className="text-blue-700 underline font-bold">Importers and Exporters in Karachi</a>.
+        </p>
+
         <h2 className="text-3xl font-bold text-blue-800 mt-12 mb-6">Top 5 Questions to Ask Your Forwarder</h2>
         <ol className="space-y-4">
           <li><strong>"Do you handle LCL shipment consolidation in-house?"</strong> (This saves you 20-30% in costs).</li>
