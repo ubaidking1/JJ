@@ -13,12 +13,12 @@ export default function Home() {
             transition={{duration:0.8}} 
             className="text-3xl md:text-5xl font-bold leading-tight text-blue-900"
           >
-            International Freight & LCL Shipment Solutions: China, Gulf & Worldwide
+            International Freight Forwarder & Customs Clearing Agent for Importers & Exporters
           </motion.h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Jilani Shipping International (JSI) is your premier global logistics partner. We specialize in <strong>China to Pakistan LCL shipments</strong>, dedicated Gulf country routes, and comprehensive freight forwarding to over 100+ global destinations.
+              Jilani Shipping International (JSI) is your <strong>global logistics partner in Pakistan</strong>. We specialize in <strong>customs brokerage, import-export documentation</strong>, and reliable <strong>FCL & LCL shipping</strong> to 100+ worldwide destinations.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               With competitive pricing, fast transit times, and expert customs handling, we ensure your shipments reach safely and on time. Whether you are exporting goods or sending personal cargo, Jilani Shipping is your reliable partner.
@@ -50,6 +50,21 @@ export default function Home() {
                 <span className="flex items-center gap-1">🛡️ 100% Safe</span>
                 <span className="flex items-center gap-1">⚡ Fast Reply</span>
                 <span className="flex items-center gap-1">💰 Best Rates</span>
+              </div>
+            </div>
+            {/* Global Reach Stats */}
+            <div className="mt-6 flex justify-between max-w-lg px-2">
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-blue-900">100+</span>
+                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Countries</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-blue-900">50+</span>
+                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Ports</span>
+              </div>
+              <div className="text-center">
+                <span className="block text-2xl font-bold text-blue-900">24/7</span>
+                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Global Support</span>
               </div>
             </div>
           </div>
@@ -174,7 +189,13 @@ export default function Home() {
       <section className="mt-20">
         <h2 className="text-center text-3xl font-bold text-blue-900 mb-10">Global Shipping & Logistics Services</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/lcl-shipping" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <Link href="/freight-forwarder-karachi" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+            <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">🌐</div>
+            <h3 className="font-bold text-blue-900 text-lg">Importer & Exporter Logistics</h3>
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">End-to-end supply chain solutions for <strong>international traders</strong>. Expert customs clearance and global freight forwarding.</p>
+            <span className="text-blue-700 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
+          </Link>
+          <Link href="/lcl-shipping" className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
             <h3 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h3>
             <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
@@ -182,13 +203,13 @@ export default function Home() {
           </Link>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚢</div>
-            <h3 className="font-bold text-blue-900 text-lg">International Sea Freight</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Global forwarding (FCL, LCL, Break-bulk). Specialized <strong>project cargo</strong> & chartering with competitive rates for worldwide shipping routes.</p>
+            <h3 className="font-bold text-blue-900 text-lg">Sea Freight & Customs Clearing</h3>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Expert <strong>customs clearing agent</strong> services. Global forwarding (FCL, LCL, Break-bulk) with specialized handling for <strong>commercial cargo</strong>.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">📦</div>
-            <h3 className="font-bold text-blue-900 text-lg">Global Buyer’s Consolidation</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Optimized consolidation, labelling, and inventory control. We bridge the gap between <strong>international suppliers</strong> and global buyers.</p>
+            <h3 className="font-bold text-blue-900 text-lg">Global Trade Consolidation</h3>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Optimized <strong>buyer’s consolidation</strong> and inventory control. Bridging the gap between <strong>international suppliers</strong> and global exporters.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🏢</div>

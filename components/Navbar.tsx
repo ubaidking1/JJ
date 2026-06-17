@@ -42,6 +42,7 @@ export default function Navbar() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div className="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110] max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-600">
+              <Link href="/freight-forwarder-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Freight Forwarding (New)</Link>
               <Link href="/seafreight" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Sea Freight</Link>
               <Link href="/lcl-shipping" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-800 italic">LCL Shipping (New)</Link>
               <Link href="/buyerconsolidation" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Consolidation</Link>
@@ -53,6 +54,7 @@ export default function Navbar() {
               <Link href="/cargo-karachi-kuwait" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Kuwait</Link>
               <hr className="my-1 border-gray-50" />
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Routes</div>
+              <Link href="/worldwide-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Worldwide Shipping (All Countries)</Link>
               <Link href="/cargo-karachi-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to China</Link>
               <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to UK</Link>
               <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to USA</Link>
