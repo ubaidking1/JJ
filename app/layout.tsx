@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["https://jilanishipping.net/og-image.jpg"],
   },
-  title: "Jilani Shipping | International Freight & China LCL Specialists",
+  title: "Freight Forwarder Karachi | Import & Export | JSI",
   description:
-    "Expert International Shipping & LCL solutions. Specialized in China to Pakistan imports, Gulf exports, and global freight forwarding. Reliable, fast, and cost-effective.",
+    "Jilani Shipping provides import and export freight forwarding in Karachi, including FCL, LCL, air freight, customs clearance and worldwide logistics.",
   keywords: [
     "international freight forwarder Pakistan",
     "China to Pakistan LCL shipment",

@@ -4,8 +4,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
-  title: "PVOC Service | Pre-Export Verification of Conformity | Jilani Shipping",
-  description: "Expert PVOC services for international trade. Ensure your goods meet destination standards with our Pre-Export Verification of Conformity solutions. Mandatory for Kenya, Tanzania, Uganda & more.",
+  title: "PVOC Services Pakistan | Export Compliance | JSI",
+  description: "PVOC and Certificate of Conformity support for regulated exports from Pakistan to Kenya, Tanzania, Uganda and other destination markets.",
+  alternates: { canonical: "/pvoc-service" },
   keywords: ["PVOC service", "Pre-Export Verification of Conformity", "CoC certificate", "shipping compliance", "Kenya PVOC", "Tanzania PVOC", "Uganda PVOC", "conformity assessment"],
 };
 

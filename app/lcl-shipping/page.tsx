@@ -2,8 +2,9 @@ import { Metadata } from "next";
 import CBMCalculator from "@/components/CBMCalculator";
 
 export const metadata: Metadata = {
-  title: "LCL Shipment Karachi | Best Less than Container Load Rates 2026",
-  description: "Get the cheapest LCL shipment rates from Karachi. Specialized in small cargo consolidation for UAE, UK, USA, and Europe. Weekly sailings, 100% safe handling.",
+  title: "LCL Shipping Karachi | China to Pakistan Freight | JSI",
+  description: "Get LCL shipping and consolidation services from China and worldwide origins to Karachi. Pay by CBM with documentation and customs support.",
+  alternates: { canonical: "/lcl-shipping" },
   keywords: ["LCL shipment", "LCL shipment Karachi", "LCL shipping Pakistan", "LCL rates Karachi", "Less than container load Pakistan", "shared container shipping Karachi", "cargo consolidation Karachi"],
 };
 

@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Buyer's Consolidation Services | Jilani Shipping International",
-  description: "Optimized buyer's consolidation services in Karachi. We organize supply chain processes in a leaner and efficient manner with maximum resource optimization.",
+  title: "Buyer's Consolidation Pakistan | Jilani Shipping",
+  description: "Combine shipments from multiple suppliers through buyer's consolidation in Pakistan, with warehousing, LCL-to-FCL planning and cargo coordination.",
+  alternates: { canonical: "/buyerconsolidation" },
   keywords: ["buyer consolidation Karachi", "supply chain optimization", "LCL to FCL consolidation", "JSI logistics"],
 };
 
