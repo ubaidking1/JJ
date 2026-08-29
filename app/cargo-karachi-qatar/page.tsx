@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to Qatar | Jilani Shipping International",
-  description: "Reliable freight forwarding from Karachi to Doha, Qatar. Competitive sea and air freight rates with secure handling.",
+  title: "Pakistan–Qatar Import & Export Shipping | JSI",
+  description: "Import and export commercial freight between Qatar and Karachi, Pakistan via Hamad Port and Doha.",
   keywords: ["cargo Karachi to Qatar", "shipping to Doha", "Karachi to Qatar freight", "Doha logistics"],
 };
 
@@ -10,7 +10,7 @@ export default function CargoQatar() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to Qatar</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and Qatar</h1>
         <p className="text-lg text-gray-700 mt-4">Safe and efficient shipping services from Karachi Port to Hamad Port, Doha.</p>
         <ul className="mt-6 space-y-2">
           <li>✅ Direct sea freight to Doha</li>

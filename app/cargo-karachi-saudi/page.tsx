@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "#1 Cargo Karachi to Saudi Arabia | Best Rates to Jeddah & Riyadh",
-  description: "Ship cargo from Karachi to Saudi Arabia starting at the lowest rates. Specialized in LCL shipment, FCL, and door-to-door delivery to Jeddah, Riyadh, Dammam & Madinah.",
+  title: "Pakistan–Saudi Import & Export Shipping | JSI",
+  description: "Import and export commercial shipments between Saudi Arabia and Karachi, Pakistan via Jeddah, Riyadh and Dammam.",
   keywords: [
     "cargo Karachi to Saudi Arabia",
     "cheapest cargo rates Karachi to Saudi",
@@ -19,7 +19,7 @@ export default function CargoSaudi() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Cargo Services from Karachi to Saudi Arabia (KSA)</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Import & Export Shipping Between Pakistan and Saudi Arabia</h1>
         
         <div className="bg-green-50 border-l-4 border-green-600 p-4 mb-8">
           <p className="text-green-800 font-bold">🇸🇦 Specialized in SASO & SABER documentation for smooth customs clearance in Jeddah and Riyadh.</p>
@@ -82,7 +82,7 @@ export default function CargoSaudi() {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-black text-blue-900 mb-6">Get Lowest Rates for Saudi Arabia</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/923018204493" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
+            <a href="https://wa.me/923180155643" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
               WhatsApp Now for Saudi Rates
             </a>
             <a href="/contact" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">

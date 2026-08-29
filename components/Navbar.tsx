@@ -43,6 +43,8 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110] max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-600">
               <Link href="/freight-forwarder-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Freight Forwarding (New)</Link>
+              <Link href="/import-to-pakistan" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Import to Pakistan</Link>
+              <Link href="/export-from-pakistan" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Export from Pakistan</Link>
               <Link href="/seafreight" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Sea Freight</Link>
               <Link href="/lcl-shipping" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-800 italic">LCL Shipping (New)</Link>
               <Link href="/buyerconsolidation" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Consolidation</Link>
@@ -117,6 +119,8 @@ export default function Navbar() {
           <Link href="/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Home</Link>
           <Link href="/companyprofile" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Company Profile</Link>
           <Link href="/lcl-shipping" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-800 rounded-lg">LCL Shipping (New)</Link>
+          <Link href="/import-to-pakistan" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Import to Pakistan</Link>
+          <Link href="/export-from-pakistan" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Export from Pakistan</Link>
           <Link href="/seafreight" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Sea Freight</Link>
           <Link href="/buyerconsolidation" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Buyer’s Consolidation</Link>
           <Link href="/pvoc-service" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">PVOC Service (New)</Link>

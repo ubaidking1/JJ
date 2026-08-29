@@ -120,6 +120,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mt-10 grid md:grid-cols-2 gap-5">
+        <Link href="/import-to-pakistan" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
+          <span className="text-sm font-bold text-blue-700">WORLDWIDE → PAKISTAN</span>
+          <h2 className="text-2xl font-bold text-blue-900 mt-2">Import Shipping to Karachi</h2>
+          <p className="text-gray-600 mt-2">Import commercial shipments from China, UAE, UK, USA, Europe and worldwide suppliers.</p>
+        </Link>
+        <Link href="/export-from-pakistan" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
+          <span className="text-sm font-bold text-blue-700">PAKISTAN → WORLDWIDE</span>
+          <h2 className="text-2xl font-bold text-blue-900 mt-2">Export Shipping from Karachi</h2>
+          <p className="text-gray-600 mt-2">Export commercial shipments from Pakistan through FCL, LCL and air freight.</p>
+        </Link>
+      </section>
+
       {/* Partners Section */}
       <section className="mt-20 py-10 border-y border-gray-100 bg-gray-50/50 -mx-4 md:-mx-6 px-4 md:px-6">
         <div className="text-center mb-8">

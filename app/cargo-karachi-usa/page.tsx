@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to USA | Jilani Shipping International",
-  description: "Reliable shipping from Karachi to USA (New York, Houston, Los Angeles). Sea and air freight services with complete documentation.",
+  title: "Pakistan–USA Import & Export Shipping | JSI",
+  description: "Import and export freight between the USA and Karachi, Pakistan via New York, Houston, Los Angeles and Savannah.",
   keywords: ["cargo Karachi to USA", "shipping to New York", "Karachi to USA freight", "USA logistics agents"],
 };
 
@@ -10,7 +10,7 @@ export default function CargoUSA() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to USA</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and USA</h1>
         <p className="text-lg text-gray-700 mt-4">Expand your business to the United States with JSI's reliable maritime and air cargo solutions.</p>
         <ul className="mt-6 space-y-2">
           <li>✅ Major ports: New York, Houston, Los Angeles, and Savannah</li>

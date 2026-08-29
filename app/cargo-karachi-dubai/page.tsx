@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "#1 Cargo Karachi to Dubai | Cheapest Rates & Door-to-Door Delivery",
-  description: "Ship cargo from Karachi to Dubai (UAE) starting at the lowest rates. Specialized in LCL shipment, FCL, and door-to-door delivery. Get a free quote today!",
+  title: "Pakistan–Dubai Import & Export Shipping | JSI",
+  description: "Import and export commercial shipments between Dubai, UAE and Karachi, Pakistan with FCL, LCL and door-to-door freight support.",
   keywords: [
     "cargo Karachi to Dubai",
     "cheapest cargo rates Karachi to Dubai",
@@ -19,7 +19,7 @@ export default function CargoKarachiDubaiPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Expert Cargo Services from Karachi to Dubai (UAE)</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Import & Export Shipping Between Karachi and Dubai</h1>
         
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
           <p className="text-yellow-800 font-bold">🚀 2026 Update: Weekly sailings confirmed every Friday from Karachi Port to Jebel Ali, Dubai.</p>
@@ -103,7 +103,7 @@ export default function CargoKarachiDubaiPage() {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-black text-blue-900 mb-6">Ready to Ship to Dubai?</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/923018204493" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
+            <a href="https://wa.me/923180155643" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
               WhatsApp Now for Rates
             </a>
             <a href="/contact" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">

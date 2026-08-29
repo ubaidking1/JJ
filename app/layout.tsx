@@ -216,7 +216,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "logo": "https://jilanishipping.net/logo.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+92-301-8204493",
+      "telephone": "+92-318-0155643",
       "contactType": "customer service",
       "email": "info@jilanishipping.net"
     },
@@ -240,7 +240,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "areaServed": ["PK", "AE", "CN", "US", "GB", "SA", "QA", "DE", "ZA", "AU", "NL", "FR", "IT"],
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Suite #266, Glass Tower, Teen Talwar, Clifton",
       "addressLocality": "Karachi",
+      "postalCode": "75600",
       "addressCountry": "PK"
     }
   };

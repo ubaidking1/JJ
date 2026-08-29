@@ -22,7 +22,7 @@ export default function PvocService() {
             <Link href="/contact" className="px-8 py-3 bg-white text-blue-900 rounded-full font-bold hover:bg-blue-50 transition-all">
               Request PVOC Quote
             </Link>
-            <a href="https://wa.me/923018204493" className="px-8 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white/10 transition-all">
+            <a href="https://wa.me/923180155643" className="px-8 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white/10 transition-all">
               WhatsApp Expert
             </a>
           </div>

@@ -14,7 +14,7 @@ export default function Contact() {
   return (
     <main className="container py-12 px-6">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
-      <p className="text-gray-700 mb-6">Email: info@jilanishipping.net | Phone: 0301-8204493</p>
+      <p className="text-gray-700 mb-6">Email: info@jilanishipping.net | Phone: 0318-0155643</p>
 
       <form 
         action="https://formspree.io/f/xpwadvro" 
@@ -48,7 +48,7 @@ export default function Contact() {
 
       <div className="mt-6 text-center">
         <a
-          href="https://wa.me/923018204493?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20commercial%20shipment%20rate.%20POL%3A%20___%20POD%3A%20___%20Commodity%3A%20___%20Weight%2FCBM%3A%20___"
+          href="https://wa.me/923180155643?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20commercial%20shipment%20rate.%20POL%3A%20___%20POD%3A%20___%20Commodity%3A%20___%20Weight%2FCBM%3A%20___"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700"

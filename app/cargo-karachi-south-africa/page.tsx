@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to South Africa (Durban) | Jilani Shipping International",
-  description: "Reliable cargo and freight forwarding services from Karachi to South Africa. Specializing in shipping to Durban, Cape Town, and Johannesburg.",
+  title: "Pakistan–South Africa Import & Export Freight | JSI",
+  description: "Import and export commercial freight between South Africa and Karachi, Pakistan via Durban, Cape Town and Johannesburg.",
   keywords: ["cargo Karachi to South Africa", "shipping to Durban", "Karachi to South Africa freight", "Durban port logistics", "South Africa shipping agents"],
 };
 
@@ -10,7 +10,7 @@ export default function CargoSouthAfrica() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to South Africa</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and South Africa</h1>
         <p className="text-lg text-gray-700 mt-4">
           Jilani Shipping International (JSI) provides specialized logistics solutions for cargo moving from Pakistan to South Africa. 
           We offer direct sea freight services to major ports, with a focus on <strong>Durban</strong>, the gateway to Southern Africa.

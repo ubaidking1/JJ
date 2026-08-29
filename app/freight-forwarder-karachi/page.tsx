@@ -2,22 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Freight Forwarder for Importers & Exporters Karachi | JSI",
-  description: "Jilani Shipping International is the leading freight forwarder in Karachi for importers and exporters. We provide end-to-end logistics, customs clearance, and global shipping solutions.",
-  keywords: ["freight forwarder for exporters", "importer logistics Pakistan", "export import shipping Karachi", "customs clearance for importers", "international trade logistics"],
+  title: "Best Freight Forwarder in Karachi | Import & Export | JSI",
+  description: "Looking for a freight forwarder in Karachi? Jilani Shipping handles commercial imports and exports, FCL/LCL sea freight, air freight, customs clearance and global logistics.",
+  keywords: ["best freight forwarder in Karachi", "freight forwarding company Karachi", "import export company Karachi", "customs clearing agent Karachi", "shipping company Karachi"],
+  alternates: { canonical: "/freight-forwarder-karachi" },
 };
 
 export default function FreightForwarder() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Freight Forwarding for Importers & Exporters</h1>
+        <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Karachi, Pakistan</p>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-2 text-blue-900">Freight Forwarder in Karachi for Imports & Exports</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
               Jilani Shipping International (JSI) specializes in providing comprehensive <strong>supply chain solutions for importers and exporters</strong>. 
-              As a premier <strong>international freight forwarder in Karachi</strong>, we handle <strong>customs clearing, commercial documentation, and port-to-port logistics</strong> to ensure your trade business grows globally.
+              As an experienced <strong>international freight forwarder in Karachi</strong>, we handle <strong>customs clearing, commercial documentation, and port-to-port logistics</strong> for commercial shipments moving into and out of Pakistan.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-blue-800">Export Logistics & Shipping</h2>
@@ -63,6 +65,12 @@ export default function FreightForwarder() {
           </div>
         </div>
 
+        <section className="mt-16 grid md:grid-cols-3 gap-5" aria-label="Jilani Shipping credentials">
+          <div className="p-5 rounded-xl border border-blue-100 bg-blue-50"><strong className="text-blue-900">PIFFA Member</strong><p className="text-sm text-gray-600 mt-1">Professional freight-forwarding network membership.</p></div>
+          <div className="p-5 rounded-xl border border-blue-100 bg-blue-50"><strong className="text-blue-900">KCCI Member</strong><p className="text-sm text-gray-600 mt-1">Karachi Chamber of Commerce & Industry member.</p></div>
+          <div className="p-5 rounded-xl border border-blue-100 bg-blue-50"><strong className="text-blue-900">Karachi Office</strong><p className="text-sm text-gray-600 mt-1">Suite #266, Glass Tower, Clifton, Karachi.</p></div>
+        </section>
+
         <section className="mt-20">
           <h2 className="text-3xl font-bold text-blue-900 text-center mb-10">Optimized Supply Chain Solutions</h2>
           <div className="grid sm:grid-cols-3 gap-8">
@@ -81,6 +89,15 @@ export default function FreightForwarder() {
               <h3 className="font-bold text-lg mb-2">Warehousing</h3>
               <p className="text-sm text-gray-600">Secure storage and distribution for your inventory management.</p>
             </div>
+          </div>
+        </section>
+
+        <section className="mt-20 max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-blue-900 mb-6">Freight Forwarding FAQs</h2>
+          <div className="space-y-4">
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Does Jilani Shipping handle imports into Pakistan?</summary><p className="mt-3 text-gray-600">Yes. We arrange commercial import shipments to Karachi from China, UAE, UK, USA, Europe and other international origins through FCL, LCL and air freight.</p></details>
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Do you also export shipments from Karachi?</summary><p className="mt-3 text-gray-600">Yes. We provide export freight booking, documentation, customs support and international shipping from Karachi to worldwide destinations.</p></details>
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">What information is needed for a freight quote?</summary><p className="mt-3 text-gray-600">Commodity, weight or CBM, package count, POL, POD, Incoterm, container type and cargo-ready date.</p></details>
           </div>
         </section>
       </div>

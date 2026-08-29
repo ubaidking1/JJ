@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to Kuwait | Lowest Shipping Rates | Jilani Shipping",
-  description: "Ship your cargo from Karachi to Kuwait City, Shuaiba, and Shuwaikh. Reliable sea and air freight services with expert customs clearance.",
+  title: "Pakistan–Kuwait Import & Export Shipping | JSI",
+  description: "Import and export commercial shipments between Kuwait and Karachi, Pakistan via Shuaiba, Shuwaikh and Kuwait City.",
   keywords: ["cargo Karachi to Kuwait", "shipping to Kuwait", "Karachi to Kuwait freight", "Kuwait shipping agents"],
 };
 
@@ -10,7 +10,7 @@ export default function CargoKuwait() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Cargo Services Karachi to Kuwait</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and Kuwait</h1>
         <p className="text-lg text-gray-700 mt-4">Jilani Shipping International (JSI) provides the most competitive and reliable freight forwarding solutions to Kuwait.</p>
         <div className="grid md:grid-cols-2 gap-8 mt-12">
           <div className="p-8 bg-blue-50 rounded-2xl border border-blue-100">
