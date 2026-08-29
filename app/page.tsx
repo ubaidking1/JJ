@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
               Jilani Shipping International (JSI) is your <strong>global logistics partner in Pakistan</strong>. We specialize in <strong>customs brokerage, import-export documentation</strong>, and reliable <strong>FCL & LCL shipping</strong> to 100+ worldwide destinations.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              With competitive pricing, fast transit times, and expert customs handling, we ensure your shipments reach safely and on time. Whether you are exporting goods or sending personal cargo, Jilani Shipping is your reliable partner.
+              With competitive pricing, fast transit times, and expert customs handling, we move commercial shipments safely and on time—from supplier pickup to customs clearance and final delivery.
             </p>
           </div>
 
@@ -29,14 +30,16 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl shadow-xl border border-blue-50 max-w-lg">
               <h2 className="text-xl font-bold text-blue-900 mb-4">Get a Quick Quote</h2>
               <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <input type="hidden" name="lead_source" value="Homepage Quick Quote" />
                 <input name="name" placeholder="Full Name" aria-label="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
                 <input name="email" type="email" placeholder="Email Address" aria-label="Email Address" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
                 <input name="phone" placeholder="Phone Number" aria-label="Phone Number" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
                 <select name="service" aria-label="Select Service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500">
+                  <option>Import from China to Karachi</option>
+                  <option>Export from Karachi to China</option>
                   <option>Karachi to Dubai</option>
                   <option>Karachi to Saudi Arabia</option>
                   <option>Karachi to Kuwait</option>
-                  <option>China to Pakistan LCL</option>
                   <option>Other / International</option>
                 </select>
                 <input name="pol" placeholder="POL (Port of Loading)" aria-label="Port of Loading" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
@@ -47,7 +50,7 @@ export default function Home() {
                 </button>
               </form>
               <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-500">
-                <span className="flex items-center gap-1">🛡️ 100% Safe</span>
+                <span className="flex items-center gap-1">🛡️ Reliable Handling</span>
                 <span className="flex items-center gap-1">⚡ Fast Reply</span>
                 <span className="flex items-center gap-1">💰 Best Rates</span>
               </div>
@@ -72,16 +75,48 @@ export default function Home() {
 
         <div className="mt-8 lg:mt-0">
           <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-            <video
-              src="/images/shipping.mp4"
+            <Image
+              src="/images/shipping-hero.webp"
+              alt="Commercial container shipping operations at port"
+              width={1280}
+              height={720}
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto aspect-video object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-              aria-label="Jilani Shipping Port and Container Operations Video"
             />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-blue-950/90 to-transparent p-6 pt-16 text-white">
+              <p className="font-bold text-lg">Commercial Freight. Clear Rates. Global Reach.</p>
+              <p className="text-sm text-blue-100">FCL • LCL • Customs Clearance • Door Delivery</p>
+            </div>
           </div>
+          <div className="grid grid-cols-3 gap-2 mt-4 text-center text-xs font-bold text-blue-900">
+            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">PIFFA Member</span>
+            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">KCCI Member</span>
+            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">Karachi Based</span>
+          </div>
+        </div>
+      </section>
+
+      {/* China Import & Export Routes */}
+      <section className="mt-20">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <p className="text-sm font-bold uppercase tracking-widest text-blue-700">China–Pakistan Trade</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mt-2">Import or Export Commercial Shipments</h2>
+          <p className="text-gray-600 mt-4">Choose your shipment direction to get the right FCL, LCL, documentation and customs-clearance support.</p>
+        </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <Link href="/import-from-china-to-karachi" className="p-7 bg-blue-900 text-white rounded-2xl shadow-lg hover:-translate-y-1 transition-transform group">
+            <span className="text-sm font-bold text-blue-200">CHINA → PAKISTAN</span>
+            <h3 className="text-2xl font-bold mt-2">Sea Freight from China to Karachi</h3>
+            <p className="text-blue-100 mt-3 leading-relaxed">FCL and LCL imports with supplier coordination, consolidation, documentation and customs clearance at Karachi Port.</p>
+            <span className="inline-block mt-6 font-bold group-hover:translate-x-1 transition-transform">Get Import Rate →</span>
+          </Link>
+          <Link href="/export-from-karachi-to-china" className="p-7 bg-white border-2 border-blue-200 rounded-2xl shadow-sm hover:-translate-y-1 transition-transform group">
+            <span className="text-sm font-bold text-blue-700">PAKISTAN → CHINA</span>
+            <h3 className="text-2xl font-bold text-blue-900 mt-2">Export Shipping from Karachi to China</h3>
+            <p className="text-gray-600 mt-3 leading-relaxed">Commercial export shipping to major Chinese ports with freight booking, documentation and port handling support.</p>
+            <span className="inline-block mt-6 text-blue-700 font-bold group-hover:translate-x-1 transition-transform">Get Export Rate →</span>
+          </Link>
         </div>
       </section>
 
@@ -151,13 +186,13 @@ export default function Home() {
             <div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Jilani Shipping is Pakistan's Choice?</h2>
               <p className="text-blue-100 text-lg mb-8 leading-relaxed">
-                With over decades of experience, Jilani Shipping International (JSI) has redefined the logistics landscape in Pakistan. 
-                We don't just move cargo; we move businesses. Our algorithm for success is simple: Best Rates, Absolute Safety, and Global Reach.
+                Jilani Shipping International (JSI) supports Pakistan’s importers and exporters with dependable freight coordination, clear rate breakdowns and global shipping coverage.
+                We don't just move shipments; we help businesses keep their supply chains moving.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-3xl font-bold text-white">100%</h3>
-                  <p className="text-blue-200 text-sm">Safe Delivery</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-white">Reliable</h3>
+                  <p className="text-blue-200 text-sm">Shipment Handling</p>
                 </div>
                 <div>
                   <h3 className="text-3xl font-bold text-white">24/7</h3>
@@ -168,8 +203,8 @@ export default function Home() {
                   <p className="text-blue-200 text-sm">Global Ports</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-white">0%</h3>
-                  <p className="text-blue-200 text-sm">Hidden Charges</p>
+                  <h3 className="text-xl md:text-2xl font-bold text-white">Clear</h3>
+                  <p className="text-blue-200 text-sm">Rate Breakdowns</p>
                 </div>
               </div>
             </div>
@@ -221,6 +256,24 @@ export default function Home() {
             <h3 className="font-bold text-blue-900 text-lg">Iran Transit Service</h3>
             <p className="text-sm text-gray-600 mt-2 leading-relaxed">Professional transit solutions from <strong>Karachi Port</strong> and <strong>Gwadar Port</strong> to Iran. Reliable and efficient cargo handling.</p>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-20 max-w-4xl mx-auto">
+        <h2 className="text-center text-3xl font-bold text-blue-900 mb-8">Commercial Shipping Questions</h2>
+        <div className="space-y-4">
+          <details className="group bg-white border border-gray-200 rounded-xl p-5">
+            <summary className="font-bold text-blue-900 cursor-pointer">What details are required for a freight quote?</summary>
+            <p className="text-gray-600 mt-3">Share the commodity, total weight or CBM, package count, POL, POD, Incoterm and cargo-ready date. For FCL, also mention the container size.</p>
+          </details>
+          <details className="group bg-white border border-gray-200 rounded-xl p-5">
+            <summary className="font-bold text-blue-900 cursor-pointer">Do you handle both China imports and exports?</summary>
+            <p className="text-gray-600 mt-3">Yes. We arrange China-to-Karachi imports and Karachi-to-China exports through FCL and LCL services, with documentation and customs support.</p>
+          </details>
+          <details className="group bg-white border border-gray-200 rounded-xl p-5">
+            <summary className="font-bold text-blue-900 cursor-pointer">Can you arrange customs clearance in Karachi?</summary>
+            <p className="text-gray-600 mt-3">Yes. Customs-clearance support is available for eligible commercial shipments, subject to shipment documents and applicable regulations.</p>
+          </details>
         </div>
       </section>
     </main>

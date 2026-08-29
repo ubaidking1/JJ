@@ -227,26 +227,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "item": { "@type": "Service", "name": "LCL Shipment Services Karachi" }},
         { "@type": "ListItem", "position": 2, "item": { "@type": "Service", "name": "Karachi to Dubai Cargo" }},
-        { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "Karachi to China Freight" }},
-        { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Karachi to USA Shipping" }},
-        { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Karachi to UK Air Cargo" }},
-        { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Iran Transit Service" }},
-        { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Karachi to South Africa Durban" }},
-        { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Karachi to Australia Sydney" }},
-        { "@type": "ListItem", "position": 9, "item": { "@type": "Service", "name": "Europe Gateway Rotterdam" }},
+        { "@type": "ListItem", "position": 3, "item": { "@type": "Service", "name": "China to Karachi Import Freight" }},
+        { "@type": "ListItem", "position": 4, "item": { "@type": "Service", "name": "Karachi to China Export Shipping" }},
+        { "@type": "ListItem", "position": 5, "item": { "@type": "Service", "name": "Karachi to USA Shipping" }},
+        { "@type": "ListItem", "position": 6, "item": { "@type": "Service", "name": "Karachi to UK Air Cargo" }},
+        { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Iran Transit Service" }},
+        { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Karachi to South Africa Durban" }},
+        { "@type": "ListItem", "position": 9, "item": { "@type": "Service", "name": "Karachi to Australia Sydney" }},
         { "@type": "ListItem", "position": 10, "item": { "@type": "Service", "name": "PVOC Pre-Export Verification of Conformity" }}
       ]
     },
     "areaServed": ["PK", "AE", "CN", "US", "GB", "SA", "QA", "DE", "ZA", "AU", "NL", "FR", "IT"],
-    "subjectOf": {
-      "@type": "VideoObject",
-      "name": "Jilani Shipping Port Operations",
-      "description": "Professional port and shipping operations by Jilani Shipping International.",
-      "thumbnailUrl": "https://jilanishipping.net/logo.png",
-      "uploadDate": "2024-01-01T08:00:00+05:00",
-      "duration": "PT0M27S",
-      "contentUrl": "https://jilanishipping.net/images/shipping.mp4"
-    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Karachi",

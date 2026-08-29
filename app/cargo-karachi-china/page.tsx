@@ -1,7 +1,8 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cargo Karachi to China | China to Pakistan Import Specialists | JSI",
+  title: "China–Pakistan Import & Export Shipping | JSI",
   description:
     "Expert freight forwarder for Karachi to China cargo and China to Pakistan imports. Specializing in LCL consolidation, customs clearance, and commercial shipping.",
   keywords: [
@@ -20,10 +21,25 @@ export default function CargoKarachiChinaPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Expert Cargo & Logistics: Karachi to China & China to Pakistan</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">China–Pakistan Import & Export Shipping</h1>
         <p className="text-lg leading-relaxed text-gray-700">
           Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
         </p>
+
+        <div className="grid md:grid-cols-2 gap-6 my-10 not-prose">
+          <Link href="/import-from-china-to-karachi" className="p-6 bg-blue-900 text-white rounded-2xl shadow-lg">
+            <span className="text-sm font-bold text-blue-200">CHINA → PAKISTAN</span>
+            <h2 className="text-2xl font-bold mt-2">Import from China to Karachi</h2>
+            <p className="text-blue-100 mt-3">FCL, LCL, consolidation and customs-clearance support.</p>
+            <span className="inline-block mt-5 font-bold">Get Import Rate →</span>
+          </Link>
+          <Link href="/export-from-karachi-to-china" className="p-6 bg-white border-2 border-blue-200 text-blue-900 rounded-2xl shadow-sm">
+            <span className="text-sm font-bold text-blue-700">PAKISTAN → CHINA</span>
+            <h2 className="text-2xl font-bold mt-2">Export from Karachi to China</h2>
+            <p className="text-gray-600 mt-3">Commercial freight, documentation and port handling.</p>
+            <span className="inline-block mt-5 text-blue-700 font-bold">Get Export Rate →</span>
+          </Link>
+        </div>
 
         <div className="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
           <h2 className="text-xl font-bold text-blue-900 mb-2">China to Pakistan Import Specialists</h2>

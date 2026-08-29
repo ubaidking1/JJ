@@ -22,21 +22,40 @@ export default function Contact() {
         onSubmit={handleSubmit}
         className="grid md:grid-cols-2 gap-4 bg-white p-6 rounded shadow"
       >
+        <input type="hidden" name="lead_source" value="Contact Page RFQ" />
         <input name="name" placeholder="Full Name" className="p-3 border rounded" required />
         <input name="email" type="email" placeholder="Email" className="p-3 border rounded" required />
         <input name="phone" placeholder="Phone" className="p-3 border rounded" required />
         <select name="service" className="p-3 border rounded">
+          <option>Import from China to Karachi</option>
+          <option>Export from Karachi to China</option>
           <option>Sea Freight</option>
           <option>Air Freight</option>
           <option>Customs Clearance</option>
           <option>Warehousing</option>
         </select>
-        <textarea name="message" placeholder="Message" rows={5} className="p-3 border rounded md:col-span-2" />
+        <input name="commodity" placeholder="Commodity / Product" className="p-3 border rounded" />
+        <input name="weight" placeholder="Weight / CBM / Container Type" className="p-3 border rounded" />
+        <input name="pol" placeholder="POL (Port of Loading)" className="p-3 border rounded" />
+        <input name="pod" placeholder="POD (Port of Discharge)" className="p-3 border rounded" />
+        <input name="cargoReadyDate" type="date" aria-label="Cargo Ready Date" className="p-3 border rounded" />
+        <textarea name="message" placeholder="Additional shipment details" rows={5} className="p-3 border rounded md:col-span-2" />
         <div className="md:col-span-2 flex gap-4">
           <button type="submit" className="px-6 py-2 bg-blue-700 text-white rounded">Send</button>
           <button type="reset" className="px-6 py-2 border rounded">Reset</button>
         </div>
       </form>
+
+      <div className="mt-6 text-center">
+        <a
+          href="https://wa.me/923018204493?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20commercial%20shipment%20rate.%20POL%3A%20___%20POD%3A%20___%20Commodity%3A%20___%20Weight%2FCBM%3A%20___"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700"
+        >
+          Send Shipment Details on WhatsApp
+        </a>
+      </div>
     </main>
   );
 }

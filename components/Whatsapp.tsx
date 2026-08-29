@@ -30,7 +30,7 @@ export default function WhatsAppButton() {
           📞 Call Now
         </a>
         <a 
-          href="https://wa.me/923018204493" 
+          href="https://wa.me/923018204493?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20commercial%20shipment%20rate.%20POL%3A%20___%20POD%3A%20___%20Commodity%3A%20___%20Weight%2FCBM%3A%20___"
           target="_blank" 
           rel="noopener noreferrer"
           onClick={handleClick}
@@ -42,7 +42,7 @@ export default function WhatsAppButton() {
 
       {/* Desktop WhatsApp Button */}
       <a
-        href="https://wa.me/923018204493"
+        href="https://wa.me/923018204493?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20commercial%20shipment%20rate.%20POL%3A%20___%20POD%3A%20___%20Commodity%3A%20___%20Weight%2FCBM%3A%20___"
         target="_blank" 
         rel="noopener noreferrer"
         onClick={handleClick}

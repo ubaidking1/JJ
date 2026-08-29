@@ -55,7 +55,8 @@ export default function Navbar() {
               <hr className="my-1 border-gray-50" />
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Routes</div>
               <Link href="/worldwide-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Worldwide Shipping (All Countries)</Link>
-              <Link href="/cargo-karachi-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to China</Link>
+              <Link href="/import-from-china-to-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Import: China to Karachi</Link>
+              <Link href="/export-from-karachi-to-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Export: Karachi to China</Link>
               <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to UK</Link>
               <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to USA</Link>
               <Link href="/cargo-karachi-canada" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Canada</Link>
@@ -83,7 +84,7 @@ export default function Navbar() {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
             <div className="absolute right-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110]">
-              <Link href="/track-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Track Your Cargo</Link>
+              <Link href="/track-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Track Your Shipment</Link>
               <hr className="my-1 border-gray-50" />
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Expert Guides</div>
               <Link href="/blog/mistakes-marketers-make-with-ai" className="block px-4 py-2 text-xs hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900">AI Marketing Mistakes (New)</Link>
@@ -127,7 +128,7 @@ export default function Navbar() {
           
           <div className="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-[10px]">
             <Link href="/cargo-karachi-dubai" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-Dubai</Link>
-            <Link href="/cargo-karachi-china" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-China</Link>
+            <Link href="/import-from-china-to-karachi" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">China-KHI Import</Link>
             <Link href="/cargo-karachi-usa" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-USA</Link>
             <Link href="/cargo-karachi-uk" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-UK</Link>
           </div>
