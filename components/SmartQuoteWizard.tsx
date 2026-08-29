@@ -88,7 +88,7 @@ export default function SmartQuoteWizard() {
   if (pathname === "/" || pathname === "/contact" || pathname.startsWith("/blog/")) return null;
 
   return (
-    <section className="max-w-6xl mx-auto px-4 md:px-6 py-12" aria-labelledby="smart-quote-heading">
+    <section id="smart-quote" className="max-w-6xl mx-auto scroll-mt-28 px-4 md:px-6 py-12" aria-labelledby="smart-quote-heading">
       <div className="overflow-hidden rounded-3xl border border-blue-100 bg-gradient-to-br from-blue-50 to-white shadow-xl">
         <div className="bg-blue-900 px-6 py-7 text-white md:px-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-200">Website Rate Request</p>

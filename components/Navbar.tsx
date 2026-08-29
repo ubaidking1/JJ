@@ -50,28 +50,28 @@ export default function Navbar() {
               <Link href="/buyerconsolidation" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Consolidation</Link>
               <Link href="/pvoc-service" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">PVOC Service (New)</Link>
               <Link href="/warehouse" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Warehouse</Link>
-              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Primary Gulf Routes</div>
-              <Link href="/cargo-karachi-dubai" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Dubai</Link>
-              <Link href="/cargo-karachi-saudi" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Saudi Arabia</Link>
-              <Link href="/cargo-karachi-kuwait" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Karachi to Kuwait</Link>
+              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Primary Gulf Trade Routes</div>
+              <Link href="/cargo-karachi-dubai" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Pakistan ↔ Dubai</Link>
+              <Link href="/cargo-karachi-saudi" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Pakistan ↔ Saudi Arabia</Link>
+              <Link href="/cargo-karachi-kuwait" className="block px-4 py-2 hover:bg-blue-50 font-bold text-blue-900">Pakistan ↔ Kuwait</Link>
               <hr className="my-1 border-gray-50" />
-              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Routes</div>
+              <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Import & Export Routes</div>
               <Link href="/worldwide-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Worldwide Shipping (All Countries)</Link>
               <Link href="/import-from-china-to-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Import: China to Karachi</Link>
               <Link href="/export-from-karachi-to-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Export: Karachi to China</Link>
-              <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to UK</Link>
-              <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to USA</Link>
-              <Link href="/cargo-karachi-canada" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Canada</Link>
-              <Link href="/cargo-karachi-australia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Australia</Link>
-              <Link href="/cargo-karachi-italy" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Italy</Link>
-              <Link href="/cargo-karachi-france" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to France</Link>
-              <Link href="/cargo-karachi-netherlands" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Netherlands</Link>
-              <Link href="/cargo-karachi-turkey" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Turkey</Link>
-              <Link href="/cargo-karachi-malaysia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Malaysia</Link>
-              <Link href="/cargo-karachi-singapore" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Singapore</Link>
-              <Link href="/cargo-karachi-thailand" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Thailand</Link>
-              <Link href="/cargo-karachi-bangladesh" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to Bangladesh</Link>
-              <Link href="/cargo-karachi-south-africa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Karachi to South Africa</Link>
+              <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ UK</Link>
+              <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ USA</Link>
+              <Link href="/cargo-karachi-canada" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Canada</Link>
+              <Link href="/cargo-karachi-australia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Australia</Link>
+              <Link href="/cargo-karachi-italy" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Italy</Link>
+              <Link href="/cargo-karachi-france" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ France</Link>
+              <Link href="/cargo-karachi-netherlands" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Netherlands</Link>
+              <Link href="/cargo-karachi-turkey" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Turkey</Link>
+              <Link href="/cargo-karachi-malaysia" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Malaysia</Link>
+              <Link href="/cargo-karachi-singapore" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Singapore</Link>
+              <Link href="/cargo-karachi-thailand" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Thailand</Link>
+              <Link href="/cargo-karachi-bangladesh" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ Bangladesh</Link>
+              <Link href="/cargo-karachi-south-africa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ South Africa</Link>
               <Link href="/iran-transit-service" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Iran Transit Service</Link>
             </div>
           </div>

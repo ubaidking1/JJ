@@ -23,7 +23,7 @@ export default function ImportToPakistanPage() {
         <div className="p-6 border rounded-xl"><h2 className="text-xl font-bold text-blue-900">LCL Import</h2><p className="text-gray-600 mt-2">Consolidated shipping when your cargo does not fill a container.</p></div>
         <div className="p-6 border rounded-xl"><h2 className="text-xl font-bold text-blue-900">Air Freight</h2><p className="text-gray-600 mt-2">Faster import solutions for urgent and time-sensitive shipments.</p></div>
       </section>
-      <Link href="/contact" className="inline-block mt-10 px-7 py-3 bg-blue-700 text-white rounded-lg font-bold">Get Import Freight Rate</Link>
+      <Link href="#smart-quote" className="inline-block mt-10 px-7 py-3 bg-blue-700 text-white rounded-lg font-bold">Get Import Freight Rate</Link>
     </main>
   );
 }

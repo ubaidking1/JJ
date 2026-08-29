@@ -17,7 +17,7 @@ export default function ExportFromPakistanPage() {
         <h2 className="text-3xl font-bold text-blue-900">Commercial Export Support</h2>
         <ul className="grid sm:grid-cols-2 gap-3 mt-6 text-gray-700"><li>✓ FCL and LCL bookings</li><li>✓ Air freight</li><li>✓ Export documentation</li><li>✓ Customs coordination</li><li>✓ Port handling</li><li>✓ Worldwide destinations</li></ul>
       </section>
-      <Link href="/contact" className="inline-block mt-10 px-7 py-3 bg-blue-700 text-white rounded-lg font-bold">Get Export Freight Rate</Link>
+      <Link href="#smart-quote" className="inline-block mt-10 px-7 py-3 bg-blue-700 text-white rounded-lg font-bold">Get Export Freight Rate</Link>
     </main>
   );
 }
