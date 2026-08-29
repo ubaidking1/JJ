@@ -1,21 +1,21 @@
-"use client";
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Freight Forwarder Karachi | Import & Export | JSI",
+  description: "Import and export freight forwarding in Karachi with FCL, LCL, air freight, customs clearance and worldwide shipping support.",
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (
     <main className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
       <section className="grid lg:grid-cols-2 gap-8 items-center">
         <div className="text-center lg:text-left">
-          <motion.h1 
-            initial={{opacity:0, y:20}} 
-            animate={{opacity:1, y:0}} 
-            transition={{duration:0.8}} 
-            className="text-3xl md:text-5xl font-bold leading-tight text-blue-900"
-          >
-            International Freight Forwarder & Customs Clearing Agent for Importers & Exporters
-          </motion.h1>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">
+            Freight Forwarder in Karachi for Imports & Exports
+          </h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
