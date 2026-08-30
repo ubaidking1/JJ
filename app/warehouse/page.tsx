@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/warehouse" },
+  alternates: { canonical: "/warehouse/" },
   title: "Warehousing & Buyer's Consolidation Karachi | JSI",
   description: "Secure Karachi warehousing and buyer's consolidation with inventory management, pick and pack, and shipment coordination.",
   keywords: ["warehousing Karachi", "buyers consolidation Pakistan", "inventory management Karachi", "pick and pack services", "JSI warehouse"],
@@ -50,7 +50,7 @@ export default function Warehouse() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/contact" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg">
+          <Link href="/contact/" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg">
             Inquire About Warehousing
           </Link>
         </div>

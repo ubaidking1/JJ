@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "Customs Clearing Agent Karachi | Import & Export | JSI",
   description: "Customs clearance in Karachi for commercial imports and exports with documentation, port coordination and shipment support.",
-  alternates: { canonical: "/customs-clearance-karachi" },
+  alternates: { canonical: "/customs-clearance-karachi/" },
 };
 
 export default function CustomsClearanceKarachi() {
@@ -23,6 +23,6 @@ export default function CustomsClearanceKarachi() {
       { question: "Do you handle both Karachi Port and Port Qasim?", answer: "We can review commercial shipment requirements for Karachi Port and Port Qasim, subject to cargo type, documentation and applicable regulations." },
       { question: "Can you estimate duty and taxes?", answer: "A case-specific estimate requires the correct HS code, assessable value and complete shipment documents. Final assessment remains subject to the relevant authorities." },
     ]}
-    related={[{ href: "/import-to-pakistan", label: "Import to Pakistan" }, { href: "/export-from-pakistan", label: "Export from Pakistan" }, { href: "/freight-forwarder-karachi", label: "Freight Forwarder Karachi" }]}
+    related={[{ href: "/import-to-pakistan/", label: "Import to Pakistan" }, { href: "/export-from-pakistan/", label: "Export from Pakistan" }, { href: "/freight-forwarder-karachi/", label: "Freight Forwarder Karachi" }]}
   />;
 }

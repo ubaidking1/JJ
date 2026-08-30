@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/project" },
+  alternates: { canonical: "/project/" },
   title: "Project Cargo & Turnkey Solutions | JSI Karachi",
   description: "Project cargo handling in Karachi for heavy goods, turnkey logistics, customs documentation and port coordination.",
   keywords: ["project cargo Karachi", "heavy goods shipping", "turnkey projects Pakistan", "chartering services"],
@@ -46,7 +46,7 @@ export default function Project() {
         <div className="mt-16 bg-blue-900 text-white p-10 rounded-3xl text-center">
           <h3 className="text-2xl font-bold mb-4">Have a complex project?</h3>
           <p className="text-blue-100 mb-8">We have the expertise to manage your most challenging logistics needs.</p>
-          <Link href="/contact" className="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors">
+          <Link href="/contact/" className="inline-block px-8 py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-gray-100 transition-colors">
             Contact Project Team
           </Link>
         </div>

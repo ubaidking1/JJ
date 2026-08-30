@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "Air Freight Services Karachi | Import & Export | JSI",
   description: "Air freight services in Karachi for urgent commercial imports and exports with airport, documentation and delivery support.",
-  alternates: { canonical: "/air-freight-karachi" },
+  alternates: { canonical: "/air-freight-karachi/" },
 };
 
 export default function AirFreightKarachi() {
@@ -23,6 +23,6 @@ export default function AirFreightKarachi() {
       { question: "What details are required for an air freight quote?", answer: "Provide pickup location, airport or destination, commodity, package count, gross weight, dimensions, Incoterm and cargo-ready date." },
       { question: "Do you handle dangerous or restricted goods?", answer: "Such cargo requires advance review of the commodity, safety documentation, airline acceptance and applicable regulations before any service can be confirmed." },
     ]}
-    related={[{ href: "/seafreight", label: "Sea Freight" }, { href: "/import-to-pakistan", label: "Import to Pakistan" }, { href: "/export-from-pakistan", label: "Export from Pakistan" }]}
+    related={[{ href: "/seafreight/", label: "Sea Freight" }, { href: "/import-to-pakistan/", label: "Import to Pakistan" }, { href: "/export-from-pakistan/", label: "Export from Pakistan" }]}
   />;
 }

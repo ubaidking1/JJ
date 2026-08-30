@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog/air-vs-sea-freight-pakistan" },
+  alternates: { canonical: "/blog/air-vs-sea-freight-pakistan/" },
   title: "Air vs Sea Freight Pakistan | Cost & Transit Guide",
   description: "Comparing air and sea freight for shipping from Karachi. Cost, speed, and reliability analysis for global exporters.",
   keywords: ["sea freight vs air freight cost Pakistan", "air cargo vs sea cargo", "shipping from Karachi", "freight cost analysis"],

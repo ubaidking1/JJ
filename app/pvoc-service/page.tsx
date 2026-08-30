@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export const metadata: Metadata = {
   title: "PVOC Services Pakistan | Export Compliance | JSI",
   description: "PVOC and Certificate of Conformity support for regulated exports from Pakistan to Kenya, Tanzania, Uganda and more.",
-  alternates: { canonical: "/pvoc-service" },
+  alternates: { canonical: "/pvoc-service/" },
   keywords: ["PVOC service", "Pre-Export Verification of Conformity", "CoC certificate", "shipping compliance", "Kenya PVOC", "Tanzania PVOC", "Uganda PVOC", "conformity assessment"],
 };
 
@@ -20,7 +20,7 @@ export default function PvocService() {
             Ensuring your shipments meet international standards and quality requirements before they leave the port. Get your Certificate of Conformity (CoC) seamlessly with Jilani Shipping International.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/contact" className="px-8 py-3 bg-white text-blue-900 rounded-full font-bold hover:bg-blue-50 transition-all">
+            <Link href="/contact/" className="px-8 py-3 bg-white text-blue-900 rounded-full font-bold hover:bg-blue-50 transition-all">
               Request PVOC Quote
             </Link>
             <a href="https://wa.me/923180155643" className="px-8 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white/10 transition-all">
@@ -115,7 +115,7 @@ export default function PvocService() {
         <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
           Don't let compliance issues delay your business. Partner with Jilani Shipping for hassle-free PVOC and international logistics.
         </p>
-        <Link href="/contact" className="inline-block px-10 py-4 bg-blue-700 text-white rounded-full font-bold text-lg hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
+        <Link href="/contact/" className="inline-block px-10 py-4 bg-blue-700 text-white rounded-full font-bold text-lg hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
           Get a Free Consultation
         </Link>
       </section>

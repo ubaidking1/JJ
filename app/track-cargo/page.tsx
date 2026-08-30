@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/track-cargo" },
+  alternates: { canonical: "/track-cargo/" },
   title: "Track Your Cargo | Jilani Shipping International",
   description: "Track your international shipment with quick access to Maersk, MSC, CMA CGM, COSCO and other global carriers.",
   keywords: ["track cargo", "container tracking", "shipment tracking", "Maersk tracking", "MSC tracking", "JSI tracking"],
@@ -45,7 +45,7 @@ export default function TrackCargo() {
         <div className="mt-16 bg-blue-50 p-8 rounded-2xl border border-blue-100 text-center">
           <h2 className="text-xl font-bold text-blue-900 mb-2">Need Assistance?</h2>
           <p className="text-gray-600 mb-6">If you cannot find your carrier or need help with tracking, our team is ready to assist you.</p>
-          <a href="/contact" className="inline-block px-8 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition-all">
+          <a href="/contact/" className="inline-block px-8 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition-all">
             Contact Support
           </a>
         </div>

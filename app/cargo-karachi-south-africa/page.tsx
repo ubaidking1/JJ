@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-south-africa" },
+  alternates: { canonical: "/cargo-karachi-south-africa/" },
   title: "Pakistan–South Africa Import & Export Freight | JSI",
   description: "Import and export commercial freight between South Africa and Karachi, Pakistan via Durban, Cape Town and Johannesburg.",
   keywords: ["cargo Karachi to South Africa", "shipping to Durban", "Karachi to South Africa freight", "Durban port logistics", "South Africa shipping agents"],
@@ -42,7 +42,7 @@ export default function CargoSouthAfrica() {
         <div className="mt-12 text-center p-8 bg-blue-900 text-white rounded-2xl shadow-xl">
           <h3 className="text-2xl font-bold mb-4">Ready to ship to South Africa?</h3>
           <p className="mb-6">Contact our team today for the best rates to Durban and beyond.</p>
-          <a href="/contact" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-all">
+          <a href="/contact/" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-all">
             Get South Africa Quote
           </a>
         </div>

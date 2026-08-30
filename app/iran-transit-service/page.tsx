@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/iran-transit-service" },
+  alternates: { canonical: "/iran-transit-service/" },
   title: "Iran Transit Service | Jilani Shipping International",
   description: "Professional Iran transit services from Karachi Port and Gwadar Port. Reliable logistics solutions for transit cargo to Iran.",
   keywords: ["Iran transit service", "Karachi to Iran transit", "Gwadar to Iran transit", "transit cargo Iran", "logistics Pakistan to Iran"],
@@ -49,7 +49,7 @@ export default function IranTransitService() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/contact" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
+          <Link href="/contact/" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
             Get Iran Transit Quote
           </Link>
         </div>

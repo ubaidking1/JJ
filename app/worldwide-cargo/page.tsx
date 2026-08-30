@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/worldwide-cargo" },
+  alternates: { canonical: "/worldwide-cargo/" },
   title: "Worldwide Cargo Shipping | Ship to Any Country | JSI",
   description:
     "Worldwide freight forwarding from Karachi to the USA, UK, Europe, Africa and Asia with reliable logistics support.",
@@ -118,7 +118,7 @@ export default function CargoWorldwidePage() {
             <div className="mt-10 p-6 bg-blue-900 text-white rounded-2xl">
               <h3 className="font-bold mb-2">Ready to ship worldwide?</h3>
               <p className="text-sm text-blue-100 mb-6">Our experts are standing by to provide you with the most competitive global rates.</p>
-              <Link href="/contact" className="block w-full text-center py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-50 transition-all">
+              <Link href="/contact/" className="block w-full text-center py-3 bg-white text-blue-900 font-bold rounded-lg hover:bg-blue-50 transition-all">
                 Get Your Global Quote
               </Link>
             </div>

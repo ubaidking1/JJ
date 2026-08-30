@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 export const metadata: Metadata = {
   title: "China to Pakistan Shipping Cost | FCL, LCL & Air",
   description: "Request China to Pakistan shipping costs for FCL, LCL and air freight with supplier pickup and Karachi import support.",
-  alternates: { canonical: "/china-to-pakistan-shipping-cost" },
+  alternates: { canonical: "/china-to-pakistan-shipping-cost/" },
 };
 
 export default function ChinaPakistanShippingCost() {
@@ -23,6 +23,6 @@ export default function ChinaPakistanShippingCost() {
       { question: "Which is cheaper from China: LCL or FCL?", answer: "LCL is often suitable for smaller volumes, while FCL may become more economical as cargo volume increases. The break-even point depends on current freight and local charges." },
       { question: "Which China ports ship to Karachi?", answer: "Common options include Shanghai, Ningbo, Shenzhen, Qingdao, Tianjin and other ports. The best port depends on the supplier location, cargo and available routing." },
     ]}
-    related={[{ href: "/import-from-china-to-karachi", label: "China to Karachi Import" }, { href: "/lcl-shipping", label: "LCL Shipping" }, { href: "/cargo-karachi-china", label: "Pakistan–China Trade" }]}
+    related={[{ href: "/import-from-china-to-karachi/", label: "China to Karachi Import" }, { href: "/lcl-shipping/", label: "LCL Shipping" }, { href: "/cargo-karachi-china/", label: "Pakistan–China Trade" }]}
   />;
 }

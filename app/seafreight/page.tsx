@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/seafreight" },
+  alternates: { canonical: "/seafreight/" },
   title: "Sea Freight Services Karachi | Jilani Shipping International",
   description: "Sea freight services in Karachi for FCL, LCL, break-bulk chartering and project cargo across global trade routes.",
   keywords: ["sea freight Karachi", "FCL shipping Pakistan", "LCL cargo Karachi", "break-bulk chartering", "project cargo Pakistan"],
@@ -48,7 +48,7 @@ export default function Seafreight() {
         </div>
 
         <div className="mt-12 text-center">
-          <Link href="/contact" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
+          <Link href="/contact/" className="inline-block px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all shadow-lg hover:shadow-blue-200">
             Request Sea Freight Quote
           </Link>
         </div>

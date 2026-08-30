@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-saudi" },
+  alternates: { canonical: "/cargo-karachi-saudi/" },
   title: "Pakistan–Saudi Import & Export Shipping | JSI",
   description: "Import and export commercial shipments between Saudi Arabia and Karachi, Pakistan via Jeddah, Riyadh and Dammam.",
   keywords: [
@@ -86,7 +86,7 @@ export default function CargoSaudi() {
             <a href="https://wa.me/923180155643" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
               WhatsApp Now for Saudi Rates
             </a>
-            <a href="/contact" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">
+            <a href="/contact/" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">
               Inquiry Form
             </a>
           </div>

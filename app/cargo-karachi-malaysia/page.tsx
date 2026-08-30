@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-malaysia" },
+  alternates: { canonical: "/cargo-karachi-malaysia/" },
   title: "Pakistan–Malaysia Import & Export Shipping | JSI",
   description: "Import and export commercial freight between Malaysia and Karachi, Pakistan via Port Klang, Penang and Kuala Lumpur.",
   keywords: ["cargo Karachi to Malaysia", "shipping to Port Klang", "Karachi to Malaysia freight", "Malaysia logistics"],
@@ -19,7 +19,7 @@ export default function CargoMalaysia() {
           <li>✅ Fast air cargo to Kuala Lumpur International Airport</li>
         </ul>
         <div className="mt-8">
-          <a href="/contact" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get Malaysia Quote</a>
+          <a href="/contact/" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get Malaysia Quote</a>
         </div>
       </section>
     </main>

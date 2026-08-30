@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/csr" },
+  alternates: { canonical: "/csr/" },
   title: "CSR & Sustainability | Jilani Shipping International",
   description: "Explore JSI's social responsibility, ethical logistics and GO GREENER environmental sustainability commitments.",
   keywords: ["logistics CSR", "sustainability in shipping", "GO GREENER program", "ethical logistics Pakistan"],

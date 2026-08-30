@@ -105,13 +105,13 @@ export default function Home() {
           <p className="text-gray-600 mt-4">Choose your shipment direction to get the right FCL, LCL, documentation and customs-clearance support.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
-          <Link href="/import-from-china-to-karachi" className="p-7 bg-blue-900 text-white rounded-2xl shadow-lg hover:-translate-y-1 transition-transform group">
+          <Link href="/import-from-china-to-karachi/" className="p-7 bg-blue-900 text-white rounded-2xl shadow-lg hover:-translate-y-1 transition-transform group">
             <span className="text-sm font-bold text-blue-200">CHINA → PAKISTAN</span>
             <h3 className="text-2xl font-bold mt-2">Sea Freight from China to Karachi</h3>
             <p className="text-blue-100 mt-3 leading-relaxed">FCL and LCL imports with supplier coordination, consolidation, documentation and customs clearance at Karachi Port.</p>
             <span className="inline-block mt-6 font-bold group-hover:translate-x-1 transition-transform">Get Import Rate →</span>
           </Link>
-          <Link href="/export-from-karachi-to-china" className="p-7 bg-white border-2 border-blue-200 rounded-2xl shadow-sm hover:-translate-y-1 transition-transform group">
+          <Link href="/export-from-karachi-to-china/" className="p-7 bg-white border-2 border-blue-200 rounded-2xl shadow-sm hover:-translate-y-1 transition-transform group">
             <span className="text-sm font-bold text-blue-700">PAKISTAN → CHINA</span>
             <h3 className="text-2xl font-bold text-blue-900 mt-2">Export Shipping from Karachi to China</h3>
             <p className="text-gray-600 mt-3 leading-relaxed">Commercial export shipping to major Chinese ports with freight booking, documentation and port handling support.</p>
@@ -121,12 +121,12 @@ export default function Home() {
       </section>
 
       <section className="mt-10 grid md:grid-cols-2 gap-5">
-        <Link href="/import-to-pakistan" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
+        <Link href="/import-to-pakistan/" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
           <span className="text-sm font-bold text-blue-700">WORLDWIDE → PAKISTAN</span>
           <h2 className="text-2xl font-bold text-blue-900 mt-2">Import Shipping to Karachi</h2>
           <p className="text-gray-600 mt-2">Import commercial shipments from China, UAE, UK, USA, Europe and worldwide suppliers.</p>
         </Link>
-        <Link href="/export-from-pakistan" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
+        <Link href="/export-from-pakistan/" className="p-6 border-2 border-blue-200 rounded-2xl hover:shadow-md transition-shadow">
           <span className="text-sm font-bold text-blue-700">PAKISTAN → WORLDWIDE</span>
           <h2 className="text-2xl font-bold text-blue-900 mt-2">Export Shipping from Karachi</h2>
           <p className="text-gray-600 mt-2">Export commercial shipments from Pakistan through FCL, LCL and air freight.</p>
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </div>
           <div className="text-center mt-10">
-            <Link href="/lcl-shipping" className="inline-block px-8 py-3 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all">
+            <Link href="/lcl-shipping/" className="inline-block px-8 py-3 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 transition-all">
               Compare LCL Shipping Rates
             </Link>
           </div>
@@ -226,7 +226,7 @@ export default function Home() {
               <p className="text-blue-100 mb-6">
                 Our strategic partnerships with global carriers and our own bonded warehousing make us the most competitive player in the market.
               </p>
-              <Link href="/contact" className="inline-block w-full text-center py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition-all">
+              <Link href="/contact/" className="inline-block w-full text-center py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition-all">
                 Partner with Jilani Shipping Today
               </Link>
             </div>
@@ -237,13 +237,13 @@ export default function Home() {
       <section className="mt-20">
         <h2 className="text-center text-3xl font-bold text-blue-900 mb-10">Global Shipping & Logistics Services</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <Link href="/freight-forwarder-karachi" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <Link href="/freight-forwarder-karachi/" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">🌐</div>
             <h3 className="font-bold text-blue-900 text-lg">Importer & Exporter Logistics</h3>
             <p className="text-sm text-gray-700 mt-2 leading-relaxed">End-to-end supply chain solutions for <strong>international traders</strong>. Expert customs clearance and global freight forwarding.</p>
             <span className="text-blue-700 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
           </Link>
-          <Link href="/lcl-shipping" className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow group">
+          <Link href="/lcl-shipping/" className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
             <h3 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h3>
             <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>

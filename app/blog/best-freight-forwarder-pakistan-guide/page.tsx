@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide" },
+  alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide/" },
   title: "Best Freight Forwarders in Pakistan | 2026 Guide",
   description: "Compare freight forwarders in Pakistan for sea freight, air freight, customs clearance and international shipping.",
   keywords: [
@@ -57,7 +57,7 @@ export default function BlogChoose() {
         </ul>
 
         <p className="my-8 p-6 bg-gray-50 border-l-4 border-blue-600 rounded-r-xl">
-          <strong>Pro Tip:</strong> If you are specifically looking for a partner to handle complex trade documents, check our specialized guide for <a href="/freight-forwarder-karachi" className="text-blue-700 underline font-bold">Importers and Exporters in Karachi</a>.
+          <strong>Pro Tip:</strong> If you are specifically looking for a partner to handle complex trade documents, check our specialized guide for <a href="/freight-forwarder-karachi/" className="text-blue-700 underline font-bold">Importers and Exporters in Karachi</a>.
         </p>
 
         <h2 className="text-3xl font-bold text-blue-800 mt-12 mb-6">Top 5 Questions to Ask Your Forwarder</h2>
@@ -72,7 +72,7 @@ export default function BlogChoose() {
         <div className="bg-blue-900 text-white p-10 rounded-3xl my-16 text-center">
           <h2 className="text-3xl font-bold mb-6 text-white">Stop Searching, Start Shipping.</h2>
           <p className="mb-8 text-blue-100 italic">"Join 5,000+ businesses that trust JSI for their global logistics."</p>
-          <a href="/contact" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-all">
+          <a href="/contact/" className="inline-block bg-white text-blue-900 px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-all">
             Get a Competitive Quote in 5 Minutes
           </a>
         </div>

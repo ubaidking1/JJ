@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Best Freight Forwarder Karachi | Import & Export | JSI",
   description: "Karachi freight forwarder for commercial imports, exports, FCL/LCL sea freight, air freight and customs clearance.",
   keywords: ["best freight forwarder in Karachi", "freight forwarding company Karachi", "import export company Karachi", "customs clearing agent Karachi", "shipping company Karachi"],
-  alternates: { canonical: "/freight-forwarder-karachi" },
+  alternates: { canonical: "/freight-forwarder-karachi/" },
 };
 
 export default function FreightForwarder() {
@@ -58,7 +58,7 @@ export default function FreightForwarder() {
               </div>
             </div>
             <div className="mt-8">
-              <Link href="/contact" className="block w-full text-center py-4 bg-blue-700 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-md">
+              <Link href="/contact/" className="block w-full text-center py-4 bg-blue-700 text-white font-bold rounded-xl hover:bg-blue-800 transition-all shadow-md">
                 Get a Quote for Your Business
               </Link>
             </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Karachi to China Export Shipping | FCL & LCL | JSI",
   description: "Export from Karachi to China with FCL, LCL, freight booking, documentation and professional port handling support.",
-  alternates: { canonical: "/export-from-karachi-to-china" },
+  alternates: { canonical: "/export-from-karachi-to-china/" },
 };
 
 export default function ExportFromKarachiToChina() {
@@ -36,8 +36,8 @@ export default function ExportFromKarachiToChina() {
       </section>
 
       <div className="mt-12 flex flex-wrap gap-4">
-        <Link href="/contact" className="px-7 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800">Get China Export Rate</Link>
-        <Link href="/import-from-china-to-karachi" className="px-7 py-3 border border-blue-700 text-blue-800 rounded-lg font-bold">Need to import instead?</Link>
+        <Link href="/contact/" className="px-7 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800">Get China Export Rate</Link>
+        <Link href="/import-from-china-to-karachi/" className="px-7 py-3 border border-blue-700 text-blue-800 rounded-lg font-bold">Need to import instead?</Link>
       </div>
     </main>
   );

@@ -4,7 +4,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Buyer's Consolidation Pakistan | Jilani Shipping",
   description: "Combine multiple supplier shipments in Karachi with warehousing, LCL-to-FCL planning and cargo coordination.",
-  alternates: { canonical: "/buyerconsolidation" },
+  alternates: { canonical: "/buyerconsolidation/" },
   keywords: ["buyer consolidation Karachi", "supply chain optimization", "LCL to FCL consolidation", "JSI logistics"],
 };
 
@@ -43,7 +43,7 @@ export default function BuyerConsolidation() {
               All received pallets are checked with the delivery list. Our software generates unique barcodes containing information about goods, quantity, supplier, and end customer to ensure seamless tracking.
             </p>
             <div className="mt-8">
-               <Link href="/contact" className="inline-block w-full text-center px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-all">
+               <Link href="/contact/" className="inline-block w-full text-center px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-all">
                 Book Consolidation
               </Link>
             </div>

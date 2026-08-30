@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog/shipping-from-pakistan-to-uae-guide" },
+  alternates: { canonical: "/blog/shipping-from-pakistan-to-uae-guide/" },
   title: "Pakistan to UAE Shipping Guide | Freight & Customs",
   description: "Pakistan to UAE shipping guide covering air freight, sea freight, door-to-door cargo costs and export procedures.",
   keywords: ["shipping from Pakistan to UAE", "cargo services Pakistan to Dubai", "cheapest shipping to Dubai from Karachi", "door to door cargo UAE from Pakistan"],
@@ -41,7 +41,7 @@ export default function BlogUAE() {
           Ships depart from Karachi Port and Port Qasim, arriving at Jebel Ali (Dubai) or Khalifa Port (Abu Dhabi).
         </p>
         <ul>
-          <li><strong><a href="/lcl-shipping" className="text-blue-700 underline font-bold">LCL (Less than Container Load):</a></strong> Perfect for smaller <strong>LCL shipments</strong> where you share container space and save costs.</li>
+          <li><strong><a href="/lcl-shipping/" className="text-blue-700 underline font-bold">LCL (Less than Container Load):</a></strong> Perfect for smaller <strong>LCL shipments</strong> where you share container space and save costs.</li>
           <li><strong>FCL (Full Container Load):</strong> Ideal for large commercial exports where you have exclusive use of a container.</li>
         </ul>
 
@@ -61,7 +61,7 @@ export default function BlogUAE() {
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Customs and Documentation</h2>
         <p>
-          Navigating customs is the most complex part of international shipping. Professional <strong>importers and exporters</strong> often use a <a href="/freight-forwarder-karachi" className="text-blue-700 underline font-bold">customs clearing agent in Karachi</a> to avoid delays. Required documents usually include:
+          Navigating customs is the most complex part of international shipping. Professional <strong>importers and exporters</strong> often use a <a href="/freight-forwarder-karachi/" className="text-blue-700 underline font-bold">customs clearing agent in Karachi</a> to avoid delays. Required documents usually include:
           - Commercial Invoice
           - Packing List
           - Bill of Lading (for sea) or Airway Bill (for air)

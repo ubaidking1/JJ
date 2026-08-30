@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-china" },
+  alternates: { canonical: "/cargo-karachi-china/" },
   title: "China–Pakistan Import & Export Shipping | JSI",
   description:
     "China–Pakistan import and export freight with FCL, LCL consolidation, customs clearance and commercial shipping support.",
@@ -28,13 +28,13 @@ export default function CargoKarachiChinaPage() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-10 not-prose">
-          <Link href="/import-from-china-to-karachi" className="p-6 bg-blue-900 text-white rounded-2xl shadow-lg">
+          <Link href="/import-from-china-to-karachi/" className="p-6 bg-blue-900 text-white rounded-2xl shadow-lg">
             <span className="text-sm font-bold text-blue-200">CHINA → PAKISTAN</span>
             <h2 className="text-2xl font-bold mt-2">Import from China to Karachi</h2>
             <p className="text-blue-100 mt-3">FCL, LCL, consolidation and customs-clearance support.</p>
             <span className="inline-block mt-5 font-bold">Get Import Rate →</span>
           </Link>
-          <Link href="/export-from-karachi-to-china" className="p-6 bg-white border-2 border-blue-200 text-blue-900 rounded-2xl shadow-sm">
+          <Link href="/export-from-karachi-to-china/" className="p-6 bg-white border-2 border-blue-200 text-blue-900 rounded-2xl shadow-sm">
             <span className="text-sm font-bold text-blue-700">PAKISTAN → CHINA</span>
             <h2 className="text-2xl font-bold mt-2">Export from Karachi to China</h2>
             <p className="text-gray-600 mt-3">Commercial freight, documentation and port handling.</p>
@@ -87,7 +87,7 @@ export default function CargoKarachiChinaPage() {
         </p>
 
         <a
-          href="/contact"
+          href="/contact/"
           className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
         >
           Request a Quote

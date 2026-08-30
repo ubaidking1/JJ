@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog/mistakes-marketers-make-with-ai" },
+  alternates: { canonical: "/blog/mistakes-marketers-make-with-ai/" },
   title: "AI Marketing Mistakes | Jilani Shipping Blog",
   description: "Learn common AI marketing mistakes, practical fixes, vibe coding practices and ways to build more reliable AI solutions.",
   keywords: ["AI in marketing", "vibe coding", "AI mistakes", "marketing automation", "AI best practices", "Claude Code", "MCP connector"],
@@ -88,7 +88,7 @@ export default function AiMarketingMistakes() {
           <p className="mb-8 text-blue-100">
             Join us and walk away with better, more powerful AI builds!
           </p>
-          <Link href="/contact" className="inline-block px-10 py-4 bg-white text-blue-900 font-bold rounded-full hover:bg-blue-50 transition-all shadow-lg">
+          <Link href="/contact/" className="inline-block px-10 py-4 bg-white text-blue-900 font-bold rounded-full hover:bg-blue-50 transition-all shadow-lg">
             Register for the Session
           </Link>
         </div>
