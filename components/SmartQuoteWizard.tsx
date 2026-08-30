@@ -1,9 +1,10 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const WHATSAPP_NUMBER = "923180155643";
+const QUOTE_EXCLUDED_PATHS = new Set(["/", "/contact", "/companyprofile", "/csr", "/track-cargo"]);
 
 const routeNames: Record<string, string> = {
   "/cargo-karachi-dubai": "Pakistan ↔ Dubai",
@@ -58,6 +59,13 @@ export default function SmartQuoteWizard() {
   const [mode, setMode] = useState("LCL");
   const route = routeNames[pathname] || "Worldwide Shipping";
 
+  // The root layout stays mounted during client-side navigation. Reset the
+  // selected service so a previous page (for example Buyer’s Consolidation)
+  // cannot carry its form and label over to the next route.
+  useEffect(() => {
+    setService(serviceFromPath(pathname));
+  }, [pathname]);
+
   const isFreight = service === "Commercial Freight";
   const isCargo = service === "Personal Cargo & Household Goods";
   const isWarehouse = service === "Warehousing";
@@ -85,7 +93,7 @@ export default function SmartQuoteWizard() {
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
-  if (pathname === "/" || pathname === "/contact" || pathname.startsWith("/blog/")) return null;
+  if (QUOTE_EXCLUDED_PATHS.has(pathname) || pathname.startsWith("/blog/")) return null;
 
   return (
     <section id="smart-quote" className="max-w-6xl mx-auto scroll-mt-28 px-4 md:px-6 py-12" aria-labelledby="smart-quote-heading">
