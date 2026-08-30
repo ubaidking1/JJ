@@ -14,7 +14,7 @@ const carriers = [
   { name: "Hapag-Lloyd", url: "https://www.hapag-lloyd.com/en/online-business/track/track-by-container.html" },
   { name: "COSCO Shipping", url: "https://lines.coscoshipping.com/ebusiness/cargoTracking" },
   { name: "Evergreen Line", url: "https://www.shipmentlink.com/servlet/TDB1_CargoTracking.do" },
-  { name: "Ocean Network Express (ONE)", url: "https://www.one-line.com/en/standard-page/cargo-tracking" },
+  { name: "Ocean Network Express (ONE)", url: "https://ecomm.one-line.com/ecom/CUP_HOM_3301.do" },
   { name: "Yang Ming Marine Transport", url: "https://www.yangming.com/e-service/track_trace/track_trace_cargo_tracking.aspx" },
 ];
 
