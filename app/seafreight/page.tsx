@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/seafreight" },
   title: "Sea Freight Services Karachi | Jilani Shipping International",
-  description: "Leading sea freight forwarder in Pakistan. We offer FCL, LCL, break-bulk chartering, and project cargo services for rice, cement, ethanol, and spices.",
+  description: "Sea freight services in Karachi for FCL, LCL, break-bulk chartering and project cargo across global trade routes.",
   keywords: ["sea freight Karachi", "FCL shipping Pakistan", "LCL cargo Karachi", "break-bulk chartering", "project cargo Pakistan"],
 };
 

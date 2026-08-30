@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Export Shipping from Pakistan | Karachi to Worldwide | JSI",
-  description: "Export commercial shipments from Karachi, Pakistan to worldwide destinations with FCL, LCL, air freight, documentation and customs support.",
+  description: "Export from Karachi to worldwide destinations with FCL, LCL, air freight, documentation and customs support.",
   alternates: { canonical: "/export-from-pakistan" },
 };
 

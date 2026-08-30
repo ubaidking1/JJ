@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/project" },
   title: "Project Cargo & Turnkey Solutions | JSI Karachi",
-  description: "Comprehensive project cargo handling from conception to completion. We specialize in heavy goods, turnkey projects, and customs documentation.",
+  description: "Project cargo handling in Karachi for heavy goods, turnkey logistics, customs documentation and port coordination.",
   keywords: ["project cargo Karachi", "heavy goods shipping", "turnkey projects Pakistan", "chartering services"],
 };
 

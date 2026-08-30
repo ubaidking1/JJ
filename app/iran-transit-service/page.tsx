@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/iran-transit-service" },
   title: "Iran Transit Service | Jilani Shipping International",
   description: "Professional Iran transit services from Karachi Port and Gwadar Port. Reliable logistics solutions for transit cargo to Iran.",
   keywords: ["Iran transit service", "Karachi to Iran transit", "Gwadar to Iran transit", "transit cargo Iran", "logistics Pakistan to Iran"],

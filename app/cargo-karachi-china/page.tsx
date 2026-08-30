@@ -2,9 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/cargo-karachi-china" },
   title: "China–Pakistan Import & Export Shipping | JSI",
   description:
-    "Expert freight forwarder for Karachi to China cargo and China to Pakistan imports. Specializing in LCL consolidation, customs clearance, and commercial shipping.",
+    "China–Pakistan import and export freight with FCL, LCL consolidation, customs clearance and commercial shipping support.",
   keywords: [
     "cargo Karachi to China",
     "China to Pakistan LCL shipment",

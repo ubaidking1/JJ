@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "10 Best Freight Forwarders in Pakistan 2026 – Expert Reviews & Rates",
-  description: "Looking for the best freight forwarder in Pakistan? Compare top logistics companies in Karachi for UAE, Saudi, USA, and UK shipping. Why Jilani Shipping ranks #1.",
+  alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide" },
+  title: "Best Freight Forwarders in Pakistan | 2026 Guide",
+  description: "Compare freight forwarders in Pakistan for sea freight, air freight, customs clearance and international shipping.",
   keywords: [
     "best freight forwarder in Pakistan",
     "top 10 shipping companies in Karachi",
@@ -18,7 +19,7 @@ export default function BlogChoose() {
     <main className="max-w-4xl mx-auto px-6 py-16 bg-white">
       <article className="prose lg:prose-xl max-w-none">
         <h1 className="text-4xl md:text-5xl font-black text-blue-900 mb-8 leading-tight">
-          How to Choose the Best Freight Forwarder in Pakistan: 2026 Industry Guide
+          How to Choose a Freight Forwarder in Pakistan
         </h1>
         
         <p className="lead text-xl text-gray-700">

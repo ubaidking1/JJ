@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/track-cargo" },
   title: "Track Your Cargo | Jilani Shipping International",
-  description: "Track your shipment across global carriers. Quick links to Maersk, MSC, CMA CGM, COSCO, and more.",
+  description: "Track your international shipment with quick access to Maersk, MSC, CMA CGM, COSCO and other global carriers.",
   keywords: ["track cargo", "container tracking", "shipment tracking", "Maersk tracking", "MSC tracking", "JSI tracking"],
 };
 

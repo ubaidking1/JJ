@@ -2,9 +2,10 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/worldwide-cargo" },
   title: "Worldwide Cargo Shipping | Ship to Any Country | JSI",
   description:
-    "Jilani Shipping International provides freight forwarding to 100+ countries. From Karachi to USA, UK, Europe, Africa, and Asia, we handle your global logistics with ease.",
+    "Worldwide freight forwarding from Karachi to the USA, UK, Europe, Africa and Asia with reliable logistics support.",
   keywords: [
     "worldwide cargo Karachi",
     "global shipping to all countries",

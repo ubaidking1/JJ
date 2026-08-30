@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Import to Pakistan | FCL, LCL & Air Freight | JSI",
-  description: "Import commercial shipments to Karachi from China, UAE, UK, USA and Europe with FCL, LCL, air freight and customs-clearance support.",
+  description: "Import to Karachi from China, UAE, UK, USA and Europe with FCL, LCL, air freight and customs-clearance support.",
   alternates: { canonical: "/import-to-pakistan" },
 };
 

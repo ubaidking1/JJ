@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Export Shipping from Karachi to China | Commercial Freight | JSI",
-  description: "Export commercial shipments from Karachi to China with FCL, LCL, freight booking, export documentation and port handling support from Jilani Shipping.",
+  title: "Karachi to China Export Shipping | FCL & LCL | JSI",
+  description: "Export from Karachi to China with FCL, LCL, freight booking, documentation and professional port handling support.",
   alternates: { canonical: "/export-from-karachi-to-china" },
 };
 

@@ -3,8 +3,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mistakes Marketers Keep Making with AI | Jilani Shipping Blog",
-  description: "Learn about common mistakes marketers make with AI and how to fix them. Join our live session on vibe coding best practices and building powerful AI solutions.",
+  alternates: { canonical: "/blog/mistakes-marketers-make-with-ai" },
+  title: "AI Marketing Mistakes | Jilani Shipping Blog",
+  description: "Learn common AI marketing mistakes, practical fixes, vibe coding practices and ways to build more reliable AI solutions.",
   keywords: ["AI in marketing", "vibe coding", "AI mistakes", "marketing automation", "AI best practices", "Claude Code", "MCP connector"],
 };
 

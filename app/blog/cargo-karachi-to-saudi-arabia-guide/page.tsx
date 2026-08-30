@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Cargo Services from Karachi to Saudi Arabia | Jilani Shipping",
+  alternates: { canonical: "/blog/cargo-karachi-to-saudi-arabia-guide" },
+  title: "Karachi to Saudi Shipping | Freight & Cargo Guide",
   description: "Detailed guide on shipping to Jeddah and Riyadh. Learn about customs, rates, and the best cargo services for Saudi Arabia.",
   keywords: ["shipping from Pakistan to Saudi Arabia", "cargo to Riyadh from Karachi", "freight services Pakistan to Jeddah", "Saudi logistics"],
 };

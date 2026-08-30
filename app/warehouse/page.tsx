@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Warehouse & Buyer's Consolidation Services | JSI Karachi",
-  description: "Secure warehousing and optimized buyer's consolidation services in Karachi. Features include inventory management, pick and pack, and software updates.",
+  alternates: { canonical: "/warehouse" },
+  title: "Warehousing & Buyer's Consolidation Karachi | JSI",
+  description: "Secure Karachi warehousing and buyer's consolidation with inventory management, pick and pack, and shipment coordination.",
   keywords: ["warehousing Karachi", "buyers consolidation Pakistan", "inventory management Karachi", "pick and pack services", "JSI warehouse"],
 };
 

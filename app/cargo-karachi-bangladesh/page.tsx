@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/cargo-karachi-bangladesh" },
   title: "Pakistan–Bangladesh Import & Export Shipping | JSI",
   description: "Import and export commercial freight between Bangladesh and Karachi, Pakistan via Chittagong and Dhaka.",
   keywords: ["cargo Karachi to Bangladesh", "shipping to Chittagong", "Karachi to Dhaka freight", "Bangladesh logistics"],

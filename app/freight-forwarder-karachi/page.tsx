@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Freight Forwarder in Karachi | Import & Export | JSI",
-  description: "Looking for a freight forwarder in Karachi? Jilani Shipping handles commercial imports and exports, FCL/LCL sea freight, air freight, customs clearance and global logistics.",
+  title: "Best Freight Forwarder Karachi | Import & Export | JSI",
+  description: "Karachi freight forwarder for commercial imports, exports, FCL/LCL sea freight, air freight and customs clearance.",
   keywords: ["best freight forwarder in Karachi", "freight forwarding company Karachi", "import export company Karachi", "customs clearing agent Karachi", "shipping company Karachi"],
   alternates: { canonical: "/freight-forwarder-karachi" },
 };

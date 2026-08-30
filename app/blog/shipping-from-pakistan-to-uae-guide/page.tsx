@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shipping from Pakistan to UAE – Complete Guide 2026 | Jilani Shipping",
-  description: "Learn everything about shipping from Pakistan to UAE. Air freight, sea freight, and door-to-door cargo costs and procedures for 2026.",
+  alternates: { canonical: "/blog/shipping-from-pakistan-to-uae-guide" },
+  title: "Pakistan to UAE Shipping Guide | Freight & Customs",
+  description: "Pakistan to UAE shipping guide covering air freight, sea freight, door-to-door cargo costs and export procedures.",
   keywords: ["shipping from Pakistan to UAE", "cargo services Pakistan to Dubai", "cheapest shipping to Dubai from Karachi", "door to door cargo UAE from Pakistan"],
 };
 
