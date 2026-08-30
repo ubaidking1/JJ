@@ -43,6 +43,8 @@ export default function Navbar() {
             </button>
             <div className="absolute left-0 mt-0 w-64 bg-white border border-gray-100 shadow-xl rounded-xl py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[110] max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-blue-600">
               <Link href="/freight-forwarder-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Freight Forwarding (New)</Link>
+              <Link href="/customs-clearance-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Customs Clearance Karachi</Link>
+              <Link href="/air-freight-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Air Freight Karachi</Link>
               <Link href="/import-to-pakistan" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Import to Pakistan</Link>
               <Link href="/export-from-pakistan" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold">Export from Pakistan</Link>
               <Link href="/seafreight" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Sea Freight</Link>
@@ -58,6 +60,7 @@ export default function Navbar() {
               <div className="px-4 py-1 text-[10px] font-bold text-gray-400 uppercase tracking-wider">Global Import & Export Routes</div>
               <Link href="/worldwide-cargo" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-bold text-blue-900 italic">Worldwide Shipping (All Countries)</Link>
               <Link href="/import-from-china-to-karachi" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Import: China to Karachi</Link>
+              <Link href="/china-to-pakistan-shipping-cost" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">China to Pakistan Shipping Cost</Link>
               <Link href="/export-from-karachi-to-china" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700 font-semibold">Export: Karachi to China</Link>
               <Link href="/cargo-karachi-uk" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ UK</Link>
               <Link href="/cargo-karachi-usa" className="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Pakistan ↔ USA</Link>
@@ -119,6 +122,8 @@ export default function Navbar() {
           <Link href="/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Home</Link>
           <Link href="/companyprofile" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Company Profile</Link>
           <Link href="/lcl-shipping" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-800 rounded-lg">LCL Shipping (New)</Link>
+          <Link href="/customs-clearance-karachi" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Customs Clearance Karachi</Link>
+          <Link href="/air-freight-karachi" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Air Freight Karachi</Link>
           <Link href="/import-to-pakistan" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Import to Pakistan</Link>
           <Link href="/export-from-pakistan" onClick={closeMenu} className="p-3 hover:bg-blue-50 font-bold text-blue-900 rounded-lg">Export from Pakistan</Link>
           <Link href="/seafreight" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Sea Freight</Link>

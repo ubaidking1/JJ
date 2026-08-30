@@ -16,6 +16,8 @@ export default function Footer() {
                           <li><Link href="/" className="hover:text-blue-700">Home</Link></li>
                           <li><Link href="/companyprofile" className="hover:text-blue-700">Company Profile</Link></li>
                           <li><Link href="/seafreight" className="hover:text-blue-700">Sea Freight</Link></li>
+                          <li><Link href="/air-freight-karachi" className="hover:text-blue-700 font-semibold">Air Freight Karachi</Link></li>
+                          <li><Link href="/customs-clearance-karachi" className="hover:text-blue-700 font-semibold">Customs Clearance Karachi</Link></li>
                           <li><Link href="/import-to-pakistan" className="hover:text-blue-700 font-semibold">Import to Pakistan</Link></li>
                           <li><Link href="/export-from-pakistan" className="hover:text-blue-700 font-semibold">Export from Pakistan</Link></li>
                           <li><Link href="/buyerconsolidation" className="hover:text-blue-700">Buyer's Consolidation</Link></li>
@@ -32,6 +34,7 @@ export default function Footer() {
                         <h5 className="font-semibold mb-2">Our Services</h5>
                         <ul className="text-sm space-y-1">
                           <li><Link href="/import-from-china-to-karachi" className="hover:text-blue-700 font-semibold">Import: China to Karachi</Link></li>
+                          <li><Link href="/china-to-pakistan-shipping-cost" className="hover:text-blue-700 font-semibold">China to Pakistan Shipping Cost</Link></li>
                           <li><Link href="/export-from-karachi-to-china" className="hover:text-blue-700 font-semibold">Export: Karachi to China</Link></li>
                           <li><Link href="/cargo-karachi-dubai" className="hover:text-blue-700">Pakistan–Dubai Import & Export</Link></li>
                           <li><Link href="/cargo-karachi-uk" className="hover:text-blue-700">Pakistan–UK Import & Export</Link></li>

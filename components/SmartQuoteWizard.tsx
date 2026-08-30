@@ -39,6 +39,9 @@ const routeNames: Record<string, string> = {
   "/iran-transit-service": "Iran Transit Service",
   "/project": "Project Cargo",
   "/worldwide-cargo": "Worldwide Shipping",
+  "/customs-clearance-karachi": "Customs Clearance Karachi",
+  "/air-freight-karachi": "Air Freight Karachi",
+  "/china-to-pakistan-shipping-cost": "China → Pakistan Shipping",
 };
 
 const serviceFromPath = (pathname: string) => {
@@ -47,6 +50,7 @@ const serviceFromPath = (pathname: string) => {
   if (pathname.includes("pvoc")) return "PVOC Service";
   if (pathname.includes("iran-transit")) return "Iran Transit";
   if (pathname.includes("project")) return "Project Cargo";
+  if (pathname.includes("customs-clearance")) return "Customs Clearance";
   return "Commercial Freight";
 };
 
