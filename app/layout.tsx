@@ -284,12 +284,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SmartQuoteWizard />
         <Footer />
         <WhatsAppButton />
-        <Script
-          id="zanderio-chat-widget"
-          src="https://cdn.zanderio.ai/widget/loader.js"
-          data-id="wdg_lqP4ntkYyrty0oy5WVf8P4i7"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
