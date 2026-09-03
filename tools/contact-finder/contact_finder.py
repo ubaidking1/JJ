@@ -29,7 +29,8 @@ EXCLUDED_DOMAINS = {
 }
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; JilaniContactFinder/1.0; public-business-contact-research)"}
 OUTPUT_FIELDS = [
-    "Company Name", "Official Website", "Business Email", "Other Emails",
+    "Company Name", "Origin Country", "POL", "POD", "Customs Station",
+    "Official Website", "Business Email", "Other Emails",
     "Public Contact Number", "WhatsApp Number", "WhatsApp Chat Link",
     "Number Verification", "Number Source URL", "LinkedIn Company Page",
     "Source URLs", "Confidence", "Status", "Checked At",
@@ -66,7 +67,15 @@ def choose_company_column(columns: list[str]) -> str | None:
     return None
 
 
-def read_companies(path: Path) -> tuple[list[str], str]:
+def choose_route_column(columns: list[str], names: tuple[str, ...]) -> str | None:
+    normalized = {re.sub(r"[^a-z0-9]+", " ", str(c).strip().lower()).strip(): str(c) for c in columns}
+    for wanted in names:
+        if wanted in normalized:
+            return normalized[wanted]
+    return None
+
+
+def read_companies(path: Path) -> tuple[list[str], str, dict[str, dict[str, str]]]:
     if path.suffix.lower() == ".csv":
         df = pd.read_csv(path, dtype=str, encoding_errors="replace")
     else:
@@ -75,12 +84,28 @@ def read_companies(path: Path) -> tuple[list[str], str]:
     column = choose_company_column(list(df.columns))
     if not column:
         raise ValueError("Importer/Exporter/Company Name column not found")
+    pol_col = choose_route_column(list(df.columns), ("pol", "port of loading", "loading port", "port loading", "origin port"))
+    pod_col = choose_route_column(list(df.columns), ("pod", "port of discharge", "discharge port", "destination port"))
+    origin_col = choose_route_column(list(df.columns), ("origin", "origin country", "country of origin"))
+    station_col = choose_route_column(list(df.columns), ("clctd", "customs station", "custom station", "collectorate"))
     seen: dict[str, str] = {}
-    for value in df[column]:
+    routes: dict[str, dict[str, set[str]]] = {}
+    for row_index, value in df[column].items():
         name = clean_company(value)
         if name:
-            seen.setdefault(company_key(name), name)
-    return sorted(seen.values()), column
+            key = company_key(name)
+            seen.setdefault(key, name)
+            route = routes.setdefault(key, {"Origin Country": set(), "POL": set(), "POD": set(), "Customs Station": set()})
+            for label, source_col in (("Origin Country", origin_col), ("POL", pol_col), ("POD", pod_col), ("Customs Station", station_col)):
+                if source_col:
+                    raw = df.at[row_index, source_col]
+                    if not pd.isna(raw) and str(raw).strip():
+                        route[label].add(str(raw).strip())
+    normalized_routes = {
+        key: {label: "; ".join(sorted(values)) if values else "Not provided in source file" for label, values in route.items()}
+        for key, route in routes.items()
+    }
+    return sorted(seen.values()), column, normalized_routes
 
 
 def db_connect() -> sqlite3.Connection:
@@ -274,6 +299,10 @@ def research_company(company: str) -> dict[str, str]:
     status = "Found" if emails or phones else "Website found" if website else "Manual review"
     return {
         "Company Name": company,
+        "Origin Country": "Not provided in source file",
+        "POL": "Not provided in source file",
+        "POD": "Not provided in source file",
+        "Customs Station": "Not provided in source file",
         "Official Website": website,
         "Business Email": emails[0] if emails else "",
         "Other Emails": "; ".join(emails[1:5]),
@@ -295,7 +324,10 @@ def previous_result(con: sqlite3.Connection, key: str) -> dict[str, str] | None:
     if not row:
         return None
     return {
-        "Company Name": row[0], "Official Website": row[2], "Business Email": row[3],
+        "Company Name": row[0], "Origin Country": "Not provided in source file",
+        "POL": "Not provided in source file", "POD": "Not provided in source file",
+        "Customs Station": "Not provided in source file",
+        "Official Website": row[2], "Business Email": row[3],
         "Other Emails": "", "Public Contact Number": row[4], "WhatsApp Number": row[9] or "",
         "WhatsApp Chat Link": whatsapp_link(row[9]) if row[9] else "",
         "Number Verification": "Publicly listed — refresh recommended" if row[4] else "Not found",
@@ -339,6 +371,10 @@ def write_contact_group(base_name: str, title: str, rows: list[dict[str, str]]) 
         table_rows.append(
             "<tr>"
             f"<td>{cell(row.get('Company Name'))}</td>"
+            f"<td>{cell(row.get('Origin Country'))}</td>"
+            f"<td>{cell(row.get('POL'))}</td>"
+            f"<td>{cell(row.get('POD'))}</td>"
+            f"<td>{cell(row.get('Customs Station'))}</td>"
             f"<td><a href='tel:{cell(phone.split(';')[0])}'>{cell(phone)}</a></td>"
             f"<td>{whatsapp_cell}</td>"
             f"<td>{cell(row.get('Business Email'))}</td>"
@@ -354,7 +390,7 @@ body{font-family:Arial,sans-serif;margin:20px;background:#f5f7fb;color:#13213c}h
 th,td{border:1px solid #dce3ed;padding:10px;text-align:left;vertical-align:top}th{background:#173f7a;color:white;position:sticky;top:0}
 .wa{background:#18a957;color:white;padding:7px 10px;border-radius:6px;text-decoration:none;display:inline-block}
 tr:nth-child(even){background:#f6f9fd}a{color:#114fc4}</style></head><body>
-<h1>""" + cell(title) + "</h1><div class='note'>Auto-refreshes every 10 seconds. Companies: " + str(len(rows)) + "</div><p><a href='FOUND_CONTACTS.html'>Numbers Found</a> | <a href='NUMBER_NOT_FOUND.html'>Numbers Not Found</a> | <a href='LIVE_CONTACTS.html'>All Results</a></p><table><thead><tr><th>Company</th><th>Public Number</th><th>WhatsApp</th><th>Email</th><th>Number Source</th><th>Status</th></tr></thead><tbody>" + "".join(table_rows) + "</tbody></table></body></html>"
+<h1>""" + cell(title) + "</h1><div class='note'>Auto-refreshes every 10 seconds. Companies: " + str(len(rows)) + "</div><p><a href='FOUND_CONTACTS.html'>Numbers Found</a> | <a href='NUMBER_NOT_FOUND.html'>Numbers Not Found</a> | <a href='LIVE_CONTACTS.html'>All Results</a></p><table><thead><tr><th>Company</th><th>Origin</th><th>POL</th><th>POD</th><th>Customs Station</th><th>Public Number</th><th>WhatsApp</th><th>Email</th><th>Number Source</th><th>Status</th></tr></thead><tbody>" + "".join(table_rows) + "</tbody></table></body></html>"
     html_path.write_text(page, encoding="utf-8")
     return csv_path, html_path
 
@@ -371,7 +407,7 @@ def write_live_files(rows: list[dict[str, str]]) -> None:
 def write_output(source: Path, rows: list[dict[str, str]], source_column: str) -> Path:
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output = DEFAULT_OUTPUT / f"{source.stem}_contacts_{stamp}.xlsx"
-    df = pd.DataFrame(rows)
+    df = pd.DataFrame(rows, columns=OUTPUT_FIELDS)
     with pd.ExcelWriter(output, engine="openpyxl") as writer:
         df.to_excel(writer, index=False, sheet_name="Contacts")
         ws = writer.book["Contacts"]
@@ -404,7 +440,7 @@ def process_file(con: sqlite3.Connection, path: Path, refresh: bool = False) -> 
     if already_processed(con, path) and not refresh:
         return
     print(f"[{APP_NAME}] Reading {path.name}")
-    companies, source_column = read_companies(path)
+    companies, source_column, routes = read_companies(path)
     rows = []
     live_html = DEFAULT_OUTPUT / "LIVE_CONTACTS.html"
     print(f"  Live file: {live_html}")
@@ -412,10 +448,12 @@ def process_file(con: sqlite3.Connection, path: Path, refresh: bool = False) -> 
         print(f"  {index}/{len(companies)} {company}")
         old = previous_result(con, company_key(company))
         if old and not refresh:
+            old.update(routes.get(company_key(company), {}))
             rows.append(old)
             write_live_files(rows)
             continue
         result = research_company(company)
+        result.update(routes.get(company_key(company), {}))
         print(f"    Public number: {result['Public Contact Number'] or 'Not found'}")
         print(f"    WhatsApp: {result['WhatsApp Number'] or 'Not found'}")
         save_result(con, result)
