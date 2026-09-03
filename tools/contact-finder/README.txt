@@ -25,6 +25,12 @@ every 10 seconds and shows each company as soon as it is found. Phone numbers,
 WhatsApp buttons and source links are clickable. LIVE_CONTACTS.csv is updated
 at the same time for Excel use. You do not need to wait for the full run.
 
+ROUTE DETAILS
+Live pages and CSV/Excel results include Origin Country, POL (Port of Loading),
+POD (Port of Discharge), and Customs Station. Common column-name variations are
+detected automatically. If a route field is absent, the result says
+"Not provided in source file" instead of guessing.
+
 SEPARATE RESULT FILES
 - FOUND_CONTACTS.html / .csv: companies where a public number was found.
 - NUMBER_NOT_FOUND.html / .csv: companies where no public number was found.
