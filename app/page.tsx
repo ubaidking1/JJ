@@ -3,8 +3,17 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Freight Forwarder Karachi | Import & Export | JSI",
-  description: "Import and export freight forwarding in Karachi with FCL, LCL, air freight, customs clearance and worldwide shipping support.",
+  title: { absolute: "Jilani Shipping | Best Shipping Company in Karachi" },
+  description: "Jilani Shipping International manages commercial import and export shipments, cargo, FCL, LCL, air freight and customs clearance from Karachi to worldwide ports.",
+  keywords: [
+    "Jilani Shipping",
+    "Jilani Shipping International",
+    "best shipping company in Karachi",
+    "import shipment management",
+    "export inquiry management",
+    "export shipment management",
+    "commercial cargo Karachi",
+  ],
   alternates: { canonical: "/" },
 };
 
@@ -14,21 +23,21 @@ export default function Home() {
       <section className="grid lg:grid-cols-2 gap-8 items-center">
         <div className="text-center lg:text-left">
           <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">
-            Freight Forwarder in Karachi for Imports & Exports
+            Jilani Shipping International — Shipping Company in Karachi
           </h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Jilani Shipping International (JSI) is your <strong>global logistics partner in Pakistan</strong>. We specialize in <strong>customs brokerage, import-export documentation</strong>, and reliable <strong>FCL & LCL shipping</strong> to 100+ worldwide destinations.
+              Jilani Shipping International (JSI) helps businesses looking for a <strong>reliable shipping company in Karachi</strong>. We provide <strong>import shipment management, export inquiry management</strong>, customs brokerage and FCL or LCL shipping to worldwide destinations.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              With competitive pricing, fast transit times, and expert customs handling, we move commercial shipments safely and on time—from supplier pickup to customs clearance and final delivery.
+              Whether you call it cargo, freight or a commercial shipment, our team coordinates supplier pickup, booking, documentation, customs clearance and final delivery with clear rate breakdowns.
             </p>
           </div>
 
           <div className="mt-8">
             <div className="bg-white p-6 rounded-2xl shadow-xl border border-blue-50 max-w-lg">
-              <h2 className="text-xl font-bold text-blue-900 mb-4">Get a Quick Quote</h2>
+              <h2 className="text-xl font-bold text-blue-900 mb-4">Import Shipment or Export Inquiry</h2>
               <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input type="hidden" name="lead_source" value="Homepage Quick Quote" />
                 <input name="name" placeholder="Full Name" aria-label="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
@@ -235,7 +244,8 @@ export default function Home() {
       </section>
 
       <section className="mt-20">
-        <h2 className="text-center text-3xl font-bold text-blue-900 mb-10">Global Shipping & Logistics Services</h2>
+          <h2 className="text-center text-3xl font-bold text-blue-900 mb-3">Import & Export Shipment Management</h2>
+          <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">Cargo clients and commercial shipment clients both receive route planning, carrier coordination, documentation support and a clear quotation from our Karachi team.</p>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Link href="/freight-forwarder-karachi/" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">🌐</div>
