@@ -92,10 +92,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         { "@type": "ListItem", "position": 7, "item": { "@type": "Service", "name": "Iran Transit Service" }},
         { "@type": "ListItem", "position": 8, "item": { "@type": "Service", "name": "Karachi to South Africa Durban" }},
         { "@type": "ListItem", "position": 9, "item": { "@type": "Service", "name": "Karachi to Australia Sydney" }},
-        { "@type": "ListItem", "position": 10, "item": { "@type": "Service", "name": "PVOC Pre-Export Verification of Conformity" }}
+        { "@type": "ListItem", "position": 10, "item": { "@type": "Service", "name": "PVOC Pre-Export Verification of Conformity" }},
+        { "@type": "ListItem", "position": 11, "item": { "@type": "Service", "name": "Kenya PVOC and KEBS Compliance Coordination", "url": "https://jilanishipping.net/kenya-pvoc-service/" }},
+        { "@type": "ListItem", "position": 12, "item": { "@type": "Service", "name": "Uganda PVOC and UNBS Compliance Coordination", "url": "https://jilanishipping.net/uganda-pvoc-service/" }}
       ]
     },
-    "areaServed": ["PK", "AE", "CN", "US", "GB", "SA", "QA", "DE", "ZA", "AU", "NL", "FR", "IT"],
+    "areaServed": ["PK", "AE", "CN", "US", "GB", "SA", "QA", "DE", "ZA", "AU", "NL", "FR", "IT", "KE", "UG"],
+    "knowsAbout": [
+      "International freight forwarding",
+      "Sea freight and air freight",
+      "Import and export documentation",
+      "Kenya PVOC and KEBS compliance coordination",
+      "Uganda PVOC and UNBS compliance coordination"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Suite #266, Glass Tower, Teen Talwar, Clifton",

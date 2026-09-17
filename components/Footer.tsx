@@ -22,6 +22,8 @@ export default function Footer() {
                           <li><Link href="/export-from-pakistan/" className="hover:text-blue-700 font-semibold">Export from Pakistan</Link></li>
                           <li><Link href="/buyerconsolidation/" className="hover:text-blue-700">Buyer's Consolidation</Link></li>
                           <li><Link href="/pvoc-service/" className="hover:text-blue-700 font-semibold text-blue-900 italic">PVOC Service (New)</Link></li>
+                          <li><Link href="/kenya-pvoc-service/" className="hover:text-blue-700 font-semibold">Kenya PVOC & KEBS Support</Link></li>
+                          <li><Link href="/uganda-pvoc-service/" className="hover:text-blue-700 font-semibold">Uganda PVOC & UNBS Support</Link></li>
                           <li><Link href="/warehouse/" className="hover:text-blue-700">Warehouse</Link></li>
                           <li><Link href="/csr/" className="hover:text-blue-700">CSR</Link></li>
                           <li><Link href="/project/" className="hover:text-blue-700">Project</Link></li>
