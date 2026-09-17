@@ -110,6 +110,21 @@ export default function PvocService() {
         </div>
       </section>
 
+      <section className="mt-20 grid md:grid-cols-2 gap-6">
+        <Link href="/kenya-pvoc-service/" className="block rounded-2xl border border-green-200 bg-green-50 p-8 hover:shadow-lg transition-shadow">
+          <p className="text-sm font-bold uppercase tracking-wide text-green-700">Pakistan exporters → Kenya</p>
+          <h2 className="mt-2 text-2xl font-bold text-green-950">Kenya PVoC & CoC Support</h2>
+          <p className="mt-3 text-gray-700">KEBS-focused document, inspection and shipment coordination with a direct WhatsApp quote.</p>
+          <span className="mt-5 inline-block font-bold text-green-800">View Kenya service →</span>
+        </Link>
+        <Link href="/uganda-pvoc-service/" className="block rounded-2xl border border-yellow-200 bg-yellow-50 p-8 hover:shadow-lg transition-shadow">
+          <p className="text-sm font-bold uppercase tracking-wide text-yellow-700">Pakistan exporters → Uganda</p>
+          <h2 className="mt-2 text-2xl font-bold text-red-950">Uganda PVoC & CoC Support</h2>
+          <p className="mt-3 text-gray-700">UNBS-focused compliance coordination and freight support with a direct WhatsApp quote.</p>
+          <span className="mt-5 inline-block font-bold text-red-800">View Uganda service →</span>
+        </Link>
+      </section>
+
       <section className="mt-20 text-center">
         <h2 className="text-3xl font-bold text-blue-900 mb-6">Ready to Ship with Confidence?</h2>
         <p className="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
