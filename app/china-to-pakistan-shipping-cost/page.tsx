@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "China to Pakistan Shipping Cost | FCL, LCL & Air",
-  description: "Request China to Pakistan shipping costs for FCL, LCL and air freight with supplier pickup and Karachi import support.",
+  title: { absolute: "China to Pakistan Shipping Cost Guide | JSI" },
+  description: "Estimate China to Pakistan shipping costs for FCL, LCL and air freight. Learn which factors affect rates, transit planning and local charges in Karachi today.",
+  keywords: [
+    "China to Pakistan shipping cost",
+    "shipping rates China to Pakistan",
+    "China Pakistan freight rates",
+    "LCL cost China Karachi",
+    "FCL rate China Pakistan",
+    "air freight China Pakistan"
+  ],
   alternates: { canonical: "/china-to-pakistan-shipping-cost/" },
 };
 

@@ -2,9 +2,16 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Freight Forwarder Karachi | Import & Export | JSI",
-  description: "Karachi freight forwarder for commercial imports, exports, FCL/LCL sea freight, air freight and customs clearance.",
-  keywords: ["best freight forwarder in Karachi", "freight forwarding company Karachi", "import export company Karachi", "customs clearing agent Karachi", "shipping company Karachi"],
+  title: { absolute: "Best Freight Forwarder in Karachi | JSI" },
+  description: "Looking for a freight forwarder in Karachi? JSI provides sea and air freight, FCL, LCL, customs coordination and worldwide import-export shipping support today.",
+  keywords: [
+    "freight forwarder Karachi",
+    "best freight forwarder in Karachi",
+    "freight forwarding company Pakistan",
+    "logistics services Karachi",
+    "international freight Karachi",
+    "shipping agent Karachi"
+  ],
   alternates: { canonical: "/freight-forwarder-karachi/" },
 };
 
@@ -13,7 +20,7 @@ export default function FreightForwarder() {
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Karachi, Pakistan</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-2 text-blue-900">Freight Forwarder in Karachi for Imports & Exports</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-6 mt-2 text-blue-900">Freight Forwarder in Karachi for Global Shipping</h1>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>

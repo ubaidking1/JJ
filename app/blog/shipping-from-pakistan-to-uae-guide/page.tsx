@@ -1,17 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Shipping from Pakistan to UAE: Complete Guide | JSI" },
+  description: "Read Jilani Shipping’s practical guide to shipping Pakistan to UAE, including freight options, documents, cost factors, transit planning and quotation today.",
+  keywords: [
+    "shipping Pakistan to UAE",
+    "shipping Pakistan to UAE guide",
+    "shipping Pakistan to UAE cost",
+    "shipping Pakistan to UAE documents",
+    "shipping Pakistan to UAE transit time",
+    "international freight Pakistan"
+  ],
   alternates: { canonical: "/blog/shipping-from-pakistan-to-uae-guide/" },
-  title: "Pakistan to UAE Shipping Guide | Freight & Customs",
-  description: "Pakistan to UAE shipping guide covering air freight, sea freight, door-to-door cargo costs and export procedures.",
-  keywords: ["shipping from Pakistan to UAE", "cargo services Pakistan to Dubai", "cheapest shipping to Dubai from Karachi", "door to door cargo UAE from Pakistan"],
 };
 
 export default function BlogUAE() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 bg-white">
       <article className="prose lg:prose-xl max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-8">Shipping from Pakistan to UAE – Complete Guide 2026</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-8">Shipping from Pakistan to UAE: Complete Guide</h1>
         
         <p className="lead text-xl text-gray-700">
           Shipping goods from Pakistan to the United Arab Emirates (UAE) has become a cornerstone of regional trade. Whether you are a business owner exporting textiles or an individual sending personal effects to Dubai, understanding the logistics landscape is crucial for a cost-effective and stress-free experience.

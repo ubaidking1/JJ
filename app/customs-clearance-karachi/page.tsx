@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Customs Clearing Agent Karachi | Import & Export | JSI",
-  description: "Customs clearance in Karachi for commercial imports and exports with documentation, port coordination and shipment support.",
+  title: { absolute: "Customs Clearing Agent in Karachi | Jilani Shipping" },
+  description: "Get customs clearance support in Karachi for sea and air shipments, import-export documents, port coordination and compliant cargo release planning with JSI.",
+  keywords: [
+    "customs clearing agent Karachi",
+    "customs clearance Karachi",
+    "import clearance Pakistan",
+    "export customs Karachi",
+    "customs broker Karachi",
+    "port clearance services"
+  ],
   alternates: { canonical: "/customs-clearance-karachi/" },
 };
 

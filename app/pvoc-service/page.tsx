@@ -4,10 +4,17 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
-  title: "PVOC Services Pakistan | Export Compliance | JSI",
-  description: "PVOC and Certificate of Conformity support for regulated exports from Pakistan to Kenya, Tanzania, Uganda and more.",
+  title: { absolute: "PVOC Certification Services for Kenya & Uganda | JSI" },
+  description: "Get PVOC coordination for exports to Kenya and Uganda, including document review, inspection planning, CoC process guidance and international freight support.",
+  keywords: [
+    "PVOC certification services",
+    "pre-export verification of conformity",
+    "PVOC certificate",
+    "Certificate of Conformity",
+    "Kenya Uganda PVOC",
+    "export compliance East Africa"
+  ],
   alternates: { canonical: "/pvoc-service/" },
-  keywords: ["PVOC service", "Pre-Export Verification of Conformity", "CoC certificate", "shipping compliance", "Kenya PVOC", "Tanzania PVOC", "Uganda PVOC", "conformity assessment"],
 };
 
 export default function PvocService() {
@@ -15,7 +22,7 @@ export default function PvocService() {
     <main className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
       <section className="bg-blue-900 text-white rounded-3xl p-8 md:p-12 shadow-2xl overflow-hidden relative">
         <div className="relative z-10">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6">PVOC: Pre-Export Verification of Conformity</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">PVOC Certification Support for Kenya and Uganda</h1>
           <p className="text-lg md:text-xl text-blue-100 max-w-3xl leading-relaxed">
             Ensuring your shipments meet international standards and quality requirements before they leave the port. Get your Certificate of Conformity (CoC) seamlessly with Jilani Shipping International.
           </p>

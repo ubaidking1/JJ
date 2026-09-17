@@ -1,17 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Karachi to South Africa Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and South Africa with FCL, LCL and air freight options, documentation support, port coordination and tailored freight.",
+  keywords: [
+    "Karachi to South Africa shipping",
+    "South Africa to Karachi freight",
+    "Pakistan South Africa cargo",
+    "sea freight South Africa Pakistan",
+    "LCL shipping South Africa",
+    "FCL shipping South Africa",
+    "South Africa import export"
+  ],
   alternates: { canonical: "/cargo-karachi-south-africa/" },
-  title: "Pakistan–South Africa Import & Export Freight | JSI",
-  description: "Import and export commercial freight between South Africa and Karachi, Pakistan via Durban, Cape Town and Johannesburg.",
-  keywords: ["cargo Karachi to South Africa", "shipping to Durban", "Karachi to South Africa freight", "Durban port logistics", "South Africa shipping agents"],
 };
 
 export default function CargoSouthAfrica() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and South Africa</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Karachi to South Africa Shipping Services</h1>
         <p className="text-lg text-gray-700 mt-4">
           Jilani Shipping International (JSI) provides specialized logistics solutions for cargo moving from Pakistan to South Africa. 
           We offer direct sea freight services to major ports, with a focus on <strong>Durban</strong>, the gateway to Southern Africa.

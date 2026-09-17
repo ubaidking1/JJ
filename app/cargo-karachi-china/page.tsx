@@ -2,27 +2,25 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-china/" },
-  title: "China–Pakistan Import & Export Shipping | JSI",
-  description:
-    "China–Pakistan import and export freight with FCL, LCL consolidation, customs clearance and commercial shipping support.",
+  title: { absolute: "Karachi to China Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and China with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
   keywords: [
-    "cargo Karachi to China",
-    "China to Pakistan LCL shipment",
-    "import from China to Pakistan",
-    "customs clearing agent for China imports",
-    "sea freight Karachi to China",
-    "air cargo Karachi to China",
-    "door to door cargo Karachi to China",
-    "Jilani Shipping International China",
+    "Karachi to China shipping",
+    "China to Karachi freight",
+    "Pakistan China cargo",
+    "sea freight China Pakistan",
+    "LCL shipping China",
+    "FCL shipping China",
+    "China import export"
   ],
+  alternates: { canonical: "/cargo-karachi-china/" },
 };
 
 export default function CargoKarachiChinaPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">China–Pakistan Import & Export Shipping</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–China Import and Export Shipping</h1>
         <p className="text-lg leading-relaxed text-gray-700">
           Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
         </p>

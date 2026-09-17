@@ -1,17 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Karachi to Kuwait Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and Kuwait with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates.",
+  keywords: [
+    "Karachi to Kuwait shipping",
+    "Kuwait to Karachi freight",
+    "Pakistan Kuwait cargo",
+    "sea freight Kuwait Pakistan",
+    "LCL shipping Kuwait",
+    "FCL shipping Kuwait",
+    "Kuwait import export"
+  ],
   alternates: { canonical: "/cargo-karachi-kuwait/" },
-  title: "Pakistan–Kuwait Import & Export Shipping | JSI",
-  description: "Import and export commercial shipments between Kuwait and Karachi, Pakistan via Shuaiba, Shuwaikh and Kuwait City.",
-  keywords: ["cargo Karachi to Kuwait", "shipping to Kuwait", "Karachi to Kuwait freight", "Kuwait shipping agents"],
 };
 
 export default function CargoKuwait() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and Kuwait</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Karachi to Kuwait Shipping Services</h1>
         <p className="text-lg text-gray-700 mt-4">Jilani Shipping International (JSI) provides the most competitive and reliable freight forwarding solutions to Kuwait.</p>
         <div className="grid md:grid-cols-2 gap-8 mt-12">
           <div className="p-8 bg-blue-50 rounded-2xl border border-blue-100">

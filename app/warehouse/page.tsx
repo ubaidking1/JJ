@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Warehousing and Cargo Consolidation in China | JSI" },
+  description: "Use China warehousing for supplier cargo collection, storage, inspection coordination, repacking and consolidation before shipping goods to Pakistan today.",
+  keywords: [
+    "warehouse in China for Pakistan",
+    "China cargo warehouse",
+    "supplier cargo storage China",
+    "China consolidation warehouse",
+    "repacking service China",
+    "cargo inspection China"
+  ],
   alternates: { canonical: "/warehouse/" },
-  title: "Warehousing & Buyer's Consolidation Karachi | JSI",
-  description: "Secure Karachi warehousing and buyer's consolidation with inventory management, pick and pack, and shipment coordination.",
-  keywords: ["warehousing Karachi", "buyers consolidation Pakistan", "inventory management Karachi", "pick and pack services", "JSI warehouse"],
 };
 
 export default function Warehouse() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Warehousing & Consolidation</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">China Warehousing and Cargo Consolidation Services</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>

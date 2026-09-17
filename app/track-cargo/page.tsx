@@ -1,10 +1,17 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Track Your International Cargo Shipment | JSI" },
+  description: "Track international cargo with carrier tools and shipment references. Contact Jilani Shipping for help locating sea freight, air freight or container status.",
+  keywords: [
+    "track cargo shipment",
+    "container tracking Pakistan",
+    "sea freight tracking",
+    "air cargo tracking",
+    "shipment status Karachi",
+    "track international cargo"
+  ],
   alternates: { canonical: "/track-cargo/" },
-  title: "Track Your Cargo | Jilani Shipping International",
-  description: "Track your international shipment with quick access to Maersk, MSC, CMA CGM, COSCO and other global carriers.",
-  keywords: ["track cargo", "container tracking", "shipment tracking", "Maersk tracking", "MSC tracking", "JSI tracking"],
 };
 
 const carriers = [
@@ -22,7 +29,7 @@ export default function TrackCargo() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-4xl mx-auto p-6 md:py-16">
-        <h1 className="text-4xl font-bold text-blue-900 mb-4 text-center">Track Your Cargo</h1>
+        <h1 className="text-4xl font-bold text-blue-900 mb-4 text-center">Track Your International Cargo Shipment</h1>
         <p className="text-gray-600 text-center mb-12">Select your shipping line below to track your container or shipment in real-time.</p>
 
         <div className="grid sm:grid-cols-2 gap-4">

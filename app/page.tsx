@@ -3,16 +3,15 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: { absolute: "Jilani Shipping | Best Shipping Company in Karachi" },
-  description: "Jilani Shipping International manages commercial import and export shipments, cargo, FCL, LCL, air freight and customs clearance from Karachi to worldwide ports.",
+  title: { absolute: "Shipping Company in Karachi | Jilani Shipping" },
+  description: "Jilani Shipping is a freight forwarding and logistics company in Karachi offering sea freight, air freight, customs clearance and import-export support today.",
   keywords: [
-    "Jilani Shipping",
-    "Jilani Shipping International",
-    "best shipping company in Karachi",
-    "import shipment management",
-    "export inquiry management",
-    "export shipment management",
-    "commercial cargo Karachi",
+    "shipping company Karachi",
+    "freight forwarder Karachi",
+    "logistics company Pakistan",
+    "sea freight Karachi",
+    "air freight Karachi",
+    "import export services Pakistan"
   ],
   alternates: { canonical: "/" },
 };
@@ -22,9 +21,7 @@ export default function Home() {
     <main className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
       <section className="grid lg:grid-cols-2 gap-8 items-center">
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">
-            Jilani Shipping International — Shipping Company in Karachi
-          </h1>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">International Shipping and Freight Forwarding Company in Karachi</h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">

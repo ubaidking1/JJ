@@ -2,8 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Karachi to China Export Shipping | FCL & LCL | JSI",
-  description: "Export from Karachi to China with FCL, LCL, freight booking, documentation and professional port handling support.",
+  title: { absolute: "Export from Karachi to China | Freight Services | JSI" },
+  description: "Export commercial goods from Karachi to China with FCL, LCL and air freight, export documentation, customs coordination and port-to-port shipping support today.",
+  keywords: [
+    "export from Karachi to China",
+    "Pakistan to China shipping",
+    "Karachi China freight",
+    "sea freight Pakistan China",
+    "air freight Karachi China",
+    "FCL export China",
+    "LCL export China"
+  ],
   alternates: { canonical: "/export-from-karachi-to-china/" },
 };
 
@@ -12,7 +21,7 @@ export default function ExportFromKarachiToChina() {
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="max-w-4xl">
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Pakistan → China Exports</p>
-        <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-3">Export Shipping from Karachi to China</h1>
+        <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-3">Export Shipping from Karachi, Pakistan to China</h1>
         <p className="text-lg text-gray-700 leading-relaxed mt-6">
           Ship commercial goods from Karachi to major ports in China with reliable FCL and LCL freight forwarding. We support exporters with bookings, documentation, port handling and shipment coordination.
         </p>

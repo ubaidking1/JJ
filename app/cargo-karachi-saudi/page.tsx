@@ -1,26 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-saudi/" },
-  title: "Pakistan–Saudi Import & Export Shipping | JSI",
-  description: "Import and export commercial shipments between Saudi Arabia and Karachi, Pakistan via Jeddah, Riyadh and Dammam.",
+  title: { absolute: "Karachi to Saudi Arabia Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and Saudi Arabia with FCL, LCL and air freight options, documentation support, port coordination and tailored freight.",
   keywords: [
-    "cargo Karachi to Saudi Arabia",
-    "cheapest cargo rates Karachi to Saudi",
-    "door to door cargo Saudi Arabia from Pakistan",
-    "sea freight Karachi to Jeddah cost",
-    "Karachi to Riyadh cargo price",
-    "Pakistan to Saudi shipping time",
-    "LCL shipment Saudi Arabia",
-    "JSI cargo Saudi",
+    "Karachi to Saudi Arabia shipping",
+    "Saudi Arabia to Karachi freight",
+    "Pakistan Saudi Arabia cargo",
+    "sea freight Saudi Arabia Pakistan",
+    "LCL shipping Saudi Arabia",
+    "FCL shipping Saudi Arabia",
+    "Saudi Arabia import export"
   ],
+  alternates: { canonical: "/cargo-karachi-saudi/" },
 };
 
 export default function CargoSaudi() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Import & Export Shipping Between Pakistan and Saudi Arabia</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Karachi to Saudi Arabia Shipping Services</h1>
         
         <div className="bg-green-50 border-l-4 border-green-600 p-4 mb-8">
           <p className="text-green-800 font-bold">🇸🇦 Specialized in SASO & SABER documentation for smooth customs clearance in Jeddah and Riyadh.</p>

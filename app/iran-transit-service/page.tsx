@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Iran Transit Cargo Service via Pakistan | JSI" },
+  description: "Move transit cargo through Pakistan toward Iran with Karachi port handling, customs documentation, bonded transport coordination and border delivery support.",
+  keywords: [
+    "Iran transit cargo Pakistan",
+    "Karachi to Iran transit",
+    "Pakistan Iran cargo transport",
+    "Iran border transit service",
+    "Karachi port transit cargo",
+    "bonded cargo Iran"
+  ],
   alternates: { canonical: "/iran-transit-service/" },
-  title: "Iran Transit Service | Jilani Shipping International",
-  description: "Professional Iran transit services from Karachi Port and Gwadar Port. Reliable logistics solutions for transit cargo to Iran.",
-  keywords: ["Iran transit service", "Karachi to Iran transit", "Gwadar to Iran transit", "transit cargo Iran", "logistics Pakistan to Iran"],
 };
 
 export default function IranTransitService() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Iran Transit Service</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">Iran Transit Cargo Service via Karachi, Pakistan</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>

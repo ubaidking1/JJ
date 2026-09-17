@@ -2,17 +2,24 @@ import { Metadata } from "next";
 import CBMCalculator from "@/components/CBMCalculator";
 
 export const metadata: Metadata = {
-  title: "LCL Shipping Karachi | China to Pakistan Freight | JSI",
-  description: "LCL shipping from China and worldwide origins to Karachi with CBM pricing, documentation and customs support.",
+  title: { absolute: "LCL Shipping Services in Karachi, Pakistan | JSI" },
+  description: "Ship smaller consignments with LCL shipping from Karachi. JSI supports consolidation, documentation, customs coordination and worldwide sea freight with JSI.",
+  keywords: [
+    "LCL shipping Pakistan",
+    "LCL shipment Karachi",
+    "less than container load Pakistan",
+    "LCL consolidation Karachi",
+    "sea freight LCL Pakistan",
+    "LCL import export"
+  ],
   alternates: { canonical: "/lcl-shipping/" },
-  keywords: ["LCL shipment", "LCL shipment Karachi", "LCL shipping Pakistan", "LCL rates Karachi", "Less than container load Pakistan", "shared container shipping Karachi", "cargo consolidation Karachi"],
 };
 
 export default function LCLShipping() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6 text-center">International LCL Shipment & Consolidation</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6 text-center">LCL Shipping Services in Karachi, Pakistan</h1>
         <p className="text-xl text-gray-700 text-center mb-12">
           Global <strong>LCL shipment</strong> solutions from China, Gulf, and Worldwide to Pakistan. Jilani Shipping International (JSI) provides the most reliable and cost-effective Less than Container Load services.
         </p>

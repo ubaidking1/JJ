@@ -3,10 +3,17 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title: { absolute: "AI Marketing Mistakes: Redirect or Remove from Logistics…" },
+  description: "This topic does not support the website’s freight, import-export or compliance subject authority. Redirect, remove or move it to a separate marketing website.",
+  keywords: [
+    "AI marketing mistakes",
+    "marketing automation errors",
+    "AI content strategy",
+    "digital marketing risks",
+    "marketing quality control"
+  ],
+  robots: { index: false, follow: true },
   alternates: { canonical: "/blog/mistakes-marketers-make-with-ai/" },
-  title: "AI Marketing Mistakes | Jilani Shipping Blog",
-  description: "Learn common AI marketing mistakes, practical fixes, vibe coding practices and ways to build more reliable AI solutions.",
-  keywords: ["AI in marketing", "vibe coding", "AI mistakes", "marketing automation", "AI best practices", "Claude Code", "MCP connector"],
 };
 
 export default function AiMarketingMistakes() {
@@ -17,9 +24,7 @@ export default function AiMarketingMistakes() {
           <div className="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-bold mb-4 uppercase tracking-wider">
             AI & Technology
           </div>
-          <h1 className="text-4xl md:text-5xl font-black text-blue-900 leading-tight mb-6">
-            Mistakes Marketers Keep Making with AI and How to Fix Them
-          </h1>
+          <h1 className="text-4xl md:text-5xl font-black text-blue-900 leading-tight mb-6">AI Marketing Mistakes: Redirect or Remove from Logistics Site</h1>
           <p className="text-gray-500 text-lg italic">
             Published on May 20, 2026 • Live Session Announcement
           </p>

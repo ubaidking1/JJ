@@ -1,17 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Karachi to Germany Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and Germany with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates.",
+  keywords: [
+    "Karachi to Germany shipping",
+    "Germany to Karachi freight",
+    "Pakistan Germany cargo",
+    "sea freight Germany Pakistan",
+    "LCL shipping Germany",
+    "FCL shipping Germany",
+    "Germany import export"
+  ],
   alternates: { canonical: "/cargo-karachi-germany/" },
-  title: "Pakistan–Germany Import & Export Shipping | JSI",
-  description: "Import and export commercial freight between Germany and Karachi, Pakistan via Hamburg, Bremerhaven and Frankfurt.",
-  keywords: ["cargo Karachi to Germany", "shipping to Hamburg", "Karachi to Europe cargo", "Germany logistics"],
 };
 
 export default function CargoGermany() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Import & Export Shipping Between Pakistan and Germany</h1>
+        <h1 className="text-4xl font-bold text-blue-900">Karachi to Germany Shipping Services</h1>
         <p className="text-lg text-gray-700 mt-4">Helping Pakistani exporters reach the German market with seamless logistics and door-to-door solutions.</p>
         <ul className="mt-6 space-y-2">
           <li>✅ Shipping to Hamburg and Bremerhaven ports</li>

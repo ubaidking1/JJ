@@ -1,26 +1,25 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/cargo-karachi-dubai/" },
-  title: "Pakistan–Dubai Import & Export Shipping | JSI",
-  description: "Import and export commercial shipments between Dubai, UAE and Karachi, Pakistan with FCL, LCL and door-to-door freight support.",
+  title: { absolute: "Karachi to Dubai Shipping | FCL & LCL | JSI" },
+  description: "Ship commercial cargo between Karachi and Dubai with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
   keywords: [
-    "cargo Karachi to Dubai",
-    "cheapest cargo rates Karachi to Dubai",
-    "door to door cargo Dubai from Karachi",
-    "sea freight Karachi to Dubai cost",
-    "air cargo price Karachi to Dubai",
-    "Pakistan to Dubai shipping time",
-    "LCL shipment Dubai",
-    "JSI cargo Karachi",
+    "Karachi to Dubai shipping",
+    "Dubai to Karachi freight",
+    "Pakistan Dubai cargo",
+    "sea freight Dubai Pakistan",
+    "LCL shipping Dubai",
+    "FCL shipping Dubai",
+    "Dubai import export"
   ],
+  alternates: { canonical: "/cargo-karachi-dubai/" },
 };
 
 export default function CargoKarachiDubaiPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Import & Export Shipping Between Karachi and Dubai</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–Dubai Import and Export Shipping</h1>
         
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
           <p className="text-yellow-800 font-bold">🚀 2026 Update: Weekly sailings confirmed every Friday from Karachi Port to Jebel Ali, Dubai.</p>

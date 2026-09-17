@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = {
-  title: "Air Freight Services Karachi | Import & Export | JSI",
-  description: "Air freight services in Karachi for urgent commercial imports and exports with airport, documentation and delivery support.",
+  title: { absolute: "Air Freight Services in Karachi, Pakistan | JSI" },
+  description: "Send urgent commercial shipments with air freight from Karachi. JSI supports airport handling, documentation, customs coordination and global delivery today.",
+  keywords: [
+    "air freight Karachi",
+    "air cargo Pakistan",
+    "air freight company Karachi",
+    "international air freight Pakistan",
+    "airport cargo Karachi",
+    "air export Pakistan"
+  ],
   alternates: { canonical: "/air-freight-karachi/" },
 };
 

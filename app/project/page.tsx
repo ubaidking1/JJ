@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Project Cargo and Breakbulk Services Karachi | JSI" },
+  description: "Move oversized and heavy project cargo through Karachi with breakbulk planning, port handling, special equipment, documentation and inland coordination today.",
+  keywords: [
+    "project cargo Karachi",
+    "breakbulk shipping Pakistan",
+    "heavy lift cargo Karachi",
+    "oversized cargo Pakistan",
+    "OOG freight forwarder",
+    "special project logistics"
+  ],
   alternates: { canonical: "/project/" },
-  title: "Project Cargo & Turnkey Solutions | JSI Karachi",
-  description: "Project cargo handling in Karachi for heavy goods, turnkey logistics, customs documentation and port coordination.",
-  keywords: ["project cargo Karachi", "heavy goods shipping", "turnkey projects Pakistan", "chartering services"],
 };
 
 export default function Project() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Specialized Project Cargo</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">Project Cargo and Breakbulk Logistics in Karachi</h1>
         
         <div className="grid md:grid-cols-1 gap-12 items-center">
           <div>

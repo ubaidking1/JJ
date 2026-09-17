@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <main className="container py-12 px-6">
-      <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
+      <h1 className="text-3xl font-bold mb-4">Contact Jilani Shipping for a Freight Quote</h1>
       <p className="text-gray-700 mb-6">Email: info@jilanishipping.net | Phone: 0318-0155643</p>
 
       <form 

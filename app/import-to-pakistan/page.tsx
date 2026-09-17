@@ -2,8 +2,16 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Import to Pakistan | FCL, LCL & Air Freight | JSI",
-  description: "Import to Karachi from China, UAE, UK, USA and Europe with FCL, LCL, air freight and customs-clearance support.",
+  title: { absolute: "Import Shipping to Pakistan | Freight Support | JSI" },
+  description: "Import goods to Pakistan with sea and air freight, FCL and LCL shipping, documentation and customs coordination through Jilani Shipping in Karachi with JSI.",
+  keywords: [
+    "import shipping to Pakistan",
+    "import freight Pakistan",
+    "international shipping to Karachi",
+    "sea import Pakistan",
+    "air import Karachi",
+    "import customs clearance Pakistan"
+  ],
   alternates: { canonical: "/import-to-pakistan/" },
 };
 
@@ -13,7 +21,7 @@ export default function ImportToPakistanPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
       <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Worldwide → Pakistan</p>
-      <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-2">Import Shipping to Karachi, Pakistan</h1>
+      <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-2">Import Shipping to Pakistan by Sea and Air</h1>
       <p className="text-lg text-gray-700 mt-6 max-w-4xl">Jilani Shipping arranges commercial imports from worldwide suppliers to Karachi through FCL containers, LCL consolidation and air freight, with documentation and customs-clearance support.</p>
       <section className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
         {origins.map((origin) => <div key={origin} className="p-5 border border-blue-100 bg-blue-50 rounded-xl font-bold text-blue-900">Import from {origin}</div>)}

@@ -2,21 +2,17 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/worldwide-cargo/" },
-  title: "Worldwide Cargo Shipping | Ship to Any Country | JSI",
-  description:
-    "Worldwide freight forwarding from Karachi to the USA, UK, Europe, Africa and Asia with reliable logistics support.",
+  title: { absolute: "Worldwide Shipping from Karachi, Pakistan | JSI" },
+  description: "Explore worldwide shipping from Karachi with sea and air freight, FCL, LCL, documentation support and destination-specific import-export services by JSI today.",
   keywords: [
-    "worldwide cargo Karachi",
-    "global shipping to all countries",
-    "international freight forwarding",
-    "sea freight worldwide",
-    "air cargo services",
-    "door to door global shipping",
-    "ship from Pakistan to Europe",
-    "ship from Pakistan to USA",
-    "ship from Pakistan to Africa",
+    "worldwide shipping Karachi",
+    "international cargo Pakistan",
+    "global freight forwarding Karachi",
+    "worldwide sea freight Pakistan",
+    "international air freight",
+    "global import export services"
   ],
+  alternates: { canonical: "/worldwide-cargo/" },
 };
 
 export default function CargoWorldwidePage() {
@@ -25,7 +21,7 @@ export default function CargoWorldwidePage() {
       {/* Hero Section */}
       <section className="bg-blue-900 text-white py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Global Reach, Local Expertise</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Worldwide Shipping Services from Karachi, Pakistan</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
             Jilani Shipping International (JSI) connects your business to the world. We provide 
             seamless freight forwarding and logistics solutions to <strong>every major port and city across the globe.</strong>

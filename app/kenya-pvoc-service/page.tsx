@@ -2,10 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Kenya PVoC & CoC Service from Pakistan | JSI",
-  description: "Kenya PVoC and Certificate of Conformity coordination for exporters in Pakistan. Get document, inspection and shipment support from JSI.",
+  title: { absolute: "Kenya PVOC Certificate & KEBS Compliance Support | JSI" },
+  description: "Exporting goods to Kenya? Get PVOC document review, KEBS compliance guidance, inspection coordination and freight support from Pakistan with Jilani Shipping.",
+  keywords: [
+    "PVOC certificate Kenya",
+    "Kenya PVOC certificate",
+    "KEBS PVOC requirements",
+    "Kenya Certificate of Conformity",
+    "CoC certificate Kenya",
+    "PVOC service Pakistan Kenya",
+    "Kenya import compliance"
+  ],
   alternates: { canonical: "/kenya-pvoc-service/" },
-  keywords: ["Kenya PVoC service Pakistan", "Certificate of Conformity Kenya", "KEBS PVoC Pakistan", "export to Kenya from Pakistan", "Kenya CoC service"],
 };
 
 const whatsapp = "https://wa.me/923180155643?text=Hello%20JSI%2C%20I%20need%20Kenya%20PVoC%2FCoC%20support.%20Product%3A%20____%20HS%20Code%3A%20____%20FOB%20Value%3A%20____%20Shipment%20Mode%3A%20Sea%2FAir%20Exporting%20Country%3A%20____";
@@ -23,7 +31,7 @@ export default function KenyaPvocService() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <section className="rounded-3xl bg-gradient-to-br from-green-900 via-green-800 to-red-800 text-white p-8 md:p-14 shadow-xl">
       <p className="font-semibold text-green-100 mb-3">Pakistan exporters → Kenya</p>
-      <h1 className="text-3xl md:text-5xl font-bold leading-tight">Kenya PVoC & Certificate of Conformity Support</h1>
+      <h1 className="text-3xl md:text-5xl font-bold leading-tight">Kenya PVOC Certificate and KEBS Compliance Support</h1>
       <p className="mt-5 text-lg text-white/90 max-w-3xl">Prepare regulated exports for Kenya with document review, authorised inspection coordination, CoC follow-up and freight support from Pakistan.</p>
       <div className="mt-8 flex flex-wrap gap-4"><a href={whatsapp} className="rounded-full bg-white px-7 py-3 font-bold text-green-900">Get Kenya PVoC Quote on WhatsApp</a><Link href="/pvoc-service/" className="rounded-full border border-white px-7 py-3 font-bold">View All PVoC Services</Link></div>
     </section>

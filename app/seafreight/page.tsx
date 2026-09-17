@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: { absolute: "Sea Freight Services in Karachi, Pakistan | JSI" },
+  description: "Book reliable sea freight from Karachi with FCL and LCL options, import-export documentation, customs coordination and worldwide port-to-port support today.",
+  keywords: [
+    "sea freight Karachi",
+    "sea freight Pakistan",
+    "ocean freight Karachi",
+    "FCL shipping Pakistan",
+    "LCL sea freight",
+    "international sea cargo"
+  ],
   alternates: { canonical: "/seafreight/" },
-  title: "Sea Freight Services Karachi | Jilani Shipping International",
-  description: "Sea freight services in Karachi for FCL, LCL, break-bulk chartering and project cargo across global trade routes.",
-  keywords: ["sea freight Karachi", "FCL shipping Pakistan", "LCL cargo Karachi", "break-bulk chartering", "project cargo Pakistan"],
 };
 
 export default function Seafreight() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Sea Freight Solutions</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">Sea Freight Services from Karachi to Worldwide Ports</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>

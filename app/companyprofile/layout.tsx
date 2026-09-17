@@ -1,8 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Jilani Shipping | Freight Forwarder Karachi",
-  description: "Meet Jilani Shipping, a Karachi freight forwarder for commercial import, export, customs, warehousing and logistics.",
+  title: { absolute: "About Jilani Shipping International | Company Profile" },
+  description: "Learn about Jilani Shipping International, our freight forwarding experience, services, trade routes and commitment to dependable import-export support today.",
+  keywords: [
+    "Jilani Shipping International",
+    "shipping company profile Pakistan",
+    "freight forwarder company Karachi",
+    "logistics company experience",
+    "import export company Pakistan",
+    "JSI Karachi"
+  ],
   alternates: { canonical: "/companyprofile/" },
 };
 

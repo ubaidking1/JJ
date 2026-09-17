@@ -2,17 +2,24 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  title: { absolute: "Corporate Social Responsibility | Jilani Shipping" },
+  description: "Discover Jilani Shipping’s approach to responsible logistics, ethical business conduct, community support and sustainable freight-forwarding practices today.",
+  keywords: [
+    "Jilani Shipping CSR",
+    "responsible logistics Pakistan",
+    "sustainable freight forwarding",
+    "ethical shipping company Karachi",
+    "corporate responsibility logistics",
+    "community support JSI"
+  ],
   alternates: { canonical: "/csr/" },
-  title: "CSR & Sustainability | Jilani Shipping International",
-  description: "Explore JSI's social responsibility, ethical logistics and GO GREENER environmental sustainability commitments.",
-  keywords: ["logistics CSR", "sustainability in shipping", "GO GREENER program", "ethical logistics Pakistan"],
 };
 
 export default function CSR() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Corporate Social Responsibility</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">Corporate Social Responsibility at Jilani Shipping</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>

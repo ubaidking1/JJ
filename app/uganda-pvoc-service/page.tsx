@@ -2,10 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Uganda PVoC & CoC Service from Pakistan | JSI",
-  description: "Uganda PVoC and Certificate of Conformity coordination for exporters in Pakistan. Get compliance documentation and freight support from JSI.",
+  title: { absolute: "Uganda PVOC Certificate & UNBS Compliance Help | JSI" },
+  description: "Shipping goods to Uganda? Get PVOC document review, UNBS compliance guidance, inspection coordination and reliable export freight support from Jilani Shipping.",
+  keywords: [
+    "PVOC Uganda",
+    "Uganda PVOC certificate",
+    "UNBS PVOC requirements",
+    "Uganda Certificate of Conformity",
+    "CoC certificate Uganda",
+    "PVOC service Pakistan Uganda",
+    "Uganda import compliance"
+  ],
   alternates: { canonical: "/uganda-pvoc-service/" },
-  keywords: ["Uganda PVoC service Pakistan", "Certificate of Conformity Uganda", "UNBS PVoC Pakistan", "export to Uganda from Pakistan", "Uganda CoC service"],
 };
 
 const whatsapp = "https://wa.me/923180155643?text=Hello%20JSI%2C%20I%20need%20Uganda%20PVoC%2FCoC%20support.%20Product%3A%20____%20HS%20Code%3A%20____%20FOB%20Value%3A%20____%20Shipment%20Mode%3A%20Sea%2FAir%20Exporting%20Country%3A%20____";
@@ -23,7 +31,7 @@ export default function UgandaPvocService() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <section className="rounded-3xl bg-gradient-to-br from-yellow-500 via-yellow-600 to-red-700 text-white p-8 md:p-14 shadow-xl">
       <p className="font-semibold text-yellow-50 mb-3">Pakistan exporters → Uganda</p>
-      <h1 className="text-3xl md:text-5xl font-bold leading-tight">Uganda PVoC & Certificate of Conformity Support</h1>
+      <h1 className="text-3xl md:text-5xl font-bold leading-tight">Uganda PVOC Certificate and UNBS Compliance Support</h1>
       <p className="mt-5 text-lg text-white/95 max-w-3xl">Get practical support for regulated exports to Uganda: document preparation, authorised inspection coordination, CoC follow-up and freight planning.</p>
       <div className="mt-8 flex flex-wrap gap-4"><a href={whatsapp} className="rounded-full bg-white px-7 py-3 font-bold text-red-800">Get Uganda PVoC Quote on WhatsApp</a><Link href="/pvoc-service/" className="rounded-full border border-white px-7 py-3 font-bold">View All PVoC Services</Link></div>
     </section>

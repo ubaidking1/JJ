@@ -1,26 +1,24 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide/" },
-  title: "Best Freight Forwarders in Pakistan | 2026 Guide",
-  description: "Compare freight forwarders in Pakistan for sea freight, air freight, customs clearance and international shipping.",
+  title: { absolute: "How to Choose a Freight Forwarder in Pakistan | JSI" },
+  description: "Read Jilani Shipping’s practical guide to best freight forwarder Pakistan, including freight options, documents, cost factors, transit planning and quotation.",
   keywords: [
-    "best freight forwarder in Pakistan",
-    "top 10 shipping companies in Karachi",
-    "international logistics companies Pakistan",
-    "freight forwarding services Karachi",
-    "customs clearance agents Karachi",
-    "cheapest freight forwarder Pakistan",
+    "best freight forwarder Pakistan",
+    "best freight forwarder Pakistan guide",
+    "best freight forwarder Pakistan cost",
+    "best freight forwarder Pakistan documents",
+    "best freight forwarder Pakistan transit time",
+    "international freight Pakistan"
   ],
+  alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide/" },
 };
 
 export default function BlogChoose() {
   return (
     <main className="max-w-4xl mx-auto px-6 py-16 bg-white">
       <article className="prose lg:prose-xl max-w-none">
-        <h1 className="text-4xl md:text-5xl font-black text-blue-900 mb-8 leading-tight">
-          How to Choose a Freight Forwarder in Pakistan
-        </h1>
+        <h1 className="text-4xl md:text-5xl font-black text-blue-900 mb-8 leading-tight">How to Choose a Freight Forwarder in Pakistan</h1>
         
         <p className="lead text-xl text-gray-700">
           In the rapidly evolving global trade landscape of 2026, choosing an international logistics partner is no longer just about the lowest price—it's about reliability, digital tracking, and customs expertise. Whether you are exporting textiles from Faisalabad or importing electronics through Karachi Port, your choice of <strong>freight forwarder in Pakistan</strong> can make or break your business.

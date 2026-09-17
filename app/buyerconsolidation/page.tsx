@@ -2,17 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Buyer's Consolidation Pakistan | Jilani Shipping",
-  description: "Combine multiple supplier shipments in Karachi with warehousing, LCL-to-FCL planning and cargo coordination.",
+  title: { absolute: "Buyer’s Consolidation Services in China | JSI" },
+  description: "Combine orders from multiple China suppliers through buyer consolidation, warehouse coordination, packing support and LCL or FCL shipping to Pakistan today.",
+  keywords: [
+    "buyer consolidation China",
+    "China cargo consolidation",
+    "supplier consolidation Pakistan",
+    "multiple supplier shipping China",
+    "LCL consolidation China",
+    "China warehouse consolidation"
+  ],
   alternates: { canonical: "/buyerconsolidation/" },
-  keywords: ["buyer consolidation Karachi", "supply chain optimization", "LCL to FCL consolidation", "JSI logistics"],
 };
 
 export default function BuyerConsolidation() {
   return (
     <main className="bg-white min-h-screen">
       <div className="max-w-6xl mx-auto p-6 md:py-12">
-        <h1 className="text-4xl font-bold mb-6 text-blue-900">Buyer's Consolidation</h1>
+        <h1 className="text-4xl font-bold mb-6 text-blue-900">Buyer’s Consolidation Services for China Shipments</h1>
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
