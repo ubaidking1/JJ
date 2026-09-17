@@ -13,6 +13,8 @@
   <url><loc>https://jilanishipping.net/warehouse/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://jilanishipping.net/iran-transit-service/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://jilanishipping.net/pvoc-service/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://jilanishipping.net/kenya-pvoc-service/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://jilanishipping.net/uganda-pvoc-service/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://jilanishipping.net/track-cargo/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   
   <!-- Blogs -->
