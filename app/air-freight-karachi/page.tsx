@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: { absolute: "Air Freight Services in Karachi, Pakistan | JSI" },
   description: "Send urgent commercial shipments with air freight from Karachi. JSI supports airport handling, documentation, customs coordination and global delivery today.",
   keywords: [
+    "air freight forwarder",
     "air freight Karachi",
     "air cargo Pakistan",
     "air freight company Karachi",

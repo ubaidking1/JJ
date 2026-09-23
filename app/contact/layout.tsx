@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   keywords: [
     "Jilani Shipping contact",
     "freight quote Karachi",
+    "freight quote",
+    "shipping quote",
     "shipping company phone Karachi",
     "import export quotation",
     "sea freight quote Pakistan",

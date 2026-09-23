@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Import goods from China to Karachi with FCL, LCL and air freight, supplier coordination, documentation, consolidation and Pakistan customs support with JSI.",
   keywords: [
     "import from China to Karachi",
+    "China freight forwarder",
+    "import freight forwarder",
     "China to Pakistan freight",
     "China to Karachi sea freight",
     "China Pakistan LCL shipment",
@@ -23,7 +25,7 @@ export default function ImportFromChinaToKarachi() {
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">China → Pakistan Imports</p>
         <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-3">Import Shipping from China to Karachi, Pakistan</h1>
         <p className="text-lg text-gray-700 leading-relaxed mt-6">
-          Import commercial shipments from major Chinese ports to Karachi with complete FCL and LCL support. Jilani Shipping coordinates supplier pickup, consolidation, shipping documents and customs clearance in Pakistan.
+          Import commercial shipments from major Chinese ports to Karachi with complete FCL and LCL support. As a China freight forwarder for Pakistan-bound cargo, Jilani Shipping coordinates supplier pickup, consolidation, shipping documents and customs clearance in Pakistan.
         </p>
       </section>
 

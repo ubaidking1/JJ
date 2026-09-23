@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Ship smaller consignments with LCL shipping from Karachi. JSI supports consolidation, documentation, customs coordination and worldwide sea freight with JSI.",
   keywords: [
     "LCL shipping Pakistan",
+    "LCL shipping",
+    "LCL freight",
     "LCL shipment Karachi",
     "less than container load Pakistan",
     "LCL consolidation Karachi",
@@ -21,7 +23,7 @@ export default function LCLShipping() {
       <section className="prose max-w-none">
         <h1 className="text-4xl font-black text-blue-900 mb-6 text-center">LCL Shipping Services in Karachi, Pakistan</h1>
         <p className="text-xl text-gray-700 text-center mb-12">
-          Global <strong>LCL shipment</strong> solutions from China, Gulf, and Worldwide to Pakistan. Jilani Shipping International (JSI) provides the most reliable and cost-effective Less than Container Load services.
+          Global <strong>LCL shipping</strong> and <strong>LCL freight</strong> solutions from China, Gulf, and worldwide origins to Pakistan. Jilani Shipping International (JSI) provides cost-effective Less than Container Load services for commercial consignments.
         </p>
 
         <div className="mb-16 bg-blue-900 text-white p-8 rounded-3xl shadow-2xl overflow-hidden relative">

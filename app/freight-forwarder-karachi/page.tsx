@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   keywords: [
     "freight forwarder Karachi",
     "best freight forwarder in Karachi",
+    "freight forwarder",
+    "freight company",
+    "international freight forwarder",
+    "shipping forwarder",
+    "freight forwarder services",
+    "global freight forwarder",
+    "international freight",
+    "freight shipments",
     "freight forwarding company Pakistan",
     "logistics services Karachi",
     "international freight Karachi",
@@ -27,6 +35,9 @@ export default function FreightForwarder() {
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
               Jilani Shipping International (JSI) specializes in providing comprehensive <strong>supply chain solutions for importers and exporters</strong>. 
               As an experienced <strong>international freight forwarder in Karachi</strong>, we handle <strong>customs clearing, commercial documentation, and port-to-port logistics</strong> for commercial shipments moving into and out of Pakistan.
+            </p>
+            <p className="text-lg leading-relaxed text-gray-700 mb-6">
+              Our <strong>freight forwarder services</strong> cover international freight bookings, global freight coordination and freight delivery planning for sea and air shipments.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-blue-800">Export Logistics & Shipping</h2>

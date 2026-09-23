@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   keywords: [
     "sea freight Karachi",
     "sea freight Pakistan",
+    "sea freight",
+    "sea freight forwarder",
+    "shipping rates",
+    "shipping cost",
+    "freight delivery",
     "ocean freight Karachi",
     "FCL shipping Pakistan",
     "LCL sea freight",
@@ -26,7 +31,8 @@ export default function Seafreight() {
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
               With our local competency, we stand to be a leading sea freight forwarder in Pakistan. 
               We provide comprehensive global freight forwarding services by sea, specializing in both 
-              FCL (Full Container Load) and LCL (Less than Container Load) transports.
+              FCL (Full Container Load) and LCL (Less than Container Load) transports. Request current
+              <strong> shipping rates</strong> and a route-specific shipping cost based on your port, volume and cargo-ready date.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-blue-800">Product and Services</h2>

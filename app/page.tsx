@@ -8,6 +8,10 @@ export const metadata: Metadata = {
   keywords: [
     "shipping company Karachi",
     "freight forwarder Karachi",
+    "freight company",
+    "international shipping",
+    "commercial shipping",
+    "global shipping",
     "logistics company Pakistan",
     "sea freight Karachi",
     "air freight Karachi",
@@ -29,6 +33,9 @@ export default function Home() {
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Whether you call it cargo, freight or a commercial shipment, our team coordinates supplier pickup, booking, documentation, customs clearance and final delivery with clear rate breakdowns.
+            </p>
+            <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
+              As a Karachi-based <strong>freight company</strong>, we support <strong>commercial shipping</strong>, international shipping and global freight movements by sea and air.
             </p>
           </div>
 
