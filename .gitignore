@@ -20,3 +20,5 @@ node_modules/
 # misc
 *.js.map
 *.css.map
+
+*.tsbuildinfo
