@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://jilanishipping.net",
     images: [
       {
-        url: "https://jilanishipping.net/og-image.jpg",
+        url: "https://jilanishipping.net/images/shipping-hero.webp",
         width: 1200,
         height: 630,
         alt: "Jilani Shipping International - Freight & Logistics",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://jilanishipping.net/og-image.jpg"],
+    images: ["https://jilanishipping.net/images/shipping-hero.webp"],
   },
   title: {
     default: "Jilani Shipping | Shipping Company in Karachi",
@@ -67,7 +67,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LogisticsBusiness",
+    "@type": "LocalBusiness",
     "name": "Jilani Shipping International",
     "alternateName": ["Jilani Shipping", "JSI"],
     "url": "https://jilanishipping.net",

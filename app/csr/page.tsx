@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Corporate Social Responsibility | Jilani Shipping" },
   description: "Discover Jilani Shipping’s approach to responsible logistics, ethical business conduct, community support and sustainable freight-forwarding practices today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "community support JSI"
   ],
   alternates: { canonical: "/csr/" },
-};
+});
 
 export default function CSR() {
   return (

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Customs Clearing Agent in Karachi | Jilani Shipping" },
   description: "Get customs clearance support in Karachi for sea and air shipments, import-export documents, port coordination and compliant cargo release planning with JSI.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "port clearance services"
   ],
   alternates: { canonical: "/customs-clearance-karachi/" },
-};
+});
 
 export default function CustomsClearanceKarachi() {
   return <SeoLandingPage

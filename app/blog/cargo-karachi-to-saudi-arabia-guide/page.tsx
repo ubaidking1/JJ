@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Saudi Arabia Shipping Guide | JSI" },
   description: "Read Jilani Shipping’s practical guide to Karachi to Saudi Arabia shipping, including freight options, documents, cost factors, transit planning and quotation.",
   keywords: [
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "international freight Pakistan"
   ],
   alternates: { canonical: "/blog/cargo-karachi-to-saudi-arabia-guide/" },
-};
+});
 
 export default function BlogSaudi() {
   return (

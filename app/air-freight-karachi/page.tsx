@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Air Freight Services in Karachi, Pakistan | JSI" },
   description: "Send urgent commercial shipments with air freight from Karachi. JSI supports airport handling, documentation, customs coordination and global delivery today.",
   keywords: [
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     "air export Pakistan"
   ],
   alternates: { canonical: "/air-freight-karachi/" },
-};
+});
 
 export default function AirFreightKarachi() {
   return <SeoLandingPage

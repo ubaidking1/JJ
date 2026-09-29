@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 import CBMCalculator from "@/components/CBMCalculator";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "LCL Shipping Services in Karachi, Pakistan | JSI" },
   description: "Ship smaller consignments with LCL shipping from Karachi. JSI supports consolidation, documentation, customs coordination and worldwide sea freight with JSI.",
   keywords: [
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     "LCL import export"
   ],
   alternates: { canonical: "/lcl-shipping/" },
-};
+});
 
 export default function LCLShipping() {
   return (

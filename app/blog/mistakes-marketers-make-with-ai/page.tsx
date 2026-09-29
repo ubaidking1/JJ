@@ -1,8 +1,9 @@
+import { pageMetadata } from "@/lib/seo";
 import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "AI Marketing Mistakes: Redirect or Remove from Logistics…" },
   description: "This topic does not support the website’s freight, import-export or compliance subject authority. Redirect, remove or move it to a separate marketing website.",
   keywords: [
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   ],
   robots: { index: false, follow: true },
   alternates: { canonical: "/blog/mistakes-marketers-make-with-ai/" },
-};
+});
 
 export default function AiMarketingMistakes() {
   return (

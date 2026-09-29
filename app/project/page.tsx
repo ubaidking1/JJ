@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Project Cargo and Breakbulk Services Karachi | JSI" },
   description: "Move oversized and heavy project cargo through Karachi with breakbulk planning, port handling, special equipment, documentation and inland coordination today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "special project logistics"
   ],
   alternates: { canonical: "/project/" },
-};
+});
 
 export default function Project() {
   return (

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Best Freight Forwarder in Karachi | JSI" },
   description: "Looking for a freight forwarder in Karachi? JSI provides sea and air freight, FCL, LCL, customs coordination and worldwide import-export shipping support today.",
   keywords: [
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     "shipping agent Karachi"
   ],
   alternates: { canonical: "/freight-forwarder-karachi/" },
-};
+});
 
 export default function FreightForwarder() {
   return (

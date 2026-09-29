@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import SeoLandingPage from "@/components/SeoLandingPage";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "China to Pakistan Shipping Cost Guide | JSI" },
   description: "Estimate China to Pakistan shipping costs for FCL, LCL and air freight. Learn which factors affect rates, transit planning and local charges in Karachi today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "air freight China Pakistan"
   ],
   alternates: { canonical: "/china-to-pakistan-shipping-cost/" },
-};
+});
 
 export default function ChinaPakistanShippingCost() {
   return <SeoLandingPage

@@ -1,12 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
 import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "PVOC Certification Services for Kenya & Uganda | JSI" },
   description: "Get PVOC coordination for exports to Kenya and Uganda, including document review, inspection planning, CoC process guidance and international freight support.",
   keywords: [
+    "reliable PVOC coordination rates",
+    "authentic CoC support",
+    "export PVOC documentation",
     "PVOC certification services",
     "pre-export verification of conformity",
     "PVOC certificate",
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
     "export compliance East Africa"
   ],
   alternates: { canonical: "/pvoc-service/" },
-};
+});
 
 export default function PvocService() {
   return (
@@ -49,7 +52,7 @@ export default function PvocService() {
               The primary objective of PVOC is to ensure that imported products meet the necessary quality, safety, and environmental standards, thereby protecting consumers and the environment in the importing country.
             </p>
             <p>
-              Upon successful completion of the PVOC process, a <strong>Certificate of Conformity (CoC)</strong> is issued. This document is mandatory for customs clearance at the destination port.
+              Upon successful completion of the PVOC process, a <strong>Certificate of Conformity (CoC)</strong> is issued. The authorised assessment body issues the CoC for compliant goods within the applicable programme. Product coverage and exemptions must be checked before shipment.
             </p>
           </div>
         </div>
@@ -85,9 +88,9 @@ export default function PvocService() {
         <div className="grid md:grid-cols-4 gap-6">
           {[
             { step: "01", title: "Document Review", desc: "We verify your technical data sheets and test reports." },
-            { step: "02", title: "Inspection", desc: "Physical inspection of goods to confirm quantity and quality." },
+            { step: "02", title: "Inspection", desc: "Inspection coordination with the authorised assessment body." },
             { step: "03", title: "Testing", desc: "Laboratory testing in accredited facilities if required." },
-            { step: "04", title: "CoC Issuance", desc: "Issuance of the Certificate of Conformity for your shipment." },
+            { step: "04", title: "CoC Issuance", desc: "CoC follow-up with the authorised body after successful assessment." },
           ].map((item, idx) => (
             <div key={idx} className="p-6 bg-white rounded-xl shadow-lg border border-gray-50 text-center hover:shadow-xl transition-shadow">
               <div className="text-4xl font-black text-blue-100 mb-2">{item.step}</div>
@@ -102,10 +105,10 @@ export default function PvocService() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-6">Countries Requiring PVOC</h2>
           <p className="text-gray-700 mb-8">
-            Many countries across Africa and the Middle East require PVOC for a wide range of products. Jilani Shipping provides expert guidance for:
+            Our destination-specific PVoC coordination covers regulated exports to Kenya and Uganda. Requirements depend on the product and current destination rules:
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            {["Kenya", "Tanzania", "Uganda", "Nigeria", "Kuwait", "Saudi Arabia", "Ghana", "Zambia"].map((country) => (
+            {["Kenya", "Uganda"].map((country) => (
               <span key={country} className="px-4 py-2 bg-white rounded-lg shadow-sm text-blue-800 font-semibold border border-blue-100">
                 {country}
               </span>
@@ -141,6 +144,6 @@ export default function PvocService() {
           Get a Free Consultation
         </Link>
       </section>
-    </main>
+    <section className="mt-12 rounded-2xl bg-blue-50 p-8"><h2 className="text-2xl font-bold text-blue-900">Reliable PVoC Rates and Authentic CoC Support</h2><p className="mt-4 text-gray-700">Share the product, HS code, invoice value, origin and test reports for an itemised quotation. JSI provides coordination; certificates are issued by the authorised conformity assessment body after successful assessment. Verify the issuer and certificate details rather than relying on a “100% original CoC” marketing claim.</p><h2 className="mt-8 text-2xl font-bold text-blue-900">PVoC for Turkey Imports?</h2><p className="mt-4 text-gray-700">Goods imported into Türkiye require a product-specific conformity review. Do not assume Kenya or Uganda PVoC rules apply: Türkiye uses technical regulations and risk-based import controls including TAREKS. For goods exported from Turkey to Uganda or Kenya, check the destination PVoC programme instead.</p><a href="https://www.trade.gov.tr/legislation/product-safety-and-technical-regulation" className="inline-block mt-4 font-semibold text-blue-800">Türkiye Ministry of Trade: product safety requirements</a></section></main>
   );
 }

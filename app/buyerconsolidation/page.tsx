@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Buyer’s Consolidation Services in China | JSI" },
   description: "Combine orders from multiple China suppliers through buyer consolidation, warehouse coordination, packing support and LCL or FCL shipping to Pakistan today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "China warehouse consolidation"
   ],
   alternates: { canonical: "/buyerconsolidation/" },
-};
+});
 
 export default function BuyerConsolidation() {
   return (

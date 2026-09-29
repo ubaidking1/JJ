@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Export Shipping from Pakistan | Sea & Air Freight | JSI" },
   description: "Export goods from Pakistan with FCL, LCL and air freight, export documentation, customs coordination and worldwide shipping support from Jilani Shipping today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "export documentation Pakistan"
   ],
   alternates: { canonical: "/export-from-pakistan/" },
-};
+});
 
 export default function ExportFromPakistanPage() {
   return (
@@ -26,6 +27,6 @@ export default function ExportFromPakistanPage() {
         <ul className="grid sm:grid-cols-2 gap-3 mt-6 text-gray-700"><li>✓ FCL and LCL bookings</li><li>✓ Air freight</li><li>✓ Export documentation</li><li>✓ Customs coordination</li><li>✓ Port handling</li><li>✓ Worldwide destinations</li></ul>
       </section>
       <Link href="#smart-quote" className="inline-block mt-10 px-7 py-3 bg-blue-700 text-white rounded-lg font-bold">Get Export Freight Rate</Link>
-    </main>
+    <section className="mt-10"><h2 className="text-2xl font-bold text-blue-900">Export Routes and Compliance Support</h2><div className="mt-4 flex flex-wrap gap-5 text-blue-800 underline"><Link href="/iran-transit-service/">Iran export and transit enquiries</Link><Link href="/cargo-karachi-china/">Export shipping to China</Link><Link href="/cargo-karachi-dubai/">Export shipping to Dubai</Link><Link href="/kenya-pvoc-service/">Kenya export PVoC support</Link><Link href="/uganda-pvoc-service/">Uganda export PVoC support</Link></div></section></main>
   );
 }

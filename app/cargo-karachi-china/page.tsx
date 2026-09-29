@@ -1,10 +1,16 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to China Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and China with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
   keywords: [
+    "export shipping Pakistan to China",
+    "import freight China to Pakistan",
+    "reliable freight rates China",
+
     "Karachi to China shipping",
     "China to Karachi freight",
     "Pakistan China cargo",
@@ -14,7 +20,7 @@ export const metadata: Metadata = {
     "China import export"
   ],
   alternates: { canonical: "/cargo-karachi-china/" },
-};
+});
 
 export default function CargoKarachiChinaPage() {
   return (
@@ -91,6 +97,7 @@ export default function CargoKarachiChinaPage() {
           Request a Quote
         </a>
       </section>
+    <RouteRateSection destination="China" />
     </main>
   );
 }

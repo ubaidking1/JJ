@@ -1,9 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Malaysia Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and Malaysia with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates.",
   keywords: [
+    "export shipping Pakistan to Malaysia",
+    "import freight Malaysia to Pakistan",
+    "reliable freight rates Malaysia",
+
     "Karachi to Malaysia shipping",
     "Malaysia to Karachi freight",
     "Pakistan Malaysia cargo",
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     "Malaysia import export"
   ],
   alternates: { canonical: "/cargo-karachi-malaysia/" },
-};
+});
 
 export default function CargoMalaysia() {
   return (
@@ -30,6 +36,7 @@ export default function CargoMalaysia() {
           <a href="/contact/" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get Malaysia Quote</a>
         </div>
       </section>
+    <RouteRateSection destination="Malaysia" />
     </main>
   );
 }

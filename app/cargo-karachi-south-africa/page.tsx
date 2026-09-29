@@ -1,9 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to South Africa Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and South Africa with FCL, LCL and air freight options, documentation support, port coordination and tailored freight.",
   keywords: [
+    "export shipping Pakistan to South Africa",
+    "import freight South Africa to Pakistan",
+    "reliable freight rates South Africa",
+
     "Karachi to South Africa shipping",
     "South Africa to Karachi freight",
     "Pakistan South Africa cargo",
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     "South Africa import export"
   ],
   alternates: { canonical: "/cargo-karachi-south-africa/" },
-};
+});
 
 export default function CargoSouthAfrica() {
   return (
@@ -55,6 +61,7 @@ export default function CargoSouthAfrica() {
           </a>
         </div>
       </section>
+    <RouteRateSection destination="South Africa" />
     </main>
   );
 }

@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Shipping from Pakistan to UAE: Complete Guide | JSI" },
   description: "Read Jilani Shipping’s practical guide to shipping Pakistan to UAE, including freight options, documents, cost factors, transit planning and quotation today.",
   keywords: [
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "international freight Pakistan"
   ],
   alternates: { canonical: "/blog/shipping-from-pakistan-to-uae-guide/" },
-};
+});
 
 export default function BlogUAE() {
   return (

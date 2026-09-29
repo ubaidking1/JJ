@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "How to Choose a Freight Forwarder in Pakistan | JSI" },
   description: "Read Jilani Shipping’s practical guide to best freight forwarder Pakistan, including freight options, documents, cost factors, transit planning and quotation.",
   keywords: [
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "international freight Pakistan"
   ],
   alternates: { canonical: "/blog/best-freight-forwarder-pakistan-guide/" },
-};
+});
 
 export default function BlogChoose() {
   return (

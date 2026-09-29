@@ -1,9 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Kuwait Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and Kuwait with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates.",
   keywords: [
+    "export shipping Pakistan to Kuwait",
+    "import freight Kuwait to Pakistan",
+    "reliable freight rates Kuwait",
+
     "Karachi to Kuwait shipping",
     "Kuwait to Karachi freight",
     "Pakistan Kuwait cargo",
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     "Kuwait import export"
   ],
   alternates: { canonical: "/cargo-karachi-kuwait/" },
-};
+});
 
 export default function CargoKuwait() {
   return (
@@ -43,6 +49,7 @@ export default function CargoKuwait() {
           <a href="/contact/" className="bg-blue-700 text-white px-10 py-4 rounded-full font-bold shadow-lg">Get Kuwait Quote</a>
         </div>
       </section>
+    <RouteRateSection destination="Kuwait" />
     </main>
   );
 }

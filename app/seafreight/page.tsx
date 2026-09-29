@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Sea Freight Services in Karachi, Pakistan | JSI" },
   description: "Book reliable sea freight from Karachi with FCL and LCL options, import-export documentation, customs coordination and worldwide port-to-port support today.",
   keywords: [
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
     "international sea cargo"
   ],
   alternates: { canonical: "/seafreight/" },
-};
+});
 
 export default function Seafreight() {
   return (

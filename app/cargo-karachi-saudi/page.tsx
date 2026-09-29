@@ -1,9 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Saudi Arabia Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and Saudi Arabia with FCL, LCL and air freight options, documentation support, port coordination and tailored freight.",
   keywords: [
+    "export shipping Pakistan to Saudi Arabia",
+    "import freight Saudi Arabia to Pakistan",
+    "reliable freight rates Saudi Arabia",
+
     "Karachi to Saudi Arabia shipping",
     "Saudi Arabia to Karachi freight",
     "Pakistan Saudi Arabia cargo",
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     "Saudi Arabia import export"
   ],
   alternates: { canonical: "/cargo-karachi-saudi/" },
-};
+});
 
 export default function CargoSaudi() {
   return (
@@ -91,6 +97,7 @@ export default function CargoSaudi() {
           </div>
         </div>
       </section>
+    <RouteRateSection destination="Saudi Arabia" />
     </main>
   );
 }

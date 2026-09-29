@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Air vs Sea Freight in Pakistan: Cost and Transit Guide |…" },
   description: "Read Jilani Shipping’s practical guide to air vs sea freight Pakistan, including freight options, documents, cost factors, transit planning and quotation today.",
   keywords: [
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "international freight Pakistan"
   ],
   alternates: { canonical: "/blog/air-vs-sea-freight-pakistan/" },
-};
+});
 
 export default function BlogAirSea() {
   return (

@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Import Shipping to Pakistan | Freight Support | JSI" },
   description: "Import goods to Pakistan with sea and air freight, FCL and LCL shipping, documentation and customs coordination through Jilani Shipping in Karachi with JSI.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "import customs clearance Pakistan"
   ],
   alternates: { canonical: "/import-to-pakistan/" },
-};
+});
 
 const origins = ["China", "UAE", "United Kingdom", "United States", "Europe", "Saudi Arabia", "Malaysia", "Singapore"];
 

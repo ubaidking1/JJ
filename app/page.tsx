@@ -1,24 +1,19 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Shipping Company in Karachi | Jilani Shipping" },
   description: "Jilani Shipping is a freight forwarding and logistics company in Karachi offering sea freight, air freight, customs clearance and import-export support today.",
   keywords: [
     "shipping company Karachi",
-    "freight forwarder Karachi",
-    "freight company",
-    "international shipping",
     "commercial shipping",
-    "global shipping",
     "logistics company Pakistan",
-    "sea freight Karachi",
-    "air freight Karachi",
     "import export services Pakistan"
   ],
   alternates: { canonical: "/" },
-};
+});
 
 export default function Home() {
   return (

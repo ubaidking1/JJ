@@ -1,10 +1,13 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Uganda PVOC Certificate & UNBS Compliance Help | JSI" },
   description: "Shipping goods to Uganda? Get PVOC document review, UNBS compliance guidance, inspection coordination and reliable export freight support from Jilani Shipping.",
   keywords: [
+    "Uganda export PVOC support",
+    "reliable PVOC rate Uganda",
     "PVOC Uganda",
     "Uganda PVOC certificate",
     "UNBS PVOC requirements",
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
     "Uganda import compliance"
   ],
   alternates: { canonical: "/uganda-pvoc-service/" },
-};
+});
 
 const whatsapp = "https://wa.me/923180155643?text=Hello%20JSI%2C%20I%20need%20Uganda%20PVoC%2FCoC%20support.%20Product%3A%20____%20HS%20Code%3A%20____%20FOB%20Value%3A%20____%20Shipment%20Mode%3A%20Sea%2FAir%20Exporting%20Country%3A%20____";
 
@@ -47,5 +50,5 @@ export default function UgandaPvocService() {
 
     <section className="mt-16"><h2 className="text-3xl font-bold text-blue-950">Frequently Asked Questions</h2><div className="mt-6 space-y-4">{faq.map(([q,a])=><article key={q} className="rounded-xl border p-6"><h3 className="font-bold text-lg">{q}</h3><p className="mt-2 text-gray-700">{a}</p></article>)}</div></section>
     <p className="mt-10 text-sm text-gray-500">Official reference: <a className="underline" href="https://unbs.go.ug/" rel="noopener noreferrer" target="_blank">Uganda National Bureau of Standards</a>. Always confirm current requirements before shipping.</p>
-  </main>;
+  <section className="mt-10 rounded-2xl bg-blue-50 p-7"><h2 className="text-2xl font-bold text-blue-900">Reliable PVoC Rate for Exports to Uganda</h2><p className="mt-3 text-gray-700">Request an itemised coordination quote using your product description, HS code, shipment value, country of export and available test reports. Inspection, testing and applicable official fees depend on the shipment. An authentic Certificate of Conformity is issued by the authorised assessment body after successful assessment; JSI coordinates the process and does not guarantee approval.</p><Link href="/pvoc-service/" className="inline-block mt-4 font-semibold text-blue-800">PVoC documentation and quotation support</Link></section></main>;
 }

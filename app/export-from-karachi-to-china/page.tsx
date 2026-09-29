@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Export from Karachi to China | Freight Services | JSI" },
   description: "Export commercial goods from Karachi to China with FCL, LCL and air freight, export documentation, customs coordination and port-to-port shipping support today.",
   keywords: [
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     "LCL export China"
   ],
   alternates: { canonical: "/export-from-karachi-to-china/" },
-};
+});
 
 export default function ExportFromKarachiToChina() {
   return (

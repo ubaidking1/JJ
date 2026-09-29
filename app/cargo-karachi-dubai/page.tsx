@@ -1,9 +1,15 @@
+import { pageMetadata } from "@/lib/seo";
+import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Dubai Shipping | FCL & LCL | JSI" },
   description: "Ship commercial cargo between Karachi and Dubai with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
   keywords: [
+    "export shipping Pakistan to Dubai UAE",
+    "import freight Dubai UAE to Pakistan",
+    "reliable freight rates Dubai UAE",
+
     "Karachi to Dubai shipping",
     "Dubai to Karachi freight",
     "Pakistan Dubai cargo",
@@ -13,7 +19,7 @@ export const metadata: Metadata = {
     "Dubai import export"
   ],
   alternates: { canonical: "/cargo-karachi-dubai/" },
-};
+});
 
 export default function CargoKarachiDubaiPage() {
   return (
@@ -22,22 +28,22 @@ export default function CargoKarachiDubaiPage() {
         <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–Dubai Import and Export Shipping</h1>
         
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
-          <p className="text-yellow-800 font-bold">🚀 2026 Update: Weekly sailings confirmed every Friday from Karachi Port to Jebel Ali, Dubai.</p>
+          <p className="text-yellow-800 font-bold">Request the current Karachi–Jebel Ali sailing schedule and booking availability.</p>
         </div>
 
         <p className="text-lg leading-relaxed text-gray-700">
-          Searching for the <strong>cheapest cargo Karachi to Dubai</strong>? Jilani Shipping International (JSI) is the leader in Pakistan-UAE logistics. We don't just move boxes; we move your business with 100% safety and zero hidden charges.
+          Request <strong>Karachi to Dubai cargo rates</strong> with Jilani Shipping International. Compare an itemised quotation for your cargo, routing and delivery scope before booking.
         </p>
 
         <div className="grid md:grid-cols-3 gap-6 my-12">
           <div className="p-6 bg-blue-900 text-white rounded-2xl shadow-xl">
             <h3 className="text-xl font-bold mb-2">Sea Freight</h3>
             <p className="text-sm opacity-90 font-bold italic underline">LCL Shipment Specialist</p>
-            <p className="text-sm opacity-90 mt-2">Best for bulk textiles, furniture, and heavy machinery. Weekly departures.</p>
+            <p className="text-sm opacity-90 mt-2">Best for bulk textiles, furniture, and heavy machinery. Sailing availability confirmed on enquiry.</p>
           </div>
           <div className="p-6 bg-blue-700 text-white rounded-2xl shadow-xl">
             <h3 className="text-xl font-bold mb-2">Air Cargo</h3>
-            <p className="text-sm opacity-90 font-bold italic underline">1-2 Day Delivery</p>
+            <p className="text-sm opacity-90 font-bold italic underline">Time-sensitive shipment enquiries</p>
             <p className="text-sm opacity-90 mt-2">Ideal for urgent documents, electronics, and fashion samples.</p>
           </div>
           <div className="p-6 bg-blue-500 text-white rounded-2xl shadow-xl">
@@ -112,6 +118,7 @@ export default function CargoKarachiDubaiPage() {
           </div>
         </div>
       </section>
+    <RouteRateSection destination="Dubai UAE" />
     </main>
   );
 }

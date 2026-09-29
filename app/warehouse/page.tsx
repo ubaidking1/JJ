@@ -1,7 +1,8 @@
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link"; 
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Warehousing and Cargo Consolidation in China | JSI" },
   description: "Use China warehousing for supplier cargo collection, storage, inspection coordination, repacking and consolidation before shipping goods to Pakistan today.",
   keywords: [
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
     "cargo inspection China"
   ],
   alternates: { canonical: "/warehouse/" },
-};
+});
 
 export default function Warehouse() {
   return (

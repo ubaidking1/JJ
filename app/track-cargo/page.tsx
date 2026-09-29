@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Track Your International Cargo Shipment | JSI" },
   description: "Track international cargo with carrier tools and shipment references. Contact Jilani Shipping for help locating sea freight, air freight or container status.",
   keywords: [
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
     "track international cargo"
   ],
   alternates: { canonical: "/track-cargo/" },
-};
+});
 
 const carriers = [
   { name: "Maersk Line", url: "https://www.maersk.com/tracking/" },

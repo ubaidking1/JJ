@@ -1,6 +1,7 @@
+import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: { absolute: "Contact Jilani Shipping | Freight Quote Karachi" },
   description: "Contact Jilani Shipping in Karachi for import-export rates, sea and air freight, customs clearance, PVOC coordination and worldwide logistics assistance today.",
   keywords: [
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     "air freight quote Karachi"
   ],
   alternates: { canonical: "/contact/" },
-};
+});
 
 export default function ContactLayout({ children }: { children: React.ReactNode }) {
   return children;
