@@ -2,6 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
+import { sendLead, trackEvent } from "@/lib/track";
 
 const WHATSAPP_NUMBER = "923180155643";
 const QUOTE_EXCLUDED_PATHS = new Set(["/", "/contact", "/companyprofile", "/csr", "/track-cargo"]);
@@ -94,7 +95,13 @@ export default function SmartQuoteWizard() {
     });
 
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+    // Open WhatsApp synchronously (avoids popup blockers) ...
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    // ... and also save the lead by email so it is never lost, and track it.
+    const fields: Record<string, string> = { page_route: route, service };
+    data.forEach((value, key) => { if (String(value).trim()) fields[key] = String(value); });
+    sendLead(fields, `Quote Wizard: ${route}`).catch(() => {});
+    trackEvent("generate_lead", { lead_source: "Quote Wizard", route, service });
   };
 
   if (QUOTE_EXCLUDED_PATHS.has(pathname) || pathname.startsWith("/blog/")) return null;
@@ -105,7 +112,7 @@ export default function SmartQuoteWizard() {
         <div className="bg-blue-900 px-6 py-7 text-white md:px-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-blue-200">Website Rate Request</p>
           <h2 id="smart-quote-heading" className="mt-2 text-2xl font-bold md:text-3xl">{heading}</h2>
-          <p className="mt-2 text-sm text-blue-100">Complete the relevant fields and send the structured inquiry directly on WhatsApp.</p>
+          <p className="mt-2 text-sm text-blue-100">Only name and phone are required. Add shipment details if you have them for a faster, exact quote.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="grid gap-5 p-6 md:grid-cols-2 md:p-10">
@@ -144,17 +151,17 @@ export default function SmartQuoteWizard() {
           )}
 
           {isCargo && <>
-            <Input name="Cargo Type" placeholder="Boxes / Household Goods / Excess Baggage" required />
-            <Input name="Pickup Address" placeholder="Pickup city or full address" required />
-            <Input name="Delivery Address" placeholder="Delivery city or full address" required />
+            <Input name="Cargo Type" placeholder="Boxes / Household Goods / Excess Baggage" />
+            <Input name="Pickup Address" placeholder="Pickup city or full address" />
+            <Input name="Delivery Address" placeholder="Delivery city or full address" />
             <Input name="Number of Boxes" placeholder="e.g. 5 boxes" />
           </>}
 
           {(isFreight || isCargo || service === "Customs Clearance" || isTransit || isProject) && <>
-            <Input name="POL" placeholder="Port of Loading (POL)" required={isFreight} />
-            <Input name="POD" placeholder="Port of Discharge (POD)" required={isFreight} />
-            <Input name="Commodity" placeholder="Commodity / Product" required />
-            <Input name="Weight" placeholder="Total weight in KG" required />
+            <Input name="POL" placeholder="Port of Loading (POL)" />
+            <Input name="POD" placeholder="Port of Discharge (POD)" />
+            <Input name="Commodity" placeholder="Commodity / Product" />
+            <Input name="Weight" placeholder="Total weight in KG" />
             <Input name="CBM or Dimensions" placeholder="CBM or package dimensions" />
             <Input name="Packages" placeholder="Number and type of packages" />
           </>}
@@ -171,29 +178,29 @@ export default function SmartQuoteWizard() {
           </>}
 
           {isConsolidation && <>
-            <Input name="Origin City" placeholder="Origin city/country" required />
-            <Input name="Number of Suppliers" placeholder="Number of suppliers" required />
+            <Input name="Origin City" placeholder="Origin city/country" />
+            <Input name="Number of Suppliers" placeholder="Number of suppliers" />
             <Input name="Estimated CBM" placeholder="Estimated total CBM" />
-            <Input name="Destination" placeholder="Final destination" required />
+            <Input name="Destination" placeholder="Final destination" />
           </>}
 
           {isWarehouse && <>
-            <Input name="Storage Location" placeholder="Required city/location" required />
-            <Input name="Cargo Type" placeholder="Cargo / commodity type" required />
-            <Input name="Pallets or CBM" placeholder="Pallet quantity or CBM" required />
-            <Input name="Storage Duration" placeholder="Expected storage duration" required />
+            <Input name="Storage Location" placeholder="Required city/location" />
+            <Input name="Cargo Type" placeholder="Cargo / commodity type" />
+            <Input name="Pallets or CBM" placeholder="Pallet quantity or CBM" />
+            <Input name="Storage Duration" placeholder="Expected storage duration" />
           </>}
 
           {isPvoc && <>
-            <Input name="Exporting Country" placeholder="Exporting country" required />
-            <Input name="Destination Country" placeholder="Destination country" required />
-            <Input name="Product" placeholder="Product description" required />
+            <Input name="Exporting Country" placeholder="Exporting country" />
+            <Input name="Destination Country" placeholder="Destination country" />
+            <Input name="Product" placeholder="Product description" />
             <Input name="HS Code" placeholder="HS Code (if available)" />
           </>}
 
           {isTransit && <>
-            <Input name="Pakistan Arrival Port" placeholder="Karachi Port / Port Qasim / Gwadar" required />
-            <Input name="Border Destination" placeholder="Iran border / final destination" required />
+            <Input name="Pakistan Arrival Port" placeholder="Karachi Port / Port Qasim / Gwadar" />
+            <Input name="Border Destination" placeholder="Iran border / final destination" />
             <Input name="Container Quantity" placeholder="Containers / trailers required" />
           </>}
 
@@ -211,7 +218,7 @@ export default function SmartQuoteWizard() {
           <button type="submit" className="md:col-span-2 rounded-xl bg-green-600 px-6 py-4 font-bold text-white shadow-lg transition hover:bg-green-700">
             Send Website Inquiry on WhatsApp
           </button>
-          <p className="text-xs text-gray-500 md:col-span-2">WhatsApp will open with your completed details. Review the message and press Send.</p>
+          <p className="text-xs text-gray-500 md:col-span-2">WhatsApp will open with your details and we also receive them by email. Press Send in WhatsApp to confirm.</p>
         </form>
       </div>
     </section>

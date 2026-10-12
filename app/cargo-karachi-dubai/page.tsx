@@ -3,8 +3,8 @@ import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Karachi to Dubai Shipping | FCL & LCL | JSI" },
-  description: "Ship commercial cargo between Karachi and Dubai with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
+  title: { absolute: "Karachi to Dubai Cargo Rates | Sea & Air Freight | JSI" },
+  description: "Karachi to Dubai cargo by sea (about 4-6 days) or air (24-48 hrs). LCL, FCL and door-to-door with customs support. Get rates per kg or CBM on WhatsApp.",
   keywords: [
     "export shipping Pakistan to Dubai UAE",
     "import freight Dubai UAE to Pakistan",
@@ -16,14 +16,30 @@ export const metadata: Metadata = pageMetadata({
     "sea freight Dubai Pakistan",
     "LCL shipping Dubai",
     "FCL shipping Dubai",
-    "Dubai import export"
+    "Dubai import export",
+    "Karachi to Dubai cargo rates",
+    "Karachi to Dubai cargo rates per kg",
+    "ship from Karachi to Dubai",
+    "cargo Pakistan to Dubai",
+    "Dubai to Karachi cargo charges",
+    "Karachi to Dubai by ship time"
   ],
   alternates: { canonical: "/cargo-karachi-dubai/" },
 });
 
+const faq = [
+  { q: "How much does cargo from Karachi to Dubai cost?", a: "Cost depends on weight (kg), volume (CBM), commodity and service. Air cargo is priced per chargeable kg, sea LCL per CBM, and FCL per container. Send your cargo details for an itemised quotation." },
+  { q: "How long does it take to ship from Karachi to Dubai by sea?", a: "Sea freight to Jebel Ali typically takes about 4 to 6 days port to port on direct services, plus customs clearance and delivery. Door-to-door usually takes 8 to 12 days." },
+  { q: "How long does air cargo from Karachi to Dubai take?", a: "Air freight usually takes 24 to 48 hours from flight departure, plus clearance on arrival." },
+  { q: "Can you ship from Dubai or Sharjah to Karachi?", a: "Yes. We handle imports from Dubai, Sharjah, Abu Dhabi and Ajman to Karachi, including door-to-door cargo and customs clearance in Pakistan." },
+  { q: "What documents are needed to ship cargo to Dubai?", a: "Typically a commercial invoice, packing list and bill of lading or airway bill. Some goods need extra certificates. We confirm requirements for your commodity before booking." },
+];
+
 export default function CargoKarachiDubaiPage() {
+  const faqLd = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) };
   return (
     <main className="max-w-6xl mx-auto px-6 py-16 bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <section className="prose max-w-none">
         <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–Dubai Import and Export Shipping</h1>
         
@@ -106,13 +122,23 @@ export default function CargoKarachiDubaiPage() {
           </table>
         </div>
 
+        <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Dubai to Karachi Cargo Charges and Imports</h2>
+        <p className="text-gray-700">Importing from Dubai, Sharjah or Abu Dhabi to Pakistan? We collect from your supplier or warehouse in the UAE, consolidate LCL cargo, and handle customs clearance and delivery in Karachi. Cargo charges depend on weight, CBM and commodity, so send us your packing list for an exact quote.</p>
+
+        <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Karachi to Dubai Cargo: Frequently Asked Questions</h2>
+        <div className="space-y-3">
+          {faq.map((f) => (
+            <details key={f.q} className="rounded-xl border p-5"><summary className="cursor-pointer font-bold text-blue-900">{f.q}</summary><p className="mt-3 leading-7 text-gray-700">{f.a}</p></details>
+          ))}
+        </div>
+
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-black text-blue-900 mb-6">Ready to Ship to Dubai?</h3>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/923180155643" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
+            <a href="https://wa.me/923180155643?text=Hello%20Jilani%20Shipping%2C%20I%20need%20Karachi%20to%20Dubai%20cargo%20rates" target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 shadow-lg flex items-center justify-center gap-2">
               WhatsApp Now for Rates
             </a>
-            <a href="/contact/" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">
+            <a href="#smart-quote" className="px-10 py-4 bg-blue-700 text-white font-bold rounded-full hover:bg-blue-800 shadow-lg">
               Get an Online Quote
             </a>
           </div>

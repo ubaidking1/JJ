@@ -1,10 +1,10 @@
 import { pageMetadata } from "@/lib/seo";
-import RouteRateSection from "@/components/RouteRateSection";
+import CountryRoutePage from "@/components/CountryRoutePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Karachi to Qatar Shipping | FCL & LCL | JSI" },
-  description: "Ship commercial cargo between Karachi and Qatar with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates now.",
+  title: { absolute: "Karachi to Qatar Cargo | Sea & Air Freight to Doha | JSI" },
+  description: "Ship cargo from Karachi to Qatar by sea (about 7-14 days) or air (1-3 days). FCL, LCL, door-to-door to Doha with customs support. Get a quote.",
   keywords: [
     "export shipping Pakistan to Qatar",
     "import freight Qatar to Pakistan",
@@ -21,22 +21,6 @@ export const metadata: Metadata = pageMetadata({
   alternates: { canonical: "/cargo-karachi-qatar/" },
 });
 
-export default function CargoQatar() {
-  return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
-      <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Karachi to Qatar Shipping Services</h1>
-        <p className="text-lg text-gray-700 mt-4">Safe and efficient shipping services from Karachi Port to Hamad Port, Doha.</p>
-        <ul className="mt-6 space-y-2">
-          <li>✅ Direct sea freight to Doha</li>
-          <li>✅ Express air cargo services</li>
-          <li>✅ Specialized handling for commercial goods</li>
-        </ul>
-        <div className="mt-8">
-          <a href="/contact/" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get Qatar Quote</a>
-        </div>
-      </section>
-    <RouteRateSection destination="Qatar" />
-    </main>
-  );
+export default function CargoKarachiQatar() {
+  return <CountryRoutePage slug="qatar" />;
 }

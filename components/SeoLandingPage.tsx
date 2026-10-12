@@ -8,17 +8,27 @@ type Props = {
   process: string[];
   faq: { question: string; answer: string }[];
   related: { href: string; label: string }[];
+  extra?: React.ReactNode;
 };
 
-export default function SeoLandingPage({ eyebrow, title, intro, services, process, faq, related }: Props) {
+export default function SeoLandingPage({ eyebrow, title, intro, services, process, faq, related, extra }: Props) {
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+  };
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />
       <section className="bg-gradient-to-br from-blue-950 to-blue-800 text-white">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-24">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-blue-200">{eyebrow}</p>
           <h1 className="mt-3 max-w-4xl text-4xl font-bold md:text-5xl">{title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-blue-100">{intro}</p>
-          <a href="#smart-quote" className="mt-8 inline-block rounded-xl bg-green-600 px-6 py-4 font-bold text-white hover:bg-green-700">Get Commercial Shipping Quote</a>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href="#smart-quote" className="inline-block rounded-xl bg-green-600 px-6 py-4 font-bold text-white hover:bg-green-700">Get Commercial Shipping Quote</a>
+            <a href="https://wa.me/923180155643" target="_blank" rel="noopener noreferrer" className="inline-block rounded-xl bg-white px-6 py-4 font-bold text-blue-900 hover:bg-blue-50">WhatsApp +92 318 0155643</a>
+          </div>
         </div>
       </section>
 
@@ -34,6 +44,8 @@ export default function SeoLandingPage({ eyebrow, title, intro, services, proces
             ))}
           </div>
         </section>
+
+        {extra}
 
         <section className="mt-16 rounded-3xl border p-7 md:p-10">
           <h2 className="text-3xl font-bold text-blue-950">How the Shipment Process Works</h2>

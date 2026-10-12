@@ -1,6 +1,7 @@
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
+import LeadForm from "@/components/LeadForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
@@ -37,26 +38,7 @@ export default function Home() {
           <div className="mt-8">
             <div className="bg-white p-6 rounded-2xl shadow-xl border border-blue-50 max-w-lg">
               <h2 className="text-xl font-bold text-blue-900 mb-4">Import Shipment or Export Inquiry</h2>
-              <form action="https://formspree.io/f/xpwadvro" method="POST" className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <input type="hidden" name="lead_source" value="Homepage Quick Quote" />
-                <input name="name" placeholder="Full Name" aria-label="Full Name" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <input name="email" type="email" placeholder="Email Address" aria-label="Email Address" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <input name="phone" placeholder="Phone Number" aria-label="Phone Number" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" required />
-                <select name="service" aria-label="Select Service" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500">
-                  <option>Import from China to Karachi</option>
-                  <option>Export from Karachi to China</option>
-                  <option>Karachi to Dubai</option>
-                  <option>Karachi to Saudi Arabia</option>
-                  <option>Karachi to Kuwait</option>
-                  <option>Other / International</option>
-                </select>
-                <input name="pol" placeholder="POL (Port of Loading)" aria-label="Port of Loading" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
-                <input name="pod" placeholder="POD (Port of Discharge)" aria-label="Port of Discharge" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500" />
-                <textarea name="comments" placeholder="Your Message / Comments" aria-label="Your Message or Comments" className="p-3 bg-gray-50 border border-gray-200 rounded-lg text-sm outline-blue-500 sm:col-span-2" rows={3}></textarea>
-                <button type="submit" className="sm:col-span-2 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800 transition-all shadow-md">
-                  Get Rates Now
-                </button>
-              </form>
+              <LeadForm source="Homepage Quick Quote" compact />
               <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-500">
                 <span className="flex items-center gap-1">🛡️ Reliable Handling</span>
                 <span className="flex items-center gap-1">⚡ Fast Reply</span>
@@ -102,6 +84,17 @@ export default function Home() {
             <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">KCCI Member</span>
             <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">Karachi Based</span>
           </div>
+        </div>
+      </section>
+
+      {/* Popular searches: direct internal links to the pages that rank and convert */}
+      <section className="mt-12" aria-label="Popular shipping services">
+        <h2 className="text-2xl font-bold text-blue-900 text-center">Popular Shipping Services from Karachi</h2>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Link href="/cargo-karachi-dubai/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Karachi to Dubai Cargo</span><span className="mt-1 block text-sm text-gray-600">Sea 4-6 days, air 24-48 hrs, door-to-door</span></Link>
+          <Link href="/china-to-pakistan-shipping-cost/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">China to Pakistan Shipping Cost</span><span className="mt-1 block text-sm text-gray-600">LCL, 20ft/40ft FCL, air, double clearance</span></Link>
+          <Link href="/customs-clearance-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Customs Clearing Agent Karachi</span><span className="mt-1 block text-sm text-gray-600">Karachi Port and Port Qasim</span></Link>
+          <Link href="/freight-forwarder-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Freight Forwarder in Karachi</span><span className="mt-1 block text-sm text-gray-600">Import, export, sea and air freight</span></Link>
         </div>
       </section>
 

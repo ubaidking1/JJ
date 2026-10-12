@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Best Freight Forwarder in Karachi | JSI" },
+  title: { absolute: "Freight Forwarder in Karachi | Sea, Air & Customs | JSI" },
   description: "Looking for a freight forwarder in Karachi? JSI provides sea and air freight, FCL, LCL, customs coordination and worldwide import-export shipping support today.",
   keywords: [
     "freight forwarder Karachi",
@@ -116,8 +116,21 @@ export default function FreightForwarder() {
           <div className="space-y-4">
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Does Jilani Shipping handle imports into Pakistan?</summary><p className="mt-3 text-gray-600">Yes. We arrange commercial import shipments to Karachi from China, UAE, UK, USA, Europe and other international origins through FCL, LCL and air freight.</p></details>
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Do you also export shipments from Karachi?</summary><p className="mt-3 text-gray-600">Yes. We provide export freight booking, documentation, customs support and international shipping from Karachi to worldwide destinations.</p></details>
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Are you a freight forwarder and customs clearing agent in Karachi?</summary><p className="mt-3 text-gray-600">Yes. We combine freight forwarding with customs clearance coordination at Karachi Port and Port Qasim, so booking, clearance and delivery stay under one team.</p></details>
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">How do I choose a freight forwarder in Karachi?</summary><p className="mt-3 text-gray-600">Ask for an itemised quotation, confirm what is included (origin, freight, destination, customs, delivery), check trade-body membership such as PIFFA, and compare communication speed. We list every charge before you book.</p></details>
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">What information is needed for a freight quote?</summary><p className="mt-3 text-gray-600">Commodity, weight or CBM, package count, POL, POD, Incoterm, container type and cargo-ready date.</p></details>
           </div>
+        </section>
+        <section className="mt-16 rounded-3xl bg-blue-950 p-8 text-white">
+          <h2 className="text-2xl font-bold">Popular freight services from Karachi</h2>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href="/cargo-karachi-dubai/" className="rounded-full bg-white/10 px-4 py-2 font-semibold hover:bg-white/20">Karachi to Dubai cargo</Link>
+            <Link href="/china-to-pakistan-shipping-cost/" className="rounded-full bg-white/10 px-4 py-2 font-semibold hover:bg-white/20">China to Pakistan shipping cost</Link>
+            <Link href="/customs-clearance-karachi/" className="rounded-full bg-white/10 px-4 py-2 font-semibold hover:bg-white/20">Customs clearing agent Karachi</Link>
+            <Link href="/lcl-shipping/" className="rounded-full bg-white/10 px-4 py-2 font-semibold hover:bg-white/20">LCL shipping</Link>
+            <Link href="/air-freight-karachi/" className="rounded-full bg-white/10 px-4 py-2 font-semibold hover:bg-white/20">Air freight Karachi</Link>
+          </div>
+          <a href="https://wa.me/923180155643?text=Hello%20Jilani%20Shipping%2C%20I%20need%20a%20freight%20forwarder%20quote" target="_blank" rel="noopener noreferrer" className="mt-6 inline-block rounded-xl bg-green-600 px-6 py-3 font-bold text-white hover:bg-green-700">Get a Freight Quote on WhatsApp</a>
         </section>
       </div>
     </main>

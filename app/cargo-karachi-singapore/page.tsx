@@ -1,10 +1,10 @@
 import { pageMetadata } from "@/lib/seo";
-import RouteRateSection from "@/components/RouteRateSection";
+import CountryRoutePage from "@/components/CountryRoutePage";
 import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Karachi to Singapore Shipping | FCL & LCL | JSI" },
-  description: "Ship commercial cargo between Karachi and Singapore with FCL, LCL and air freight options, documentation support, port coordination and tailored freight rates.",
+  title: { absolute: "Karachi to Singapore Cargo | Sea & Air Freight | JSI" },
+  description: "Karachi to Singapore cargo by sea (about 10-16 days) or air (1-3 days). FCL, LCL and transshipment to Southeast Asia. Get a quote.",
   keywords: [
     "export shipping Pakistan to Singapore",
     "import freight Singapore to Pakistan",
@@ -21,22 +21,6 @@ export const metadata: Metadata = pageMetadata({
   alternates: { canonical: "/cargo-karachi-singapore/" },
 });
 
-export default function CargoSingapore() {
-  return (
-    <main className="max-w-6xl mx-auto px-6 py-12">
-      <section className="prose max-w-none">
-        <h1 className="text-4xl font-bold text-blue-900">Karachi to Singapore Shipping Services</h1>
-        <p className="text-lg text-gray-700 mt-4">JSI handles commercial shipments in both directions: Singapore to Karachi imports and Karachi to Singapore exports.</p>
-        <ul className="mt-6 space-y-2">
-          <li>✅ Frequent sailings and fast transit times</li>
-          <li>✅ Specialized transshipment handling for global routes</li>
-          <li>✅ Efficient LCL and FCL consolidation</li>
-        </ul>
-        <div className="mt-8">
-          <a href="/contact/" className="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold">Get Singapore Quote</a>
-        </div>
-      </section>
-    <RouteRateSection destination="Singapore" />
-    </main>
-  );
+export default function CargoKarachiSingapore() {
+  return <CountryRoutePage slug="singapore" />;
 }

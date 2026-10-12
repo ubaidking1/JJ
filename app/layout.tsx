@@ -8,9 +8,13 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jilanishipping.net"),
+  verification: {
+    google: [
+      "aj94_WtlcjHxi1gd7f2KwaEQaLHX8lkPHJr7Xf-NJUg",
+      "pd_oDtTHCN_0supzJeLXGK_Tfn8xpahdkdkdx2VCNpUUs",
+    ],
+  },
   other: {
-    "google-site-verification": "aj94_WtlcjHxi1gd7f2KwaEQaLHX8lkPHJr7Xf-NJUg",
-    "google-site-verification-2": "pd_oDtTHCN_0supzJeLXGK_Tfn8xpahdkdkdx2VCNpUUs",
     "geo.region": "PK-SD",
     "geo.placename": "Karachi",
     "geo.position": "24.8607;67.0011",
@@ -69,7 +73,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Jilani Shipping International",
-    "alternateName": ["Jilani Shipping", "JSI"],
+    "alternateName": ["Jilani Shipping", "JSI", "Jilani Shipping International", "Jalani Shipping"],
+    "telephone": "+92-318-0155643",
+    "email": "info@jilanishipping.net",
+    "image": "https://jilanishipping.net/images/shipping-hero.webp",
+    "geo": { "@type": "GeoCoordinates", "latitude": 24.8607, "longitude": 67.0011 },
     "url": "https://jilanishipping.net",
     "logo": "https://jilanishipping.net/logo.png",
     "contactPoint": {
@@ -114,6 +122,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     }
   };
 
+  const websiteLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Jilani Shipping International",
+    "url": "https://jilanishipping.net/"
+  };
+
   return (
     <html lang="en">
       <head>
@@ -128,6 +143,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
         />
       </head>
       <body>

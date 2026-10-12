@@ -1,0 +1,5 @@
+# Netlify: force ONE canonical host (https + non-www) so Google stops splitting
+# ranking signals across http://, www. and https:// versions of every page.
+http://jilanishipping.net/*      https://jilanishipping.net/:splat      301!
+http://www.jilanishipping.net/*  https://jilanishipping.net/:splat      301!
+https://www.jilanishipping.net/* https://jilanishipping.net/:splat      301!
