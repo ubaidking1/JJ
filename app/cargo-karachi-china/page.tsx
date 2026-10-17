@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import HubLink from "@/components/HubLinks";
 import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -28,7 +29,7 @@ export default function CargoKarachiChinaPage() {
       <section className="prose max-w-none">
         <h1 className="text-4xl font-black text-blue-900 mb-6">Karachi to China Shipping: Import and Export Cargo</h1>
         <p className="text-lg leading-relaxed text-gray-700">
-          Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
+          Jilani Shipping International (JSI) is the premier logistics partner for China-Pakistan trade. Whether you are an exporter sending goods to Guangzhou or an importer sourcing from Yiwu or Shanghai, we provide the most reliable LCL consolidation and customs brokerage services.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-10 not-prose">
@@ -48,7 +49,7 @@ export default function CargoKarachiChinaPage() {
 
         <div className="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
           <h2 className="text-xl font-bold text-blue-900 mb-2">China to Pakistan Import Specialists</h2>
-          <p className="text-sm text-gray-700">We handle the entire import process, from <strong>supplier coordination in China</strong> to <strong>customs clearing at Karachi Port</strong>. Our dedicated LCL service for China imports is the most cost-effective in the market.</p>
+          <p className="text-sm text-gray-700">We handle the entire import process, from supplier coordination in China to customs clearing at Karachi Port. Our dedicated LCL service for China imports is the most cost-effective in the market.</p>
         </div>
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Why JSI for China Trade?</h2>
@@ -97,6 +98,7 @@ export default function CargoKarachiChinaPage() {
           Request a Quote
         </a>
       </section>
+    <HubLink country="china" />
     <RouteRateSection destination="China" />
     </main>
   );

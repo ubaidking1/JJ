@@ -1,3 +1,4 @@
+import FaqSchema from "@/components/FaqSchema";
 import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -32,6 +33,7 @@ export default function KenyaPvocService() {
 
   return <main className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+    <FaqSchema items={faq.map(([q, a]) => ({ q, a }))} />
     <section className="rounded-3xl bg-gradient-to-br from-green-900 via-green-800 to-red-800 text-white p-8 md:p-14 shadow-xl">
       <p className="font-semibold text-green-100 mb-3">Pakistan exporters → Kenya</p>
       <h1 className="text-3xl md:text-5xl font-bold leading-tight">Kenya PVOC Certificate and KEBS Compliance Support</h1>

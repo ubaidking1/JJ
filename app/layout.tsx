@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/Whatsapp";
 import SmartQuoteWizard from "@/components/SmartQuoteWizard";
 import Script from "next/script";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jilanishipping.net"),
@@ -42,24 +43,6 @@ export const metadata: Metadata = {
   },
   description:
     "Jilani Shipping International is a shipping company in Karachi for commercial import and export shipments, cargo, FCL, LCL, air freight and customs clearance.",
-  keywords: [
-    "Jilani Shipping International",
-    "Jilani Shipping",
-    "best shipping company in Karachi",
-    "shipping company in Karachi",
-    "freight forwarder Karachi",
-    "import shipment management",
-    "export inquiry management",
-    "export shipment management",
-    "commercial cargo shipping Pakistan",
-    "import export shipping Karachi",
-    "FCL and LCL shipping Pakistan",
-    "sea freight Karachi",
-    "air freight Karachi",
-    "customs clearance Karachi",
-    "China to Pakistan shipping",
-    "Pakistan worldwide shipping",
-  ],
 };
 
 export const viewport: Viewport = {
@@ -158,6 +141,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <BreadcrumbSchema />
         <Navbar />
         {children}
         <SmartQuoteWizard />

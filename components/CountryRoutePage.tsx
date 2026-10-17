@@ -1,6 +1,7 @@
 import Link from "next/link";
 import RouteRateSection from "@/components/RouteRateSection";
 import { countryBySlug } from "@/lib/countries";
+import HubLink from "@/components/HubLinks";
 
 export default function CountryRoutePage({ slug }: { slug: string }) {
   const c = countryBySlug(slug);
@@ -66,6 +67,8 @@ export default function CountryRoutePage({ slug }: { slug: string }) {
         <Link href="/lcl-shipping/" className="rounded-full bg-blue-50 px-4 py-2 font-semibold text-blue-800 hover:bg-blue-100">LCL Shipping</Link>
         <Link href="/air-freight-karachi/" className="rounded-full bg-blue-50 px-4 py-2 font-semibold text-blue-800 hover:bg-blue-100">Air Freight Karachi</Link>
       </nav>
+
+      <HubLink country={c.slug} />
 
       <RouteRateSection destination={c.name} />
     </main>

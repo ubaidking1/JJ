@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Customs Clearing Agent in Karachi | Import & Export | JSI" },
-  description: "Looking for a clearing agent in Karachi? JSI handles import and export customs clearance at Karachi Port and Port Qasim: documents, duties, release and delivery.",
+  description: "Looking for a clearing agent in Karachi? JSI handles import and export customs clearance at Karachi Port and Port Qasim: documents, duties and release.",
   keywords: [
     "customs clearing agent Karachi",
     "customs clearance Karachi",

@@ -1,3 +1,4 @@
+import FaqSchema from "@/components/FaqSchema";
 import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { Metadata } from "next";
@@ -112,6 +113,13 @@ export default function FreightForwarder() {
         </section>
 
         <section className="mt-20 max-w-4xl mx-auto">
+          <FaqSchema items={[
+            { q: "Does Jilani Shipping handle imports into Pakistan?", a: "Yes. We arrange commercial import shipments to Karachi from China, UAE, UK, USA, Europe and other international origins through FCL, LCL and air freight." },
+            { q: "Do you also export shipments from Karachi?", a: "Yes. We provide export freight booking, documentation, customs support and international shipping from Karachi to worldwide destinations." },
+            { q: "Are you a freight forwarder and customs clearing agent in Karachi?", a: "Yes. We combine freight forwarding with customs clearance coordination at Karachi Port and Port Qasim, so booking, clearance and delivery stay under one team." },
+            { q: "How do I choose a freight forwarder in Karachi?", a: "Ask for an itemised quotation, confirm what is included (origin, freight, destination, customs, delivery), check trade-body membership such as PIFFA, and compare communication speed. We list every charge before you book." },
+            { q: "What information is needed for a freight quote?", a: "Commodity, weight or CBM, package count, POL, POD, Incoterm, container type and cargo-ready date." },
+          ]} />
           <h2 className="text-3xl font-bold text-blue-900 mb-6">Freight Forwarding FAQs</h2>
           <div className="space-y-4">
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Does Jilani Shipping handle imports into Pakistan?</summary><p className="mt-3 text-gray-600">Yes. We arrange commercial import shipments to Karachi from China, UAE, UK, USA, Europe and other international origins through FCL, LCL and air freight.</p></details>

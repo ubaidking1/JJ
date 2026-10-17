@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import HubLink from "@/components/HubLinks";
 import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
@@ -97,6 +98,7 @@ export default function CargoSaudi() {
           </div>
         </div>
       </section>
+    <HubLink country="saudi" />
     <RouteRateSection destination="Saudi Arabia" />
     </main>
   );

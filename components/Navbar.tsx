@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 md:gap-3 shrink-0" onClick={closeMenu}>
           <Image 
             src="/logo.png" 
-            alt="JSI Logo" 
+            alt="Jilani Shipping International logo" 
             width={48}
             height={48}
             priority

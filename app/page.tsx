@@ -2,6 +2,7 @@ import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
+import FaqSchema from "@/components/FaqSchema";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
@@ -25,13 +26,13 @@ export default function Home() {
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Jilani Shipping International (JSI) helps businesses looking for a <strong>reliable shipping company in Karachi</strong>. We provide <strong>import shipment management, export inquiry management</strong>, customs brokerage and FCL or LCL shipping to worldwide destinations.
+              Jilani Shipping International (JSI) helps businesses in Pakistan move cargo by sea and air. We manage import shipments and export inquiries, and provide customs brokerage and FCL or LCL shipping to worldwide destinations.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               Whether you call it cargo, freight or a commercial shipment, our team coordinates supplier pickup, booking, documentation, customs clearance and final delivery with clear rate breakdowns.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              As a Karachi-based <strong>freight company</strong>, we support <strong>commercial shipping</strong>, international shipping and global freight movements by sea and air.
+              From our Karachi office we support commercial shipments to and from China, the Gulf, Europe and North America.
             </p>
           </div>
 
@@ -242,39 +243,44 @@ export default function Home() {
           <Link href="/freight-forwarder-karachi/" className="p-6 bg-blue-50 border-2 border-blue-200 rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-700 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">🌐</div>
             <h3 className="font-bold text-blue-900 text-lg">Importer & Exporter Logistics</h3>
-            <p className="text-sm text-gray-700 mt-2 leading-relaxed">End-to-end supply chain solutions for <strong>international traders</strong>. Expert customs clearance and global freight forwarding.</p>
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">End-to-end supply chain solutions for international traders. Expert customs clearance and global freight forwarding.</p>
             <span className="text-blue-700 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
           </Link>
           <Link href="/lcl-shipping/" className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
             <h3 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h3>
-            <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our LCL shipment solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
             <span className="text-blue-600 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
           </Link>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚢</div>
             <h3 className="font-bold text-blue-900 text-lg">Sea Freight & Customs Clearing</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Expert <strong>customs clearing agent</strong> services. Global forwarding (FCL, LCL, Break-bulk) with specialized handling for <strong>commercial cargo</strong>.</p>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Expert customs clearing agent services. Global forwarding (FCL, LCL, Break-bulk) with specialized handling for commercial cargo.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">📦</div>
             <h3 className="font-bold text-blue-900 text-lg">Global Trade Consolidation</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Optimized <strong>buyer’s consolidation</strong> and inventory control. Bridging the gap between <strong>international suppliers</strong> and global exporters.</p>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Optimized buyer’s consolidation and inventory control. Bridging the gap between international suppliers and global exporters.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🏢</div>
             <h3 className="font-bold text-blue-900 text-lg">Secure Warehousing</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Bonded storage and eco-friendly operations within 5km of Port Qasim. Essential for <strong>supply chain optimization</strong> in Pakistan.</p>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Bonded storage and eco-friendly operations within 5km of Port Qasim. Essential for supply chain optimization in Pakistan.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚛</div>
             <h3 className="font-bold text-blue-900 text-lg">Iran Transit Service</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Professional transit solutions from <strong>Karachi Port</strong> and <strong>Gwadar Port</strong> to Iran. Reliable and efficient cargo handling.</p>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Professional transit solutions from Karachi Port and Gwadar Port to Iran. Reliable and efficient cargo handling.</p>
           </div>
         </div>
       </section>
 
       <section className="mt-20 max-w-4xl mx-auto">
+        <FaqSchema items={[
+          { q: "What details are required for a freight quote?", a: "Share the commodity, total weight or CBM, package count, POL, POD, Incoterm and cargo-ready date. For FCL, also mention the container size." },
+          { q: "Do you handle both China imports and exports?", a: "Yes. We arrange China-to-Karachi imports and Karachi-to-China exports through FCL and LCL services, with documentation and customs support." },
+          { q: "Can you arrange customs clearance in Karachi?", a: "Yes. Customs-clearance support is available for eligible commercial shipments, subject to shipment documents and applicable regulations." },
+        ]} />
         <h2 className="text-center text-3xl font-bold text-blue-900 mb-8">Commercial Shipping Questions</h2>
         <div className="space-y-4">
           <details className="group bg-white border border-gray-200 rounded-xl p-5">

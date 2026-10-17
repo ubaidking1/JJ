@@ -1,4 +1,5 @@
 import { pageMetadata } from "@/lib/seo";
+import HubLink from "@/components/HubLinks";
 import RouteRateSection from "@/components/RouteRateSection";
 import { Metadata } from "next";
 
@@ -49,6 +50,7 @@ export default function CargoKuwait() {
           <a href="/contact/" className="bg-blue-700 text-white px-10 py-4 rounded-full font-bold shadow-lg">Get Kuwait Quote</a>
         </div>
       </section>
+    <HubLink country="kuwait" />
     <RouteRateSection destination="Kuwait" />
     </main>
   );
