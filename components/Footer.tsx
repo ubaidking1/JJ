@@ -48,6 +48,11 @@ export default function Footer() {
                           <li><Link href="/cargo-karachi-south-africa/" className="hover:text-blue-700">Pakistan–South Africa Trade</Link></li>
                           <li><Link href="/iran-transit-service/" className="hover:text-blue-700">Iran Transit Service</Link></li>
                           <li><Link href="/worldwide-cargo/" className="hover:text-blue-700">Worldwide Commercial Shipping</Link></li>
+                          <li><Link href="/shipping-pakistan-to-middle-east/" className="hover:text-blue-700">Shipping to the Middle East</Link></li>
+                          <li><Link href="/shipping-pakistan-to-europe/" className="hover:text-blue-700">Shipping to Europe & UK</Link></li>
+                          <li><Link href="/shipping-pakistan-to-asia-pacific/" className="hover:text-blue-700">Shipping to Asia-Pacific</Link></li>
+                          <li><Link href="/blog/shipping-from-pakistan-to-uae-guide/" className="hover:text-blue-700">Pakistan to UAE Shipping Guide</Link></li>
+                          <li><Link href="/blog/best-freight-forwarder-pakistan-guide/" className="hover:text-blue-700">Choosing a Freight Forwarder</Link></li>
                         </ul>
                       </div>
                     </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LeadForm from "@/components/LeadForm";
 import FaqSchema from "@/components/FaqSchema";
+import RouteLinks from "@/components/RouteLinks";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
@@ -274,6 +275,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <RouteLinks />
 
       <section className="mt-20 max-w-4xl mx-auto">
         <FaqSchema items={[
