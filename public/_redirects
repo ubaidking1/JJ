@@ -3,3 +3,7 @@
 http://jilanishipping.net/*      https://jilanishipping.net/:splat      301!
 http://www.jilanishipping.net/*  https://jilanishipping.net/:splat      301!
 https://www.jilanishipping.net/* https://jilanishipping.net/:splat      301!
+
+# Old URL still indexed in Google (about 150 impressions in 6 months) but no longer a page.
+/cargo-karachi-chaina    /cargo-karachi-china/  301
+/cargo-karachi-chaina/   /cargo-karachi-china/  301

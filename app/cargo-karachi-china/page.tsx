@@ -26,7 +26,7 @@ export default function CargoKarachiChinaPage() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12 bg-white">
       <section className="prose max-w-none">
-        <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–China Import and Export Shipping</h1>
+        <h1 className="text-4xl font-black text-blue-900 mb-6">Karachi to China Shipping: Import and Export Cargo</h1>
         <p className="text-lg leading-relaxed text-gray-700">
           Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
         </p>
