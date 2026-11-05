@@ -1,6 +1,10 @@
 import { pageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ContentSections, { Section } from "@/components/ContentSections";
+import FaqBlock from "@/components/FaqBlock";
+import OperationsBlock from "@/components/OperationsBlock";
+
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Export from Karachi to China | Freight Services | JSI" },
@@ -16,6 +20,42 @@ export const metadata: Metadata = pageMetadata({
   ],
   alternates: { canonical: "/export-from-karachi-to-china/" },
 });
+
+
+const sections: Section[] = [
+  { title: "How an export from Karachi to China works",
+    steps: [
+      "Agree the Incoterm and payment terms with your Chinese buyer, and check import and product requirements in China.",
+      "Book FCL, LCL or air freight to the Chinese port or airport nearest your buyer.",
+      "Move the cargo to the port or CFS, or arrange pickup from your factory.",
+      "A licensed customs agent files the export Goods Declaration in the Pakistan Customs system.",
+      "Prepare the certificate of origin if the buyer wants reduced duty under the China\u2013Pakistan Free Trade Agreement.",
+      "The cargo is loaded and the bill of lading or airway bill is issued.",
+    ] },
+  { title: "Documents usually needed",
+    items: [
+      "Commercial invoice and packing list.",
+      "Export Goods Declaration and customs clearance.",
+      "Bill of lading (sea) or airway bill (air).",
+      "Certificate of origin when the buyer needs it for preferential duty.",
+      "Food, agricultural and other regulated exports may need registrations or approvals on the Chinese side, so confirm these with your buyer before shipping.",
+    ] },
+  { title: "Transit time",
+    paras: ["Transit depends on the shipping line, the Chinese destination port and transshipment. On the China corridor, sea freight typically takes several weeks and air freight a few days. We give the current schedule with each quotation."] },
+  { title: "What affects the cost",
+    items: [
+      "FCL per container, LCL per CBM or tonne, or air per chargeable kilogram.",
+      "The Chinese destination port and the shipping line.",
+      "Origin charges in Karachi and destination handling in China.",
+      "Season and carrier space, because rates change regularly.",
+    ] },
+];
+
+const faq = [
+  { q: "Which Chinese ports can you ship to?", a: "Shanghai, Ningbo, Shenzhen, Guangzhou, Qingdao, Tianjin and Xiamen are the main options, and other Chinese ports are available on request." },
+  { q: "Do I need a certificate of origin for exports to China?", a: "Not always. It is needed if your buyer wants to claim reduced duty for qualifying goods under the China\u2013Pakistan Free Trade Agreement, so ask your buyer early." },
+  { q: "Can I export less than a full container to China?", a: "Yes. LCL lets you ship a smaller volume, and we can compare it against an FCL quotation as your volume grows." },
+];
 
 export default function ExportFromKarachiToChina() {
   return (
@@ -44,6 +84,10 @@ export default function ExportFromKarachiToChina() {
         <h2 className="text-3xl font-bold text-blue-900">Major China Destinations</h2>
         <p className="text-gray-700 mt-4">Shanghai, Ningbo, Shenzhen, Guangzhou, Qingdao, Tianjin and Xiamen, plus other Chinese ports on request.</p>
       </section>
+
+      <ContentSections sections={sections} />
+      <OperationsBlock />
+      <FaqBlock items={faq} />
 
       <div className="mt-12 flex flex-wrap gap-4">
         <Link href="/contact/" className="px-7 py-3 bg-blue-700 text-white rounded-lg font-bold hover:bg-blue-800">Get China Export Rate</Link>
