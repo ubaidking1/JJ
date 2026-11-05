@@ -80,9 +80,9 @@ export default function CargoKarachiChinaPage() {
 
         <h2>Estimated Transit Time</h2>
         <p>
-          <strong>Sea Freight:</strong> 7–10 days  
+          <strong>Sea Freight:</strong> about 18 to 35 days port to port (indicative)  
           <br />
-          <strong>Air Freight:</strong> 2–4 days
+          <strong>Air Freight:</strong> about 3 to 7 days (indicative)
         </p>
 
         <h2>Get a Free Quote</h2>
