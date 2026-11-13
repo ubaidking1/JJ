@@ -24,7 +24,7 @@ export default function ExportFromKarachiToChina() {
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">Pakistan → China Exports</p>
         <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-3">Export Shipping from Karachi, Pakistan to China</h1>
         <p className="text-lg text-gray-700 leading-relaxed mt-6">
-          Ship commercial goods from Karachi to major ports in China with reliable FCL and LCL freight forwarding. We support exporters with bookings, documentation, port handling and shipment coordination.
+          Arrange export freight enquiries from Karachi to major Chinese ports. JSI can review FCL, LCL and air-freight requirements, export documentation, port handling and routing options based on the commodity and shipment details.
         </p>
       </section>
 
@@ -36,7 +36,7 @@ export default function ExportFromKarachiToChina() {
           <li>✓ Container and port coordination</li>
           <li>✓ Customs-clearance assistance</li>
           <li>✓ Shipping-line options</li>
-          <li>✓ Rate and transit-time comparison</li>
+          <li>✓ Shipment-specific rate and schedule review</li>
         </ul>
       </section>
 
