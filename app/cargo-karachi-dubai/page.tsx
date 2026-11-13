@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Karachi to Dubai Cargo Rates | Sea & Air Freight | JSI" },
-  description: "Karachi to Dubai cargo by sea (about 4-6 days) or air (24-48 hrs). LCL, FCL and door-to-door with customs support. Get rates per kg or CBM on WhatsApp.",
+  description: "Arrange commercial cargo between Karachi and Dubai with sea and air freight enquiries, FCL, LCL and customs coordination. Request a shipment-specific quotation from JSI.",
   keywords: [
     "export shipping Pakistan to Dubai UAE",
     "import freight Dubai UAE to Pakistan",
