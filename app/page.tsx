@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Freight Forwarder in Karachi | Jilani Shipping International" },
-  description: "Jilani Shipping International is a Karachi freight forwarder coordinating commercial imports and exports by sea and air, including FCL, LCL and customs clearance support.",
+  description: "Jilani Shipping International is a Karachi freight forwarder with experience since 1998 and PIFFA membership, coordinating commercial imports and exports by sea and air.",
   keywords: [
     "freight forwarder Karachi",
     "freight forwarding company Pakistan",
@@ -30,7 +30,7 @@ export default function Home() {
               Jilani Shipping International (JSI) is a Karachi-based freight forwarding company supporting commercial import and export shipments. We coordinate sea freight, air freight, FCL, LCL, shipment documentation and customs clearance support for businesses moving cargo internationally.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Our team can assist with shipment planning, supplier coordination, freight booking enquiries, export and import documentation, customs coordination and delivery arrangements. The available scope, route and charges are confirmed for each shipment.
+              With freight forwarding experience since 1998, JSI helps businesses coordinate the moving parts of an international shipment through one point of contact—from freight options and supplier coordination to documentation, customs-clearance requirements, port handling and delivery arrangements. The agreed scope, route and charges are confirmed for each shipment.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
               For a tailored quotation, share your origin, destination, commodity, weight or CBM, Incoterm and cargo-ready date. JSI will review the shipment requirements and confirm the applicable options.
@@ -74,11 +74,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mt-10 grid gap-4 rounded-2xl border border-blue-100 bg-blue-50 p-6 md:grid-cols-3" aria-label="Jilani Shipping credentials and shipment coordination">
+        <div>
+          <p className="text-2xl font-black text-blue-900">Since 1998</p>
+          <p className="mt-1 text-sm text-gray-700">Freight forwarding experience supporting commercial importers and exporters.</p>
+        </div>
+        <div>
+          <p className="text-2xl font-black text-blue-900">PIFFA Member</p>
+          <p className="mt-1 text-sm text-gray-700">Member of the Pakistan International Freight Forwarders Association.</p>
+        </div>
+        <div>
+          <p className="text-lg font-bold text-blue-900">One-team shipment coordination</p>
+          <p className="mt-1 text-sm text-gray-700">We help coordinate freight options, documentation, customs-clearance requirements, port handling and delivery arrangements, with scope confirmed for each shipment.</p>
+        </div>
+      </section>
+
       {/* Popular searches: direct internal links to the pages that rank and convert */}
       <section className="mt-12" aria-label="Popular shipping services">
         <h2 className="text-2xl font-bold text-blue-900 text-center">Popular Shipping Services from Karachi</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Link href="/cargo-karachi-dubai/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Karachi to Dubai Cargo</span><span className="mt-1 block text-sm text-gray-600">Sea and air freight enquiries for commercial shipments</span></Link>
+          <Link href="/cargo-karachi-dubai/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Karachi–Dubai Freight Shipments</span><span className="mt-1 block text-sm text-gray-600">Commercial import and export by sea and air, FCL and LCL</span></Link>
           <Link href="/china-to-pakistan-shipping-cost/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">China to Pakistan Shipping Cost</span><span className="mt-1 block text-sm text-gray-600">LCL, 20ft/40ft FCL, air, double clearance</span></Link>
           <Link href="/customs-clearance-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Customs Clearing Agent Karachi</span><span className="mt-1 block text-sm text-gray-600">Karachi Port and Port Qasim</span></Link>
           <Link href="/freight-forwarder-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Freight Forwarder in Karachi</span><span className="mt-1 block text-sm text-gray-600">Import, export, sea and air freight</span></Link>
