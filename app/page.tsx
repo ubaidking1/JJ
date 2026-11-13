@@ -67,9 +67,9 @@ export default function Home() {
             </div>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-4 text-center text-xs font-bold text-blue-900">
-            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">PIFFA Member</span>
-            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">KCCI Member</span>
             <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">Karachi Based</span>
+            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">Sea & Air Freight</span>
+            <span className="bg-blue-50 border border-blue-100 rounded-lg px-2 py-3">Import & Export</span>
           </div>
         </div>
       </section>
