@@ -4,7 +4,7 @@ import SeoLandingPage from "@/components/SeoLandingPage";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "China to Pakistan Shipping Cost: Per KG, CBM & 40ft" },
-  description: "How much is shipping from China to Pakistan? See what drives sea, air and 20ft/40ft container cost, per-kg and CBM rules, transit times and get a quote.",
+  description: "Understand China–Pakistan commercial freight pricing for sea, air, LCL and 20ft/40ft FCL. Learn which shipment details affect cost and request an itemised quote.",
   keywords: [
     "China to Pakistan shipping cost",
     "shipping cost from China to Pakistan",
@@ -27,12 +27,12 @@ export default function ChinaPakistanShippingCost() {
   return <SeoLandingPage
     eyebrow="China to Pakistan Freight Rates"
     title="China to Pakistan Shipping Cost: Sea, Air, 20ft & 40ft Container"
-    intro="The cost of shipping from China to Pakistan depends on the origin port, cargo volume (CBM) or weight (kg), container size, Incoterm and season. Below is how freight is priced, so you can estimate your own shipment, then send us your details for a current, itemised quotation to Karachi Port or Port Qasim."
+    intro="Commercial freight cost from China to Pakistan depends on origin city or port, commodity, volume (CBM), gross and chargeable weight, container size, Incoterm, routing and current carrier capacity. Use the guidance below to understand pricing factors, then request a current itemised quotation for Karachi Port, Port Qasim or an agreed delivery location."
     services={[
       { title: "LCL Shipping by CBM", text: "Best for smaller commercial shipments that do not fill a container. Priced per CBM or per tonne, whichever is greater. Share exact carton sizes for accurate pricing." },
       { title: "FCL 20ft, 40ft & 40HC", text: "Full-container quotations cover ocean freight, origin charges and Karachi destination handling. Cheaper per CBM once cargo volume is high enough." },
       { title: "Air Freight from China", text: "For urgent or high-value goods. Priced per chargeable kg (the greater of actual and volumetric weight)." },
-      { title: "Door-to-Door & Double Clearance", text: "Pickup in China, customs at both ends and delivery in Pakistan under one quotation, with clearly stated duty and tax scope." },
+      { title: "Door-to-Door & Double Clearance", text: "Origin pickup, export/import customs coordination and delivery can be reviewed and quoted when available; duties and taxes are assessed separately by the relevant authorities." },
     ]}
     process={["Send us the China city or port, supplier Incoterm (EXW / FOB / CIF) and cargo-ready date.", "Share commodity, number of cartons, weight and dimensions or the container size.", "Confirm Karachi Port, Port Qasim or your final delivery address.", "Receive a current itemised quotation: freight, origin, destination, customs and delivery."]}
     extra={
@@ -43,9 +43,9 @@ export default function ChinaPakistanShippingCost() {
             <table className="w-full border-collapse border text-sm md:text-base">
               <thead><tr><th className={th}>Service</th><th className={th}>Priced by</th><th className={th}>Typical transit (indicative)</th><th className={th}>Best for</th></tr></thead>
               <tbody>
-                <tr><td className={td}>Sea LCL</td><td className={td}>CBM (or per tonne if heavier)</td><td className={td}>About 20 to 35 days port to port</td><td className={td}>Under roughly 15 CBM</td></tr>
-                <tr><td className={td}>Sea FCL 20ft / 40ft / 40HC</td><td className={td}>Flat rate per container</td><td className={td}>About 18 to 30 days port to port</td><td className={td}>Large or heavy volumes</td></tr>
-                <tr><td className={td}>Air freight</td><td className={td}>Per chargeable kg</td><td className={td}>About 3 to 7 days</td><td className={td}>Urgent, high-value, samples</td></tr>
+                <tr><td className={td}>Sea LCL</td><td className={td}>CBM (or per tonne if heavier)</td><td className={td}>Varies by port pair and routing</td><td className={td}>Under roughly 15 CBM</td></tr>
+                <tr><td className={td}>Sea FCL 20ft / 40ft / 40HC</td><td className={td}>Flat rate per container</td><td className={td}>Varies by carrier and routing</td><td className={td}>Large or heavy volumes</td></tr>
+                <tr><td className={td}>Air freight</td><td className={td}>Per chargeable kg</td><td className={td}>Depends on airline routing and handling</td><td className={td}>Urgent, high-value, samples</td></tr>
               </tbody>
             </table>
           </div>
@@ -58,7 +58,7 @@ export default function ChinaPakistanShippingCost() {
             <ul className="mt-3 space-y-2 text-gray-700 list-disc pl-5">
               <li>Air freight uses <strong>chargeable weight</strong>: the greater of actual kg and volumetric kg (L × W × H in cm ÷ 6000).</li>
               <li>Sea LCL is commonly charged on the greater of <strong>1 CBM or 1,000 kg</strong>.</li>
-              <li>Sea is almost always cheaper per kg than air; air makes sense when speed or high cargo value outweighs freight cost.</li>
+              <li>Sea freight may be more economical for larger or less time-sensitive shipments; compare the full charges and transit requirements against air freight.</li>
             </ul>
           </div>
           <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6">

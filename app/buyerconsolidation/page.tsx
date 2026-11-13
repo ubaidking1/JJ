@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Buyer’s Consolidation Services in China | JSI" },
-  description: "Combine orders from multiple China suppliers through buyer consolidation, warehouse coordination, packing support and LCL or FCL shipping to Pakistan today.",
+  description: "Coordinate multi-supplier China shipments with buyer-consolidation planning and LCL or FCL freight options to Pakistan, subject to confirmed warehouse and handling availability.",
   keywords: [
     "buyer consolidation China",
     "China cargo consolidation",
@@ -45,10 +45,10 @@ export default function BuyerConsolidation() {
           <div className="bg-gray-50 p-8 rounded-2xl border border-gray-100">
             <h2 className="text-2xl font-semibold mb-4 text-blue-800">Operational Excellence</h2>
             <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-              Our facility within 5 Kms vicinity of Port Qasim allows easy access for shipments coming from upcountry and near all industrial areas.
+              For shipments requiring storage or consolidation, facility location, receiving arrangements, operating scope and charges are confirmed for the specific shipment before supplier dispatch.
             </p>
             <p className="text-gray-600 text-sm leading-relaxed">
-              All received pallets are checked with the delivery list. Our software generates unique barcodes containing information about goods, quantity, supplier, and end customer to ensure seamless tracking.
+              Where a nominated facility offers receiving and inventory services, the applicable checking, labelling, reporting and handling scope is confirmed in advance.
             </p>
             <div className="mt-8">
                <Link href="/contact/" className="inline-block w-full text-center px-6 py-3 bg-blue-700 text-white font-bold rounded-lg hover:bg-blue-800 transition-all">

@@ -26,7 +26,7 @@ export default function ImportFromChinaToKarachi() {
         <p className="text-sm font-bold uppercase tracking-widest text-blue-700">China → Pakistan Imports</p>
         <h1 className="text-4xl md:text-5xl font-black text-blue-900 mt-3">Import Shipping from China to Karachi, Pakistan</h1>
         <p className="text-lg text-gray-700 leading-relaxed mt-6">
-          Import commercial shipments from major Chinese ports to Karachi with complete FCL and LCL support. As a China freight forwarder for Pakistan-bound cargo, Jilani Shipping coordinates supplier pickup, consolidation, shipping documents and customs clearance in Pakistan.
+          Plan commercial imports from major Chinese ports to Karachi with FCL, LCL and air-freight options. Jilani Shipping International reviews supplier, cargo, documentation and Pakistan customs-clearance coordination requirements for each shipment.
         </p>
       </section>
 
@@ -44,14 +44,14 @@ export default function ImportFromChinaToKarachi() {
       <section className="mt-12">
         <h2 className="text-3xl font-bold text-blue-900">China Import Support</h2>
         <ul className="grid sm:grid-cols-2 gap-3 mt-6 text-gray-700">
-          <li>✓ Supplier pickup and coordination</li>
+          <li>✓ Supplier and cargo information coordination</li>
           <li>✓ Buyer’s consolidation</li>
           <li>✓ FCL and LCL sea freight</li>
           <li>✓ Import documentation</li>
           <li>✓ Karachi Port customs clearance</li>
           <li>✓ Delivery planning in Pakistan</li>
         </ul>
-        <p className="mt-8 text-gray-700">Common origins include Shanghai, Ningbo, Shenzhen, Guangzhou, Qingdao, Tianjin and Xiamen.</p>
+        <p className="mt-8 text-gray-700">Commonly requested origins include Shanghai, Ningbo, Shenzhen, Guangzhou, Qingdao, Tianjin and Xiamen. Available routing, origin handling and service scope are confirmed against the shipment details.</p>
       </section>
 
       <div className="mt-12 flex flex-wrap gap-4">

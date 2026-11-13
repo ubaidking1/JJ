@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
   title: { absolute: "Warehousing and Cargo Consolidation in China | JSI" },
-  description: "Use China warehousing for supplier cargo collection, storage, inspection coordination, repacking and consolidation before shipping goods to Pakistan today.",
+  description: "Discuss China-side warehouse and consolidation requirements for commercial shipments to Pakistan. Facility, storage, inspection and repacking availability is confirmed per shipment.",
   keywords: [
     "warehouse in China for Pakistan",
     "China cargo warehouse",
@@ -50,9 +50,7 @@ export default function Warehouse() {
           <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100">
             <h2 className="text-2xl font-semibold mb-4 text-blue-900">Pallets & Storage</h2>
             <p className="text-gray-700 leading-relaxed">
-              Most of the goods are stored and transported on the standard EU pallets (80cm x 120cm). 
-              Due to our extensive collaboration with Asian suppliers, we also handle sea pallets 
-              varying from 100cm x 100cm to 120cm x 120cm.
+              Pallet dimensions, cargo compatibility, storage conditions and handling requirements should be shared during the enquiry so the nominated facility can confirm acceptance.
             </p>
           </div>
         </div>
