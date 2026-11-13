@@ -43,7 +43,7 @@ export default function Home() {
               <LeadForm source="Homepage Quick Quote" compact />
               <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-500">
                 <span className="flex items-center gap-1">🛡️ Reliable Handling</span>
-                <span className="flex items-center gap-1">⚡ Quote Support</span>
+                <span className="flex items-center gap-1">⚡ Shipment Enquiry Support</span>
                 <span className="flex items-center gap-1">💰 Itemised Quotes</span>
               </div>
             </div>
