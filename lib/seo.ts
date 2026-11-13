@@ -8,7 +8,9 @@ export function pageMetadata(meta: Metadata): Metadata {
   const canonicalUrl =
     typeof canonical === "string"
       ? new URL(canonical, SITE_URL).href
-      : SITE_URL + "/";
+      : canonical instanceof URL
+        ? canonical.href
+        : undefined;
 
   const title =
     typeof meta.title === "string"
@@ -33,7 +35,7 @@ export function pageMetadata(meta: Metadata): Metadata {
     openGraph: {
       type: "website",
       ...meta.openGraph,
-      url: canonicalUrl,
+      ...(canonicalUrl ? { url: canonicalUrl } : {}),
       ...(title ? { title } : {}),
       ...(description ? { description } : {}),
       images: pageImages,
