@@ -48,7 +48,7 @@ export default function CargoKarachiChinaPage() {
 
         <div className="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
           <h2 className="text-xl font-bold text-blue-900 mb-2">China to Pakistan Import Specialists</h2>
-          <p className="text-sm text-gray-700">We handle the entire import process, from <strong>supplier coordination in China</strong> to <strong>customs clearing at Karachi Port</strong>. LCL availability, routing and charges are confirmed for each shipment based on cargo details and current schedules.</p>
+          <p className="text-sm text-gray-700">We review China-origin import requirements, including supplier collection details where arranged, freight options, shipment documentation and customs-clearance coordination at Karachi. LCL availability, routing and charges are confirmed for each shipment based on cargo details and current schedules.</p>
         </div>
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Why JSI for China Trade?</h2>
@@ -64,8 +64,8 @@ export default function CargoKarachiChinaPage() {
           <li>🟩 <strong>Sea Freight</strong> — cost-effective solutions for large shipments</li>
           <li>🟩 <strong>Air Freight</strong> — express shipping for urgent deliveries</li>
           <li>🟩 <strong>Customs Brokerage</strong> — complete import/export support</li>
-          <li>🟩 <strong>Warehousing</strong> — secure storage before shipment</li>
-          <li>🟩 <strong>Door Delivery</strong> — available in Guangzhou, Shanghai, Shenzhen, Ningbo & more</li>
+          <li>🟩 <strong>Shipment Coordination</strong> — origin and destination handling scope confirmed in the quotation</li>
+          <li>🟩 <strong>Delivery Arrangements</strong> — subject to destination, commodity and confirmed service scope</li>
         </ul>
 
         <h2>Popular Routes from Karachi to China</h2>
@@ -86,8 +86,7 @@ export default function CargoKarachiChinaPage() {
 
         <h2>Get a Free Quote</h2>
         <p>
-          Ready to ship your cargo from Karachi to China? Contact Jilani Shipping International
-          today for reliable service and competitive rates.
+          Planning an import or export shipment between Pakistan and China? Share the origin, destination, commodity, weight or CBM and Incoterm with Jilani Shipping International for a shipment-specific quotation.
         </p>
 
         <a
