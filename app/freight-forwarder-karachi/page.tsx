@@ -46,7 +46,7 @@ export default function FreightForwarder() {
               <li className="flex items-center gap-2">✅ <strong>Customs Clearing Agent</strong> for Exports in Karachi</li>
               <li className="flex items-center gap-2">✅ <strong>FCL & LCL Export Shipping</strong> on supported trade lanes</li>
               <li className="flex items-center gap-2">✅ Commercial Invoice & Packing List Assistance</li>
-              <li className="flex items-center gap-2">✅ <strong>Door-to-Door Export Logistics</strong></li>
+              <li className="flex items-center gap-2">✅ <strong>Delivery coordination</strong> where the route and service scope are confirmed</li>
               <li className="flex items-center gap-2">✅ Competitive <strong>Sea Freight Rates</strong> for Exporters</li>
             </ul>
 
