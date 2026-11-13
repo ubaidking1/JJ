@@ -5,13 +5,15 @@ import LeadForm from "@/components/LeadForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "Shipping Company in Karachi | Jilani Shipping" },
-  description: "Jilani Shipping is a freight forwarding and logistics company in Karachi offering sea freight, air freight, customs clearance and import-export support today.",
+  title: { absolute: "Freight Forwarder in Karachi | Jilani Shipping International" },
+  description: "Jilani Shipping International is a Karachi freight forwarder coordinating commercial imports and exports by sea and air, including FCL, LCL and customs clearance support.",
   keywords: [
-    "shipping company Karachi",
-    "commercial shipping",
-    "logistics company Pakistan",
-    "import export services Pakistan"
+    "freight forwarder Karachi",
+    "freight forwarding company Pakistan",
+    "import and export shipping Karachi",
+    "sea freight Karachi",
+    "air freight Karachi",
+    "FCL and LCL shipping Pakistan"
   ],
   alternates: { canonical: "/" },
 });
@@ -21,17 +23,17 @@ export default function Home() {
     <main className="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-12">
       <section className="grid lg:grid-cols-2 gap-8 items-center">
         <div className="text-center lg:text-left">
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">International Shipping and Freight Forwarding Company in Karachi</h1>
+          <h1 className="text-3xl md:text-5xl font-bold leading-tight text-blue-900">Freight Forwarder in Karachi for Import and Export Shipping</h1>
           
           <div className="mt-6 space-y-4">
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Jilani Shipping International (JSI) helps businesses looking for a <strong>reliable shipping company in Karachi</strong>. We provide <strong>import shipment management, export inquiry management</strong>, customs brokerage and FCL or LCL shipping to worldwide destinations.
+              Jilani Shipping International (JSI) is a Karachi-based freight forwarding company supporting commercial import and export shipments. We coordinate sea freight, air freight, FCL, LCL, shipment documentation and customs clearance support for businesses moving cargo internationally.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              Whether you call it cargo, freight or a commercial shipment, our team coordinates supplier pickup, booking, documentation, customs clearance and final delivery with clear rate breakdowns.
+              Our team can assist with shipment planning, supplier coordination, freight booking enquiries, export and import documentation, customs coordination and delivery arrangements. The available scope, route and charges are confirmed for each shipment.
             </p>
             <p className="text-sm md:text-lg text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-              As a Karachi-based <strong>freight company</strong>, we support <strong>commercial shipping</strong>, international shipping and global freight movements by sea and air.
+              For a tailored quotation, share your origin, destination, commodity, weight or CBM, Incoterm and cargo-ready date. JSI will review the shipment requirements and confirm the applicable options.
             </p>
           </div>
 
@@ -41,23 +43,8 @@ export default function Home() {
               <LeadForm source="Homepage Quick Quote" compact />
               <div className="mt-4 flex items-center justify-center gap-4 text-xs text-gray-500">
                 <span className="flex items-center gap-1">🛡️ Reliable Handling</span>
-                <span className="flex items-center gap-1">⚡ Fast Reply</span>
-                <span className="flex items-center gap-1">💰 Best Rates</span>
-              </div>
-            </div>
-            {/* Global Reach Stats */}
-            <div className="mt-6 flex justify-between max-w-lg px-2">
-              <div className="text-center">
-                <span className="block text-2xl font-bold text-blue-900">100+</span>
-                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Countries</span>
-              </div>
-              <div className="text-center">
-                <span className="block text-2xl font-bold text-blue-900">50+</span>
-                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Ports</span>
-              </div>
-              <div className="text-center">
-                <span className="block text-2xl font-bold text-blue-900">24/7</span>
-                <span className="text-[10px] text-gray-500 uppercase font-bold tracking-tighter">Global Support</span>
+                <span className="flex items-center gap-1">⚡ Quote Support</span>
+                <span className="flex items-center gap-1">💰 Itemised Quotes</span>
               </div>
             </div>
           </div>
@@ -134,34 +121,7 @@ export default function Home() {
         </Link>
       </section>
 
-      {/* Partners Section */}
-      <section className="mt-20 py-10 border-y border-gray-100 bg-gray-50/50 -mx-4 md:-mx-6 px-4 md:px-6">
-        <div className="text-center mb-8">
-          <h2 className="text-xl font-bold text-gray-400 uppercase tracking-widest">Trusted Partners & Carriers</h2>
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-blue-900 tracking-tighter italic">MAERSK</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-yellow-600 tracking-widest italic">MSC</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-red-700 tracking-tighter">CMA CGM</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-blue-800 tracking-normal">COSCO</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-green-700 tracking-normal italic">EVERGREEN</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-2xl font-black text-orange-600 tracking-tighter">HAPAG-LLOYD</span>
-          </div>
-        </div>
-      </section>
-
-      {/* LCL vs FCL Section */}
+      {/* Shipment options section */}
       <section className="mt-20 p-8 bg-blue-50 rounded-3xl border border-blue-100">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-blue-900 text-center mb-8">Choose the Right Shipment Type</h2>
