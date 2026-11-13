@@ -1,4 +1,4 @@
-name: Validate Netlify production build
+name: Validate Static Site Build
 
 on:
   push:
