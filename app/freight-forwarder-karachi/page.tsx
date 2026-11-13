@@ -34,17 +34,17 @@ export default function FreightForwarder() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
-              Jilani Shipping International (JSI) specializes in providing comprehensive <strong>supply chain solutions for importers and exporters</strong>. 
+              Jilani Shipping International (JSI) specializes in providing commercial <strong>freight forwarding and shipment coordination for importers and exporters</strong>. 
               As an experienced <strong>international freight forwarder in Karachi</strong>, we handle <strong>customs clearing, commercial documentation, and port-to-port logistics</strong> for commercial shipments moving into and out of Pakistan.
             </p>
             <p className="text-lg leading-relaxed text-gray-700 mb-6">
-              Our <strong>freight forwarder services</strong> cover international freight bookings, global freight coordination and freight delivery planning for sea and air shipments.
+              Our <strong>freight forwarding services</strong> cover sea and air freight enquiries, FCL and LCL options, import and export documentation, customs coordination and delivery planning. We help manage the shipment process through one point of contact, with each service scope confirmed before booking.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4 text-blue-800">Export Logistics & Shipping</h2>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-center gap-2">✅ <strong>Customs Clearing Agent</strong> for Exports in Karachi</li>
-              <li className="flex items-center gap-2">✅ <strong>FCL & LCL Export Shipping</strong> to 100+ Countries</li>
+              <li className="flex items-center gap-2">✅ <strong>FCL & LCL Export Shipping</strong> on supported trade lanes</li>
               <li className="flex items-center gap-2">✅ Commercial Invoice & Packing List Assistance</li>
               <li className="flex items-center gap-2">✅ <strong>Door-to-Door Export Logistics</strong></li>
               <li className="flex items-center gap-2">✅ Competitive <strong>Sea Freight Rates</strong> for Exporters</li>
@@ -55,7 +55,7 @@ export default function FreightForwarder() {
               <li className="flex items-center gap-2">✅ <strong>Import Customs Brokerage</strong> & Duty Estimation</li>
               <li className="flex items-center gap-2">✅ Reliable <strong>Import Logistics</strong> for Industrial Raw Materials</li>
               <li className="flex items-center gap-2">✅ <strong>LCL Consolidation</strong> from China, Europe & USA</li>
-              <li className="flex items-center gap-2">✅ De-consolidation & Bonded Warehousing</li>
+              <li className="flex items-center gap-2">✅ De-consolidation and storage coordination, where available</li>
               <li className="flex items-center gap-2">✅ <strong>Import Documentation</strong> & Form-E/Form-I Support</li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ export default function FreightForwarder() {
               </div>
               <div>
                 <h3 className="font-bold text-blue-800">Real-time Tracking</h3>
-                <p className="text-sm text-gray-600">Stay informed about your shipment's status with our dedicated tracking and support team.</p>
+                <p className="text-sm text-gray-600">We coordinate shipment-status updates with the relevant carrier and service providers.</p>
               </div>
             </div>
             <div className="mt-8">
@@ -106,7 +106,7 @@ export default function FreightForwarder() {
             <div className="p-6 bg-white border rounded-2xl text-center">
               <div className="text-4xl mb-4">🏢</div>
               <h3 className="font-bold text-lg mb-2">Warehousing</h3>
-              <p className="text-sm text-gray-600">Secure storage and distribution for your inventory management.</p>
+              <p className="text-sm text-gray-600">Storage options can be reviewed based on cargo type, location, capacity and availability.</p>
             </div>
           </div>
         </section>
