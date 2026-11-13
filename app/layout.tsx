@@ -37,11 +37,11 @@ export const metadata: Metadata = {
     images: ["https://jilanishipping.net/images/shipping-hero.webp"],
   },
   title: {
-    default: "Jilani Shipping | Shipping Company in Karachi",
+    default: "Jilani Shipping International | Freight Forwarder Karachi",
     template: "%s | Jilani Shipping International",
   },
   description:
-    "Jilani Shipping International is a shipping company in Karachi for commercial import and export shipments, cargo, FCL, LCL, air freight and customs clearance.",
+    "Jilani Shipping International is a Karachi-based freight forwarder coordinating commercial imports and exports by sea and air, including FCL, LCL and customs clearance support.",
   keywords: [
     "Jilani Shipping International",
     "Jilani Shipping",
@@ -71,7 +71,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["Organization", "LocalBusiness"],
     "name": "Jilani Shipping International",
     "alternateName": ["Jilani Shipping", "JSI", "Jilani Shipping International", "Jalani Shipping"],
     "telephone": "+92-318-0155643",
@@ -86,7 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "contactType": "customer service",
       "email": "info@jilanishipping.net"
     },
-    "description": "Karachi shipping company for commercial import and export shipment management, cargo, FCL, LCL, air freight, customs clearance and worldwide freight forwarding.",
+    "description": "Karachi-based freight forwarding company coordinating commercial import and export shipments by sea and air, including FCL, LCL, customs clearance coordination and logistics support.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Jilani Shipping Global Services",
