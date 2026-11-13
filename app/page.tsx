@@ -78,7 +78,7 @@ export default function Home() {
       <section className="mt-12" aria-label="Popular shipping services">
         <h2 className="text-2xl font-bold text-blue-900 text-center">Popular Shipping Services from Karachi</h2>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Link href="/cargo-karachi-dubai/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Karachi to Dubai Cargo</span><span className="mt-1 block text-sm text-gray-600">Sea 4-6 days, air 24-48 hrs, door-to-door</span></Link>
+          <Link href="/cargo-karachi-dubai/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Karachi to Dubai Cargo</span><span className="mt-1 block text-sm text-gray-600">Sea and air freight enquiries for commercial shipments</span></Link>
           <Link href="/china-to-pakistan-shipping-cost/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">China to Pakistan Shipping Cost</span><span className="mt-1 block text-sm text-gray-600">LCL, 20ft/40ft FCL, air, double clearance</span></Link>
           <Link href="/customs-clearance-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Customs Clearing Agent Karachi</span><span className="mt-1 block text-sm text-gray-600">Karachi Port and Port Qasim</span></Link>
           <Link href="/freight-forwarder-karachi/" className="rounded-xl border-2 border-blue-100 p-5 hover:shadow-md"><span className="font-bold text-blue-900">Freight Forwarder in Karachi</span><span className="mt-1 block text-sm text-gray-600">Import, export, sea and air freight</span></Link>
@@ -130,18 +130,18 @@ export default function Home() {
               <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">📦 LCL Shipment</h3>
               <p className="text-sm text-gray-600 mb-4"><strong>Less than Container Load:</strong> Best for smaller cargo that doesn't fill a whole container. You only pay for the space you use.</p>
               <ul className="text-sm text-gray-700 space-y-2">
-                <li>✅ Most Cost-Effective</li>
+                <li>✅ Shared container space for eligible shipments</li>
                 <li>✅ Pay per CBM (Cubic Meter)</li>
-                <li>✅ Weekly departures from Karachi</li>
+                <li>✅ Sailing schedules confirmed for each quotation</li>
               </ul>
             </div>
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-blue-100">
               <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">🚢 FCL Shipment</h3>
               <p className="text-sm text-gray-600 mb-4"><strong>Full Container Load:</strong> Best for large shipments where you have exclusive use of a 20ft or 40ft container.</p>
               <ul className="text-sm text-gray-700 space-y-2">
-                <li>✅ Maximum Security</li>
-                <li>✅ Faster Transit (No consolidation)</li>
-                <li>✅ Best for Bulk Goods</li>
+                <li>✅ Dedicated container for the shipment</li>
+                <li>✅ Container options based on cargo and route</li>
+                <li>✅ Suitable for larger commercial shipments</li>
               </ul>
             </div>
           </div>
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="bg-blue-900 text-white rounded-3xl p-8 md:p-16 relative overflow-hidden shadow-2xl">
           <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">Why Jilani Shipping is Pakistan's Choice?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">Freight Coordination for Pakistan’s Importers and Exporters</h2>
               <p className="text-blue-100 text-lg mb-8 leading-relaxed">
                 Jilani Shipping International (JSI) supports Pakistan’s importers and exporters with dependable freight coordination, clear rate breakdowns and global shipping coverage.
                 We don't just move shipments; we help businesses keep their supply chains moving.
@@ -169,12 +169,12 @@ export default function Home() {
                   <p className="text-blue-200 text-sm">Shipment Handling</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-white">24/7</h3>
-                  <p className="text-blue-200 text-sm">Customer Support</p>
+                  <h3 className="text-xl font-bold text-white">Service</h3>
+                  <p className="text-blue-200 text-sm">Shipment Coordination</p>
                 </div>
                 <div>
-                  <h3 className="text-3xl font-bold text-white">50+</h3>
-                  <p className="text-blue-200 text-sm">Global Ports</p>
+                  <h3 className="text-xl font-bold text-white">FCL / LCL</h3>
+                  <p className="text-blue-200 text-sm">Shipment Options</p>
                 </div>
                 <div>
                   <h3 className="text-xl md:text-2xl font-bold text-white">Clear</h3>
@@ -183,9 +183,9 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
-              <h3 className="text-2xl font-bold mb-4 italic">"JSI is the only name you need for global trade."</h3>
+              <h3 className="text-2xl font-bold mb-4">Request a shipment-specific quotation</h3>
               <p className="text-blue-100 mb-6">
-                Our strategic partnerships with global carriers and our own bonded warehousing make us the most competitive player in the market.
+                Share your cargo details, origin and destination. Our team will review the shipment requirements and confirm the available service scope and charges.
               </p>
               <Link href="/contact/" className="inline-block w-full text-center py-4 bg-white text-blue-900 font-bold rounded-xl hover:bg-blue-50 transition-all">
                 Partner with Jilani Shipping Today
