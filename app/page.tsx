@@ -208,7 +208,7 @@ export default function Home() {
           <Link href="/lcl-shipping/" className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow group">
             <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-4 font-bold group-hover:scale-110 transition-transform" aria-hidden="true">📦</div>
             <h3 className="font-bold text-blue-900 text-lg">LCL Shipment Services</h3>
-            <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller loads with weekly sailings from Karachi to worldwide ports.</p>
+            <p className="text-sm text-gray-700 mt-2 leading-relaxed">Save costs with our <strong>LCL shipment</strong> solutions. Share container space for smaller commercial loads. Sailing schedules and available destinations are confirmed for each quotation.</p>
             <span className="text-blue-600 text-xs font-bold mt-4 inline-block group-hover:translate-x-1 transition-transform">Learn More →</span>
           </Link>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
@@ -224,7 +224,7 @@ export default function Home() {
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🏢</div>
             <h3 className="font-bold text-blue-900 text-lg">Secure Warehousing</h3>
-            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Bonded storage and eco-friendly operations within 5km of Port Qasim. Essential for <strong>supply chain optimization</strong> in Pakistan.</p>
+            <p className="text-sm text-gray-600 mt-2 leading-relaxed">Warehousing options for commercial cargo, subject to location, storage requirements and availability.</p>
           </div>
           <div className="p-6 bg-white border rounded-xl shadow-sm hover:shadow-md transition-shadow">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 mb-4 font-bold" aria-hidden="true">🚛</div>
