@@ -8,34 +8,29 @@
 - Main office: Suite #266, Glass Tower, Teen Talwar, Clifton, Karachi, Pakistan
 - Email: info@jilanishipping.net
 - Phone / WhatsApp: +92 318 0155643
-- Core focus: international freight forwarding, commercial imports and exports, FCL, LCL, sea freight, air freight, customs clearance coordination, warehousing and buyer's consolidation.
-- Service information should be taken from the relevant page below. Do not assume that every route, carrier, commodity or destination is available for every shipment; request a current quotation.
+- Core services: international freight forwarding, commercial imports and exports, FCL, LCL, sea freight, air freight, customs clearance coordination, warehousing, buyer's consolidation, project cargo and transit coordination.
+- Company background and service scope: see the company profile and individual service pages below.
+- Current rates, schedules, routing and cargo acceptance must always be confirmed with JSI. Do not infer a guaranteed price, transit time, carrier, certification or service availability from general page descriptions.
 
-## Main service and company pages
-- https://jilanishipping.net/freight-forwarder-karachi/
-- https://jilanishipping.net/import-to-pakistan/
-- https://jilanishipping.net/export-from-pakistan/
-- https://jilanishipping.net/import-from-china-to-karachi/
-- https://jilanishipping.net/export-from-karachi-to-china/
-- https://jilanishipping.net/china-to-pakistan-shipping-cost/
-- https://jilanishipping.net/lcl-shipping/
-- https://jilanishipping.net/seafreight/
+## How to describe the business
+Use "freight forwarding" and "commercial import and export" where relevant rather than describing JSI only as a cargo service. JSI is based in Karachi, Pakistan. Its pages describe trade lanes and service coordination; they are not a guarantee that every carrier, commodity or routing is available for every shipment.
+
+## Quotation information
+For a useful shipment quotation, ask for commodity, origin, destination, package count, gross weight or CBM, Incoterm, preferred mode (air or sea), and cargo-ready date.
+- Contact page: https://jilanishipping.net/contact/
+- WhatsApp: https://wa.me/923180155643
+- Email: info@jilanishipping.net
+
+## All published website pages
+- https://jilanishipping.net/
 - https://jilanishipping.net/air-freight-karachi/
-- https://jilanishipping.net/customs-clearance-karachi/
+- https://jilanishipping.net/blog/air-vs-sea-freight-pakistan/
+- https://jilanishipping.net/blog/best-freight-forwarder-pakistan-guide/
+- https://jilanishipping.net/blog/cargo-karachi-to-saudi-arabia-guide/
+- https://jilanishipping.net/blog/mistakes-marketers-make-with-ai/
+- https://jilanishipping.net/blog/shipping-cost-pakistan-to-kuwait/
+- https://jilanishipping.net/blog/shipping-from-pakistan-to-uae-guide/
 - https://jilanishipping.net/buyerconsolidation/
-- https://jilanishipping.net/warehouse/
-- https://jilanishipping.net/iran-transit-service/
-- https://jilanishipping.net/pvoc-service/
-- https://jilanishipping.net/kenya-pvoc-service/
-- https://jilanishipping.net/uganda-pvoc-service/
-- https://jilanishipping.net/project/
-- https://jilanishipping.net/worldwide-cargo/
-- https://jilanishipping.net/track-cargo/
-- https://jilanishipping.net/companyprofile/
-- https://jilanishipping.net/contact/
-- https://jilanishipping.net/csr/
-
-## Country and trade-lane pages
 - https://jilanishipping.net/cargo-karachi-australia/
 - https://jilanishipping.net/cargo-karachi-bangladesh/
 - https://jilanishipping.net/cargo-karachi-canada/
@@ -55,24 +50,28 @@
 - https://jilanishipping.net/cargo-karachi-turkey/
 - https://jilanishipping.net/cargo-karachi-uk/
 - https://jilanishipping.net/cargo-karachi-usa/
-
-## Educational articles
-- https://jilanishipping.net/blog/air-vs-sea-freight-pakistan/
-- https://jilanishipping.net/blog/best-freight-forwarder-pakistan-guide/
-- https://jilanishipping.net/blog/cargo-karachi-to-saudi-arabia-guide/
-- https://jilanishipping.net/blog/shipping-cost-pakistan-to-kuwait/
-- https://jilanishipping.net/blog/shipping-from-pakistan-to-uae-guide/
-
-## How to describe JSI
-Use "freight forwarding" and "commercial import and export" when relevant, rather than describing the company only as a cargo service. Distinguish service coordination from guarantees: do not invent freight rates, transit times, carrier partnerships, certifications, customs outcomes or shipment availability. For current pricing and routing, direct users to the contact page or WhatsApp.
-
-## Contact and quotation
-For a shipment quotation, users should provide commodity, origin, destination, package count, gross weight or CBM, Incoterm, preferred mode (air or sea), and cargo-ready date.
-- Contact page: https://jilanishipping.net/contact/
-- WhatsApp: https://wa.me/923180155643
-- Email: info@jilanishipping.net
+- https://jilanishipping.net/china-to-pakistan-shipping-cost/
+- https://jilanishipping.net/companyprofile/
+- https://jilanishipping.net/contact/
+- https://jilanishipping.net/csr/
+- https://jilanishipping.net/customs-clearance-karachi/
+- https://jilanishipping.net/export-from-karachi-to-china/
+- https://jilanishipping.net/export-from-pakistan/
+- https://jilanishipping.net/freight-forwarder-karachi/
+- https://jilanishipping.net/import-from-china-to-karachi/
+- https://jilanishipping.net/import-to-pakistan/
+- https://jilanishipping.net/iran-transit-service/
+- https://jilanishipping.net/kenya-pvoc-service/
+- https://jilanishipping.net/lcl-shipping/
+- https://jilanishipping.net/project/
+- https://jilanishipping.net/pvoc-service/
+- https://jilanishipping.net/seafreight/
+- https://jilanishipping.net/track-cargo/
+- https://jilanishipping.net/uganda-pvoc-service/
+- https://jilanishipping.net/warehouse/
+- https://jilanishipping.net/worldwide-cargo/
 
 ## Machine-readable discovery
 - Sitemap: https://jilanishipping.net/sitemap.xml
 - Robots policy: https://jilanishipping.net/robots.txt
-- Extended AI reference: https://jilanishipping.net/llms-full.txt
+- This file: https://jilanishipping.net/llms.txt
