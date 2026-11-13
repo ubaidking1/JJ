@@ -28,7 +28,7 @@ export default function CargoKarachiChinaPage() {
       <section className="prose max-w-none">
         <h1 className="text-4xl font-black text-blue-900 mb-6">Pakistan–China Import and Export Shipping</h1>
         <p className="text-lg leading-relaxed text-gray-700">
-          Jilani Shipping International (JSI) is the premier <strong>logistics partner for China-Pakistan trade</strong>. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we provide the most reliable <strong>LCL consolidation and customs brokerage</strong> services.
+          Jilani Shipping International (JSI) coordinates freight enquiries for commercial shipments between China and Pakistan. Whether you are an <strong>exporter</strong> sending goods to Guangzhou or an <strong>importer</strong> sourcing from Yiwu or Shanghai, we can review <strong>LCL consolidation, FCL, air freight and customs-clearance coordination</strong> requirements for each shipment.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6 my-10 not-prose">
@@ -48,15 +48,15 @@ export default function CargoKarachiChinaPage() {
 
         <div className="bg-blue-50 p-6 rounded-2xl border-l-4 border-blue-600 my-8">
           <h2 className="text-xl font-bold text-blue-900 mb-2">China to Pakistan Import Specialists</h2>
-          <p className="text-sm text-gray-700">We handle the entire import process, from <strong>supplier coordination in China</strong> to <strong>customs clearing at Karachi Port</strong>. Our dedicated LCL service for China imports is the most cost-effective in the market.</p>
+          <p className="text-sm text-gray-700">We handle the entire import process, from <strong>supplier coordination in China</strong> to <strong>customs clearing at Karachi Port</strong>. LCL availability, routing and charges are confirmed for each shipment based on cargo details and current schedules.</p>
         </div>
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Why JSI for China Trade?</h2>
         <ul className="grid md:grid-cols-2 gap-4">
-          <li className="flex items-start gap-2">✅ <strong>Direct LCL Consolidation</strong> - No third-party markups.</li>
-          <li className="flex items-start gap-2">✅ <strong>In-house Customs Agents</strong> - Expert documentation & clearing.</li>
+          <li className="flex items-start gap-2">✅ <strong>LCL Shipment Enquiries</strong> - Consolidation options reviewed against cargo and routing.</li>
+          <li className="flex items-start gap-2">✅ <strong>Customs Coordination</strong> - Documentation and clearance requirements reviewed.</li>
           <li className="flex items-start gap-2">✅ <strong>Global Sourcing Support</strong> - We bridge the gap with suppliers.</li>
-          <li className="flex items-start gap-2">✅ <strong>Door-to-Door Delivery</strong> - Seamless logistics from origin to destination.</li>
+          <li className="flex items-start gap-2">✅ <strong>Delivery Options</strong> - Scope confirmed by origin, destination and cargo.</li>
         </ul>
 
         <h2>Our Cargo Services Include:</h2>
@@ -77,11 +77,11 @@ export default function CargoKarachiChinaPage() {
           - Karachi Airport to Beijing / Shanghai Airports
         </p>
 
-        <h2>Estimated Transit Time</h2>
+        <h2>Transit Time and Routing</h2>
         <p>
-          <strong>Sea Freight:</strong> 7–10 days  
+          Transit estimates depend on origin and destination ports, carrier schedule, routing, transshipment and customs clearance.  
           <br />
-          <strong>Air Freight:</strong> 2–4 days
+          JSI confirms the current estimated schedule with each shipment quotation.
         </p>
 
         <h2>Get a Free Quote</h2>
