@@ -26,7 +26,7 @@ export default function SeoLandingPage({ eyebrow, title, intro, services, proces
           <h1 className="mt-3 max-w-4xl text-4xl font-bold md:text-5xl">{title}</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-blue-100">{intro}</p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#smart-quote" className="inline-block rounded-xl bg-green-600 px-6 py-4 font-bold text-white hover:bg-green-700">Get Commercial Shipping Quote</a>
+            <a href="#smart-quote" className="inline-block rounded-xl bg-green-600 px-6 py-4 font-bold text-white hover:bg-green-700">Request a Commercial Freight Quote</a>
             <a href="https://wa.me/923180155643" target="_blank" rel="noopener noreferrer" className="inline-block rounded-xl bg-white px-6 py-4 font-bold text-blue-900 hover:bg-blue-50">WhatsApp +92 318 0155643</a>
           </div>
         </div>
