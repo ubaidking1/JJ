@@ -65,11 +65,11 @@ export default function FreightForwarder() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-bold text-blue-800">Expert Customs Handling</h3>
-                <p className="text-sm text-gray-600">We navigate the complex customs regulations in Pakistan so you don't have to, ensuring zero delays for your imports and exports.</p>
+                <p className="text-sm text-gray-600">We help coordinate customs documentation and shipment requirements. Clearance timelines depend on the cargo, documentation and decisions of the relevant authorities.</p>
               </div>
               <div>
                 <h3 className="font-bold text-blue-800">Global Network</h3>
-                <p className="text-sm text-gray-600">With partners in over 100 countries, we provide a seamless bridge between you and your international buyers or suppliers.</p>
+                <p className="text-sm text-gray-600">We support international freight enquiries across multiple trade lanes. Available routes, origin and destination handling, and delivery scope are confirmed for each shipment.</p>
               </div>
               <div>
                 <h3 className="font-bold text-blue-800">Real-time Tracking</h3>
@@ -117,7 +117,7 @@ export default function FreightForwarder() {
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Does Jilani Shipping handle imports into Pakistan?</summary><p className="mt-3 text-gray-600">Yes. We arrange commercial import shipments to Karachi from China, UAE, UK, USA, Europe and other international origins through FCL, LCL and air freight.</p></details>
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Do you also export shipments from Karachi?</summary><p className="mt-3 text-gray-600">Yes. We provide export freight booking, documentation, customs support and international shipping from Karachi to worldwide destinations.</p></details>
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">Are you a freight forwarder and customs clearing agent in Karachi?</summary><p className="mt-3 text-gray-600">Yes. We combine freight forwarding with customs clearance coordination at Karachi Port and Port Qasim, so booking, clearance and delivery stay under one team.</p></details>
-            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">How do I choose a freight forwarder in Karachi?</summary><p className="mt-3 text-gray-600">Ask for an itemised quotation, confirm what is included (origin, freight, destination, customs, delivery), check trade-body membership such as PIFFA, and compare communication speed. We list every charge before you book.</p></details>
+            <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">How do I choose a freight forwarder in Karachi?</summary><p className="mt-3 text-gray-600">Ask for an itemised quotation, confirm what is included (origin, freight, destination, customs, delivery), check trade-body membership such as PIFFA, and compare communication speed. Ask for an itemised quotation showing the included services, charges and exclusions before confirming a shipment.</p></details>
             <details className="border rounded-xl p-5"><summary className="font-bold cursor-pointer">What information is needed for a freight quote?</summary><p className="mt-3 text-gray-600">Commodity, weight or CBM, package count, POL, POD, Incoterm, container type and cargo-ready date.</p></details>
           </div>
         </section>
