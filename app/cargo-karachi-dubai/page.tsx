@@ -92,34 +92,16 @@ export default function CargoKarachiDubaiPage() {
           </div>
         </div>
 
-        <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Transit Times for Dubai</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse border border-gray-200">
-            <thead className="bg-gray-100">
-              <tr>
-                <th className="p-4 border">Service Type</th>
-                <th className="p-4 border">Transit Time</th>
-                <th className="p-4 border">Best For</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="p-4 border font-bold">Air Freight</td>
-                <td className="p-4 border">24 - 48 Hours</td>
-                <td className="p-4 border">Urgent & Small items</td>
-              </tr>
-              <tr>
-                <td className="p-4 border font-bold">Sea Freight (Direct)</td>
-                <td className="p-4 border">4 - 6 Days</td>
-                <td className="p-4 border">Commercial Bulk</td>
-              </tr>
-              <tr>
-                <td className="p-4 border font-bold">Door-to-Door</td>
-                <td className="p-4 border">8 - 12 Days</td>
-                <td className="p-4 border">Personal effects & E-commerce</td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Karachi–Dubai Shipping Schedule and Transit Estimates</h2>
+        <p className="text-gray-700">Transit estimates are not fixed. They depend on the selected service, confirmed airline or vessel, routing, transshipment, port and terminal operations, customs clearance and final delivery scope. Ask JSI to confirm the current schedule and estimated transit for your specific cargo before booking.</p>
+        <div className="my-6 rounded-xl border border-blue-100 bg-blue-50 p-5">
+          <h3 className="font-bold text-blue-900">What to include in your schedule enquiry</h3>
+          <ul className="mt-3 list-disc pl-5 text-gray-700">
+            <li>Origin and destination (airport, seaport or delivery address)</li>
+            <li>Commodity, package count, gross weight and dimensions or CBM</li>
+            <li>Preferred service: air, LCL or FCL</li>
+            <li>Cargo-ready date and any delivery requirements</li>
+          </ul>
         </div>
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">Dubai to Karachi Cargo Charges and Imports</h2>
