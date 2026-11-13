@@ -29,8 +29,8 @@ export const metadata: Metadata = pageMetadata({
 
 const faq = [
   { q: "How much does cargo from Karachi to Dubai cost?", a: "Cost depends on weight (kg), volume (CBM), commodity and service. Air cargo is priced per chargeable kg, sea LCL per CBM, and FCL per container. Send your cargo details for an itemised quotation." },
-  { q: "How long does it take to ship from Karachi to Dubai by sea?", a: "Sea freight to Jebel Ali typically takes about 4 to 6 days port to port on direct services, plus customs clearance and delivery. Door-to-door usually takes 8 to 12 days." },
-  { q: "How long does air cargo from Karachi to Dubai take?", a: "Air freight usually takes 24 to 48 hours from flight departure, plus clearance on arrival." },
+  { q: "How long does it take to ship from Karachi to Dubai by sea?", a: "Transit time depends on the confirmed vessel, routing, transshipment, port operations and customs clearance. JSI confirms the current estimated schedule with the shipment quotation." },
+  { q: "How long does air cargo from Karachi to Dubai take?", a: "Air transit depends on airline routing, flight availability, handling and customs clearance. The applicable estimate is confirmed when the shipment is quoted." },
   { q: "Can you ship from Dubai or Sharjah to Karachi?", a: "Yes. We handle imports from Dubai, Sharjah, Abu Dhabi and Ajman to Karachi, including door-to-door cargo and customs clearance in Pakistan." },
   { q: "What documents are needed to ship cargo to Dubai?", a: "Typically a commercial invoice, packing list and bill of lading or airway bill. Some goods need extra certificates. We confirm requirements for your commodity before booking." },
 ];
@@ -64,14 +64,14 @@ export default function CargoKarachiDubaiPage() {
           </div>
           <div className="p-6 bg-blue-500 text-white rounded-2xl shadow-xl">
             <h3 className="text-xl font-bold mb-2">Door-to-Door</h3>
-            <p className="text-sm opacity-90 font-bold italic underline">Zero Hassle</p>
+            <p className="text-sm opacity-90 font-bold italic underline">Subject to route and cargo</p>
             <p className="text-sm opacity-90 mt-2">We pick up from your door in Karachi and deliver to your door in Dubai/Sharjah.</p>
           </div>
         </div>
 
         <h2 className="text-2xl font-bold text-blue-800 mt-12 mb-6">How Much Does Cargo from Karachi to Dubai Cost?</h2>
         <p>
-          The cost depends on weight, volume (CBM), and the type of goods. JSI offers the most competitive <strong>Karachi to Dubai cargo rates</strong>. 
+          The cost depends on weight, volume (CBM), and the type of goods. JSI can provide an itemised <strong>Karachi to Dubai cargo quotation</strong> based on the shipment details. 
           For an accurate quote, we need to know:
         </p>
         <ul className="grid md:grid-cols-2 gap-2">
