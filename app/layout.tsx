@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@context": "https://schema.org",
     "@type": ["Organization", "LocalBusiness"],
     "name": "Jilani Shipping International",
-    "alternateName": ["Jilani Shipping", "JSI", "Jilani Shipping International", "Jalani Shipping"],
+    "alternateName": ["Jilani Shipping", "JSI"],
     "telephone": "+92-318-0155643",
     "email": "info@jilanishipping.net",
     "image": "https://jilanishipping.net/images/shipping-hero.webp",
