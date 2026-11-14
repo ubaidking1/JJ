@@ -9,6 +9,10 @@ export default function Footer() {
                       <h4 className="font-semibold">Jilani Shipping International</h4>
                       <p className="text-sm">info@jilanishipping.net | +92 318 0155643</p>
                     </div>
+                    <div className="flex items-center gap-4">
+                      <a href="https://www.facebook.com/share/19owxA2Lsh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-blue-800 hover:text-blue-600 font-semibold">Facebook</a>
+                      <a href="https://www.instagram.com/jilani_shipping_international?vrfl=YWZsdHdjY3g0NHYy&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-pink-600 hover:text-pink-500 font-semibold">Instagram</a>
+                    </div>
                     <div className="flex flex-col md:flex-row gap-8">
                       <div>
                         <h5 className="font-semibold mb-2">Quick Links</h5>
