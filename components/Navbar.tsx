@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,6 +14,19 @@ export default function Navbar() {
 
   return (
     <header className="shadow-sm border-b bg-white/95 sticky top-0 z-[100]">
+      <div className="bg-gradient-to-r from-blue-950 via-blue-900 to-slate-900 text-white">
+        <div className="max-w-6xl mx-auto px-4 md:px-6 py-2 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+          <p className="text-xs sm:text-sm font-semibold tracking-wide">
+            Pakistan → Iran <span className="text-amber-300 px-1">|</span> China → Karachi → Iran
+            <span className="hidden md:inline text-blue-100 font-normal"> · Iran Transit Freight Enquiries</span>
+          </p>
+          <div className="flex items-center gap-3">
+            <a href="https://www.facebook.com/share/19owxA2Lsh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Jilani Shipping International on Facebook" className="hover:text-amber-300 transition-colors"><FaFacebookF size={15} /></a>
+            <a href="https://www.instagram.com/jilani_shipping_international?vrfl=YWZsdHdjY3g0NHYy&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Jilani Shipping International on Instagram" className="hover:text-amber-300 transition-colors"><FaInstagram size={17} /></a>
+            <Link href="/iran-transit-service/" className="rounded-full bg-amber-400 hover:bg-amber-300 text-blue-950 px-3 py-1 text-xs font-bold transition-colors">Request a Quote →</Link>
+          </div>
+        </div>
+      </div>
       <div className="max-w-6xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 md:gap-3 shrink-0" onClick={closeMenu}>
@@ -100,6 +114,8 @@ export default function Navbar() {
             </div>
           </div>
 
+          <a href="https://www.facebook.com/share/19owxA2Lsh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-blue-800 hover:text-blue-600"><FaFacebookF size={17} /></a>
+          <a href="https://www.instagram.com/jilani_shipping_international?vrfl=YWZsdHdjY3g0NHYy&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-pink-600 hover:text-pink-500"><FaInstagram size={19} /></a>
           <Link href="/contact/" className="px-4 py-2 rounded-lg bg-blue-900 text-white hover:bg-blue-800 transition-all">Contact</Link>
         </nav>
 
@@ -136,7 +152,11 @@ export default function Navbar() {
           <Link href="/csr/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">CSR</Link>
           <Link href="/project/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Project</Link>
           <Link href="/iran-transit-service/" onClick={closeMenu} className="p-3 hover:bg-blue-50 rounded-lg">Iran Transit</Link>
-          <Link href="/contact/" onClick={closeMenu} className="p-3 bg-blue-900 text-white rounded-lg text-center mt-2">Contact Us</Link>
+          <div className="flex items-center justify-center gap-6 py-3 border-t border-gray-100 mt-2">
+            <a href="https://www.facebook.com/share/19owxA2Lsh/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="flex items-center gap-2 text-blue-800"><FaFacebookF /> Facebook</a>
+            <a href="https://www.instagram.com/jilani_shipping_international?vrfl=YWZsdHdjY3g0NHYy&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex items-center gap-2 text-pink-600"><FaInstagram /> Instagram</a>
+          </div>
+          <Link href="/contact/" onClick={closeMenu} className="p-3 bg-blue-900 text-white rounded-lg text-center">Contact Us</Link>
           
           <div className="mt-4 pt-4 border-t grid grid-cols-2 gap-2 text-[10px]">
             <Link href="/cargo-karachi-dubai/" onClick={closeMenu} className="p-2 bg-gray-100 rounded text-center">KHI-Dubai</Link>
