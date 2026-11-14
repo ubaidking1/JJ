@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = pageMetadata({
-  title: { absolute: "AI Marketing Mistakes: Redirect or Remove from Logistics…" },
+  title: { absolute: "AI Marketing Mistakes | JSI" },
   description: "This topic does not support the website’s freight, import-export or compliance subject authority. Redirect, remove or move it to a separate marketing website.",
   keywords: [
     "AI marketing mistakes",
