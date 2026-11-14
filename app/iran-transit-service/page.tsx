@@ -2,15 +2,19 @@ import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import type { Metadata } from "next";
 export const metadata: Metadata = pageMetadata({
- title: { absolute: "Iran Transit by Road & Air Freight Enquiries | JSI" },
- description: "Request Iran transit rates via Pakistan, road transport and air freight enquiries with export documentation, route review and itemised shipment quotations.",
- keywords: ["Iran transit via Pakistan", "Iran transit by road", "air freight to Iran", "export cargo Pakistan to Iran", "Iran export freight rates", "reliable Iran transit rate", "Karachi Iran bonded transport"],
+ title: { absolute: "Pakistan to Iran & China via Karachi Transit Freight | JSI" },
+ description: "Commercial freight enquiries for Pakistan to Iran and China to Karachi to Iran routing. Request a route review for sea or road transit, handling and documentation coordination.",
+ keywords: ["Pakistan to Iran freight", "China Karachi Iran transit", "China to Iran via Karachi", "Iran transit via Pakistan", "Iran transit by road", "commercial freight Iran", "Karachi Iran transit freight"],
  alternates: { canonical: "/iran-transit-service/" },
 });
 export default function IranTransitService() {
  return <main className="max-w-6xl mx-auto px-6 py-12">
   <h1 className="text-4xl font-bold text-blue-900">Iran Transit by Road and Air Freight Enquiries</h1>
-  <p className="mt-6 text-lg text-gray-700">Jilani Shipping coordinates Iran transit enquiries via Pakistan and export cargo planning from Karachi. Share the goods, origin and final destination so route availability, carrier acceptance, documentation and applicable requirements can be reviewed before a booking is offered.</p>
+  <p className="mt-6 text-lg text-gray-700">Jilani Shipping International handles commercial freight enquiries for two focus routes: Pakistan to Iran, and China to Iran via Karachi. Share your cargo details and shipment plan so the proposed routing, carrier acceptance, handling, documentation and applicable requirements can be reviewed before a booking is offered.</p>
+  <section className="mt-8 grid gap-5 md:grid-cols-2">
+   <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6"><h2 className="text-2xl font-bold text-blue-900">Pakistan → Iran</h2><p className="mt-3 text-gray-700">For commercial exports from Pakistan to Iran, send the cargo origin, destination, commodity, HS code, shipment size and preferred mode. Routing and export documentation are reviewed against the shipment details.</p></div>
+   <div className="rounded-2xl border border-blue-100 bg-blue-50 p-6"><h2 className="text-2xl font-bold text-blue-900">China → Karachi → Iran</h2><p className="mt-3 text-gray-700">For China-origin cargo planned to move through Karachi towards Iran, provide the China loading port, Karachi handling requirements, final Iranian destination, commodity and container or cargo details. Transit feasibility, customs procedures and onward transport scope must be confirmed for each shipment.</p></div>
+  </section>
   <section className="mt-10"><h2 className="text-2xl font-bold text-blue-900">By Road: Iran Transit via Pakistan</h2><p className="mt-3 text-gray-700">For road transit, provide the arrival port, delivery location, commodity, HS code, gross weight and container or truck requirement. Our team can review port handling, transit documentation, border coordination and transport scope. Transit cargo passing through Pakistan and exports originating in Pakistan require different documentation.</p></section>
   <section className="mt-10"><h2 className="text-2xl font-bold text-blue-900">By Air: Iran Import and Export Cargo Enquiries</h2><p className="mt-3 text-gray-700">For time-sensitive air freight enquiries, share the origin and destination airports, cargo dimensions, weight, product details and ready date. Air routing and acceptance must be confirmed for each shipment; an enquiry does not confirm an available flight or guaranteed delivery time.</p></section>
   <section className="mt-10 rounded-2xl bg-blue-50 p-7"><h2 className="text-2xl font-bold text-blue-900">Request a Reliable Rate for Iran Transit</h2><p className="mt-3 text-gray-700">A useful Iran transit quotation identifies the transport mode, handling, documentation, border charges, delivery scope and exclusions. Comparing the cheapest rate for Iran transit requires comparing the same service scope. Rates depend on cargo, route, availability and validity; we do not promise a universal lowest price or a 100% service guarantee.</p></section>
